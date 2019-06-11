@@ -11,8 +11,10 @@ alias gp='git pull'
 alias gps='git push'
 alias gd='git diff'
 alias gnb='git checkout -b'
+alias gac='git add . && git commit'
 alias gch='git checkout'
 alias grs='git reset HEAD .'
+alias gr='git remote'
 alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias gt='git ls-tree -r master --name-only'
 alias grem='git remote'
@@ -26,10 +28,8 @@ alias grep='grep --color=auto'
 
 # Command Aliases
 alias v='vim'
-
-# Aliases for things that should be in my PATH variable
+alias p='/c/ProgramData/chocolatey/bin/pandoc.exe'
 alias mpv='/c/"Program Files"/mpv/mpv.exe'
-alias pandoc='/c/ProgramData/chocolatey/bin/pandoc.exe'
 alias choco='/c/ProgramData/chocolatey/bin/choco.exe'
 
 # cd <!>

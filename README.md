@@ -1,6 +1,8 @@
 # Dot Files
 
-## Visual Studio Code Plugins
+I've switched from VSCode to [VSCodium](https://github.com/VSCodium/vscodium) but everything will still be compatible, if anything I'll be the one to run into incompatibility issues
+
+## VSCode Plugins
 
 + Auto Import
 + Auto Rename Tag
@@ -9,4 +11,4 @@
 + Fix JSON
 + VSCodeVim
 
-Only VSCodeVim is required to use my Visual Studio Code config files
+Only VSCodeVim is required to use my VSCode config files
