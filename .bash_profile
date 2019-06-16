@@ -5,6 +5,8 @@ test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 
 export PATH="$PATH:$HOME/scripts"
+export EDITOR="vim"
+
 
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc

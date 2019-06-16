@@ -45,4 +45,5 @@ alias ai='cd ~/Documents/Uni/"3rd Year"/"Artificial Intelligence"'
 alias uni='cd ~/Documents/Uni/"3rd Year"'
 alias ani='cd ~/Videos/Anime'
 alias tb='cd ~/Documents/Textbooks/"3rd Year"'
+alias repo='cd ~/Repositories'
 # <!->
