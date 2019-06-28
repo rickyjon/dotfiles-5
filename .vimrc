@@ -7,7 +7,6 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set number
-set autoindent
 set number relativenumber
 
 " Autocompletion
@@ -18,10 +17,13 @@ set splitbelow splitright
 
 " Enable and disable auto comment
 map <leader>c :setlocal formatoptions-=cro<CR>
-map <leader>cc :setlocal formatoptions=cro<CR>
+map <leader>C :setlocal formatoptions=cro<CR>
 
 " Enable spell checking, o for othography
 map <leader>o :setlocal spell! spelllang=en_au<CR>
+
+map <leader>a :setlocal autoindent<CR>
+map <leader>A :setlocal noautoindent<CR>
 
 " Shortcutting split navigation
 map <C-h> <C-w>h
@@ -38,17 +40,28 @@ autocmd BufWritePre * %s/\s\+$//e
 " Update shortcuts on edit
 autocmd BufWritePost ~/.autocd !gencd
 
+" Fix tex file type set
+autocmd BufRead,BufNewFile *.tex set filetype=tex
+
 " Guide navigation
 noremap <leader><Tab> <Esc>/<++><Enter>"_c4l
 inoremap <leader><Tab> <Esc>/<++><Enter>"_c4l
 vnoremap <leader><Tab> <Esc>/<++><Enter>"_c4l
+
+" general insert commands
+inoremap .g <++>
+inoremap .q ""<++><Esc>?"<CR>i
+inoremap .a ''<++><Esc>?'<CR>i
+inoremap .b ()<++><Esc>?)<CR>i
+inoremap .s []<++><Esc>?]<CR>i
+inoremap .c {}<++><Esc>?}<CR>i
+inoremap .r ``<++><Esc>?`<CR>i
 
 " shell
 map <leader>sh i#!/bin/sh<CR><CR>
 autocmd FileType sh inoremap ,f ()<Space>{<CR><Tab><++><CR>}<CR><CR><++><Esc>?()<CR>
 autocmd FileType sh inoremap ,i if<Space>[<Space>];<Space>then<CR><++><CR>fi<CR><CR><++><Esc>?];<CR>hi<Space>
 autocmd FileType sh inoremap ,ei elif<Space>[<Space>];<Space>then<CR><++><CR><Esc>?];<CR>hi<Space>
-autocmd FileType sh inoremap ," ""<Space><++><Esc>?"<CR>i
 autocmd FileType sh inoremap ,sw case<Space>""<Space>in<CR><++>)<Space><++><Space>;;<CR><++><CR>esac<CR><CR><++><Esc>?"<CR>i
 autocmd FileType sh inoremap ,ca )<Space><++><Space>;;<CR><++><Esc>?)<CR>
 
@@ -86,10 +99,34 @@ autocmd FileType html inoremap ,td <td></td><CR><++><Esc>?</td><CR>
 autocmd FileType html inoremap ,tr <tr><CR></tr><CR><CR><++><Esc>?</tr><CR>
 
 " markdown
-autocmd FileType markdown inoremap <leader>r ---<CR>title:<Space><++><CR>author:<Space>"Brodie Robertson"<CR>geometry:<CR>-<Space>top=30mm<CR>-<Space>left=20mm<CR>-<Space>right=20mm<CR>-<Space>bottom=30mm<CR>header-includes:<Space>\|<CR><Tab>\usepackage{float}<CR>\let\origfigure\figure<CR>\let\endorigfigure\endfigure<CR>\renewenvironment{figure}[1][2]<Space>{<CR><Tab>\expandafter\origfigure\expandafter[H]<CR><BS>}<Space>{<CR><Tab>\endorigfigure<CR><BS>}<CR><BS>---<CR><CR>
-autocmd FileType markdown inoremap ,im ![]("<++>")<Space><++><Esc>F]
-autocmd FileType markdown inoremap ,a ![]("<++>")<Space><++><Esc>F]
+autocmd FileType markdown noremap <leader>r ---<CR>title:<Space><++><CR>author:<Space>"Brodie Robertson"<CR>geometry:<CR>-<Space>top=30mm<CR>-<Space>left=20mm<CR>-<Space>right=20mm<CR>-<Space>bottom=30mm<CR>header-includes:<Space>\|<CR><Tab>\usepackage{float}<CR>\let\origfigure\figure<CR>\let\endorigfigure\endfigure<CR>\renewenvironment{figure}[1][2]<Space>{<CR><Tab>\expandafter\origfigure\expandafter[H]<CR><BS>}<Space>{<CR><Tab>\endorigfigure<CR><BS>}<CR><BS>---<CR><CR>
+autocmd FileType markdown inoremap ,im ![]("<++>")<Space><++><Esc>F]i
+autocmd FileType markdown inoremap ,a ![]("<++>")<Space><++><Esc>F]i
 autocmd FileType markdown inoremap ,1 #<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,2 ##<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,3 ###<Space><CR><CR><++><Esc>2k<S-a>
-autocmd FileType markdown inoremap ,d +<Space><CR><CR><++><Esc>2k<S-a>
+autocmd FileType markdown inoremap ,4 ####<Space><CR><CR><++><Esc>2k<S-a>
+autocmd FileType markdown inoremap ,5 #####<Space><CR><CR><++><Esc>2k<S-a>
+autocmd FileType markdown inoremap ,d +<Space><CR><++><Esc>1k<S-a>
+
+" latex
+autocmd FileType tex,latex inoremap ,dc \documentclass{}<CR><CR><++><Esc>?}<CR>i
+autocmd FileType tex,latex inoremap ,up \usepackage{}<CR><CR><++><Esc>?}<CR>i
+autocmd FileType tex,latex inoremap ,bd \begin{document}<CR><CR><CR><CR>\end{document}<Esc>kki
+autocmd FileType tex,latex inoremap ,be \begin{}<CR><CR><CR><CR>\end{<++>}<Esc>?n{<CR>lli
+autocmd FileType tex,latex inoremap ,ti \title{}<CR><CR><++><Esc>?}<CR>i
+autocmd FileType tex,latex inoremap ,a \author{}<CR><CR><++><Esc>?}<CR>i
+autocmd FileType tex,latex inoremap ,mt \maketitle<CR><CR>
+autocmd FileType tex,latex inoremap ,s \section{}<CR><CR><++><Esc>?}<CR>i
+autocmd FileType tex,latex inoremap ,ss \subsection{}<CR><CR><++><Esc>?}<CR>i
+autocmd FileType tex,latex inoremap ,sss \subsubsection{}<CR><CR><++><Esc>?}<CR>i
+autocmd FileType tex,latex inoremap ,rc \renewcommand{}{<++>}<CR><CR><++><Esc>?}{<CR>i
+autocmd FileType tex,latex inoremap ,tf \titleformat{}{<++>}{<++>}{<++>}{<++>}<CR><CR><++><Esc>?{}<CR>li
+autocmd FileType tex,latex inoremap ,lt \{\LaTeX}<Space>
+autocmd FileType tex,latex inoremap ,b \bfseries
+autocmd FileType tex,latex inoremap ,t \tiny
+autocmd FileType tex,latex inoremap ,sc \scriptsize
+autocmd FileType tex,latex inoremap ,fn \footnotesize
+autocmd FileType tex,latex inoremap ,sm \small
+autocmd FileType tex,latex inoremap ,l \large
+autocmd FileType tex,latex inoremap ,h \huge
