@@ -6,7 +6,6 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-set number
 set number relativenumber
 
 " Autocompletion
@@ -31,8 +30,21 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Shortcut split opening
+nnoremap H :split<Space>
+nnoremap V :vsplit<Space>
+
+" Vertically center document when entering insert mode
+autocmd InsertEnter * norm zz
+
 " Alias replace all to S
 nnoremap S :%s//g<Left><Left>
+
+" Alias write to W
+nnoremap W :w<CR>
+
+" Alias write and quit to Q
+nnoremap Q :wq<CR>
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
@@ -110,6 +122,8 @@ autocmd FileType markdown inoremap ,5 #####<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,d +<Space><CR><++><Esc>1k<S-a>
 
 " latex
+autocmd FileType tex,latex noremap <leader>d :w<CR>:!texify<Space>-cp<Space>%<CR>
+autocmd FileType tex,latex inoremap ,c \{<++>}<CR><++><Esc>?{<CR>i
 autocmd FileType tex,latex inoremap ,dc \documentclass{}<CR><CR><++><Esc>?}<CR>i
 autocmd FileType tex,latex inoremap ,up \usepackage{}<CR><CR><++><Esc>?}<CR>i
 autocmd FileType tex,latex inoremap ,bd \begin{document}<CR><CR><CR><CR>\end{document}<Esc>kki
@@ -122,7 +136,7 @@ autocmd FileType tex,latex inoremap ,ss \subsection{}<CR><CR><++><Esc>?}<CR>i
 autocmd FileType tex,latex inoremap ,sss \subsubsection{}<CR><CR><++><Esc>?}<CR>i
 autocmd FileType tex,latex inoremap ,rc \renewcommand{}{<++>}<CR><CR><++><Esc>?}{<CR>i
 autocmd FileType tex,latex inoremap ,tf \titleformat{}{<++>}{<++>}{<++>}{<++>}<CR><CR><++><Esc>?{}<CR>li
-autocmd FileType tex,latex inoremap ,lt \{\LaTeX}<Space>
+autocmd FileType tex,latex inoremap ,lt {\LaTeX}<Space>
 autocmd FileType tex,latex inoremap ,b \bfseries
 autocmd FileType tex,latex inoremap ,t \tiny
 autocmd FileType tex,latex inoremap ,sc \scriptsize
