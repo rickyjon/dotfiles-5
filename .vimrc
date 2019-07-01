@@ -21,6 +21,7 @@ map <leader>C :setlocal formatoptions=cro<CR>
 " Enable spell checking, o for othography
 map <leader>o :setlocal spell! spelllang=en_au<CR>
 
+" Enable disable auto indent
 map <leader>a :setlocal autoindent<CR>
 map <leader>A :setlocal noautoindent<CR>
 
@@ -31,8 +32,8 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Shortcut split opening
-nnoremap H :split<Space>
-nnoremap V :vsplit<Space>
+nnoremap <leader>h :split<Space>
+nnoremap <leader>v :vsplit<Space>
 
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
