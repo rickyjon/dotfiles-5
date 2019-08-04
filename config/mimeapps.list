@@ -1,0 +1,7 @@
+[Added Associations]
+x-scheme-handler/magnet=torrent.desktop;
+application/x.bittorrent=torrent.desktop;
+application/pdf=org.pwmt.zathura.desktop;
+video/x-matroska=mpv.desktop;
+text/plain=vscodium-bin.desktop;vim.desktop;
+video/mp4=mpv.desktop;

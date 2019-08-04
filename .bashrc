@@ -1,4 +1,11 @@
-~/scripts/gencd
+# ~/scripts/gencd
+neofetch
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+export PS1="\[\033[34m\]\u\[\033[m\]@\[\033[34m\]\h \[\033[32m\]\w\[\033[m\] (\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \$ "
 
 # Git Aliases
 alias g='git'
@@ -7,7 +14,7 @@ alias gco='git commit'
 alias ga='git add'
 alias gpl='git pull'
 alias gpom='git pull origin master'
-alias gps='git push'
+alias gpu='git push'
 alias gd='git diff'
 alias gch='git checkout'
 alias gnb='git checkout -b'
@@ -33,23 +40,13 @@ alias grep='grep --color=auto'
 
 # Command Aliases
 alias v='vim'
-alias p='/c/ProgramData/chocolatey/bin/pandoc.exe'
-alias mpv='/c/"Program Files"/mpv/mpv.exe'
-alias choco='/c/ProgramData/chocolatey/bin/choco.exe'
-
-# cd <!>
-alias desk='cd ~/Desktop'
-alias doc='cd ~/Documents'
-alias pic='cd ~/Pictures'
-alias sh='cd ~/Scripts'
-alias vid='cd ~/Videos'
-alias ccp='cd ~/Documents/Uni/"3rd Year"/"Concurrent Programming"'
-alias ad='cd ~/Documents/Uni/"3rd Year"/"Agile Development"'
-alias mgd='cd ~/Documents/Uni/"3rd Year"/"Mobile Game Development"'
-alias ai='cd ~/Documents/Uni/"3rd Year"/"Artificial Intelligence"'
-alias uni='cd ~/Documents/Uni/"3rd Year"'
-alias ani='cd ~/Videos/Anime'
-alias tb='cd ~/Documents/Textbooks/"3rd Year"'
-alias repo='cd ~/Repositories'
-alias yt='cd ~/Videos/Youtube'
-# <!->
+alias sv='sudo vim'
+alias p='pandoc'
+alias m='mpv'
+alias r='ranger'
+alias sr='sudo ranger'
+alias trc='transmission-remote-cli'
+alias trss='transmission-rss'
+alias xup='xrdb .Xresources'
+alias pman='sudo pacman'
+alias pip='sudo pip'

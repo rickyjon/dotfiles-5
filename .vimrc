@@ -62,13 +62,13 @@ inoremap <leader><Tab> <Esc>/<++><Enter>"_c4l
 vnoremap <leader><Tab> <Esc>/<++><Enter>"_c4l
 
 " general insert commands
-inoremap .g <++>
-inoremap .q ""<++><Esc>?"<CR>i
-inoremap .a ''<++><Esc>?'<CR>i
-inoremap .b ()<++><Esc>?)<CR>i
-inoremap .s []<++><Esc>?]<CR>i
-inoremap .c {}<++><Esc>?}<CR>i
-inoremap .r ``<++><Esc>?`<CR>i
+inoremap ;g <++>
+inoremap ;q ""<++><Esc>?"<CR>i
+inoremap ;a ''<++><Esc>?'<CR>i
+inoremap ;b ()<++><Esc>?)<CR>i
+inoremap ;s []<++><Esc>?]<CR>i
+inoremap ;c {}<++><Esc>?}<CR>i
+inoremap ;r ``<++><Esc>?`<CR>i
 
 " shell
 map <leader>sh i#!/bin/sh<CR><CR>
