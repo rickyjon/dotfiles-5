@@ -5,7 +5,7 @@ neofetch
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-export PS1="\[\033[34m\]\u\[\033[m\]@\[\033[34m\]\h \[\033[32m\]\w\[\033[m\] (\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \$ "
+export PS1="\[\e[33m\][\[\e[m\]\[\033[31m\]\u\[\033[33m\]@\[\033[34m\]\h:\[\033[35m\]\w\[\033[m\]\[\e[33m\]]\[\e[m\] (\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \$ "
 
 # Git Aliases
 alias g='git'
@@ -39,8 +39,8 @@ alias ls='ls -hN -A --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 
 # Command Aliases
-alias v='vim'
-alias sv='sudo vim'
+alias v='nvim'
+alias sv='sudo nvim'
 alias p='pandoc'
 alias m='mpv'
 alias r='ranger'

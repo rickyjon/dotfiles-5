@@ -145,7 +145,8 @@ bindsym $mod+shift+a exec fusermount -u cell/
 ###---Toggle External Display---###
 bindsym $mod+e exec dm
 
-###---Bookmarks---####
+###---Bookmarks/Search---####
+bindsym $mod+s exec sch "firefox"
 bindsym $mod+b exec bm "firefox"
 
 ###---Brightness---###
