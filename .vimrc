@@ -8,6 +8,8 @@ set softtabstop=4
 set tabstop=4
 set number relativenumber
 
+set clipboard+=unnamedplus
+
 " Autocompletion
 set wildmode=longest,list,full
 
