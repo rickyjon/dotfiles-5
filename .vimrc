@@ -1,7 +1,17 @@
 let mapleader=" "
 
+call plug#begin('~/local/share/nvim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
+
+let g:airline_theme='powerlineish'
+
 " Basic settings
 syntax on
+set encoding=utf-8
 set expandtab
 set shiftwidth=4
 set softtabstop=4
@@ -26,6 +36,12 @@ map <leader>o :setlocal spell! spelllang=en_au<CR>
 " Enable disable auto indent
 map <leader>a :setlocal autoindent<CR>
 map <leader>A :setlocal noautoindent<CR>
+
+" Shell check
+map <leader>s :!clear && shellcheck %<CR>
+
+map <leader>c :w! \| !comp <c-r>%<CR><CR>
+map <leader>p :!opout <c-r>%<CR><CR>
 
 " Shortcutting split navigation
 map <C-h> <C-w>h
@@ -73,7 +89,7 @@ inoremap ;c {}<++><Esc>?}<CR>i
 inoremap ;r ``<++><Esc>?`<CR>i
 
 " shell
-map <leader>sh i#!/bin/sh<CR><CR>
+map <leader>b i#!/bin/sh<CR><CR>
 autocmd FileType sh inoremap ,f ()<Space>{<CR><Tab><++><CR>}<CR><CR><++><Esc>?()<CR>
 autocmd FileType sh inoremap ,i if<Space>[<Space>];<Space>then<CR><++><CR>fi<CR><CR><++><Esc>?];<CR>hi<Space>
 autocmd FileType sh inoremap ,ei elif<Space>[<Space>];<Space>then<CR><++><CR><Esc>?];<CR>hi<Space>
@@ -120,15 +136,16 @@ autocmd FileType html inoremap ,td <td></td><CR><++><Esc>?</td><CR>i
 autocmd FileType html inoremap ,tr <tr><CR></tr><CR><CR><++><Esc>?</tr><CR>i
 
 " markdown
-autocmd FileType markdown noremap <leader>r ---<CR>title:<Space><++><CR>author:<Space>"Brodie Robertson"<CR>geometry:<CR>-<Space>top=30mm<CR>-<Space>left=20mm<CR>-<Space>right=20mm<CR>-<Space>bottom=30mm<CR>header-includes:<Space>\|<CR><Tab>\usepackage{float}<CR>\let\origfigure\figure<CR>\let\endorigfigure\endfigure<CR>\renewenvironment{figure}[1][2]<Space>{<CR><Tab>\expandafter\origfigure\expandafter[H]<CR><BS>}<Space>{<CR><Tab>\endorigfigure<CR><BS>}<CR><BS>---<CR><CR>
-autocmd FileType markdown inoremap ,im ![]("<++>")<Space><++><Esc>F]i
-autocmd FileType markdown inoremap ,a ![]("<++>")<Space><++><Esc>F]i
+autocmd FileType markdown noremap <leader>r i---<CR>title:<Space><++><CR>author:<Space>"Brodie Robertson"<CR>geometry:<CR>-<Space>top=30mm<CR>-<Space>left=20mm<CR>-<Space>right=20mm<CR>-<Space>bottom=30mm<CR>header-includes:<Space>\|<CR><Tab>\usepackage{float}<CR>\let\origfigure\figure<CR>\let\endorigfigure\endfigure<CR>\renewenvironment{figure}[1][2]<Space>{<CR><Tab>\expandafter\origfigure\expandafter[H]<CR><BS>}<Space>{<CR><Tab>\endorigfigure<CR><BS>}<CR><BS>---<CR><CR>
+autocmd FileType markdown inoremap ,i ![]("<++>")<Space><++><Esc>F]i
+autocmd FileType markdown inoremap ,a []("<++>")<Space><++><Esc>F]i
 autocmd FileType markdown inoremap ,1 #<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,2 ##<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,3 ###<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,4 ####<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,5 #####<Space><CR><CR><++><Esc>2k<S-a>
-autocmd FileType markdown inoremap ,d +<Space><CR><++><Esc>1k<S-a>
+autocmd FileType markdown inoremap ,u +<Space><CR><++><Esc>1k<S-a>
+autocmd FileType markdown inoremap ,o 1.<Space><CR><++><Esc>1k<S-a>
 
 " latex
 autocmd FileType tex,latex noremap <leader>d :w<CR>:!texify<Space>-cp<Space>%<CR>

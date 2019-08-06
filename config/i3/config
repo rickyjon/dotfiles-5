@@ -115,7 +115,7 @@ bindsym $mod+r mode "resize"
 ###---Start external scripts---###
 # Status Bar
 bar {
-        status_command i3status
+        status_command i3blocks
 }
 # BitTorrent daemon
 exec --no-startup-id transmission-daemon
@@ -157,7 +157,7 @@ bindsym $mod+shift+z exec prompt "Are you sure you would like to reboot?" "sudo 
 bindsym $mod+shift+x exec prompt "Are you sure you would like to shutdown?" "sudo shutdown"
 
 ###---Launch programs---###
-bindsym $mod+Mod1+o exec openshot-qt
+bindsym $mod+Mod1+k exec kdenlive
 bindsym $mod+Mod1+s exec obs
 bindsym $mod+Mod1+g exec gimp
 bindsym $mod+Mod1+b exec firefox

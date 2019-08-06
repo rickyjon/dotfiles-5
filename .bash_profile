@@ -1,2 +1,1 @@
-#!/bin/sh
-source ~/.profile
+.profile

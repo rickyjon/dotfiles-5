@@ -1,6 +1,5 @@
-URxvt.font: xft:DejaVu Mono Oblique:size=10
-URxvt.boldFont: xft:DejaVu Mono Oblique Bold:size=10
-URxvt.letterSpace: -3
+URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12
+URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:size=16
 URxvt.scrollBar: false
 URxvt.perl-ext-common:resize-font
 URxvt.keysym.C-minus:resize-font:smaller
