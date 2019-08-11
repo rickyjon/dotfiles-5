@@ -120,7 +120,7 @@ bar {
 # BitTorrent daemon
 exec --no-startup-id transmission-daemon
 # Torrent RSS
-#exec --no-startup-id transmission-rss
+exec --no-startup-id transmission-rss -f
 #Wifi Applet
 exec --no-startup-id nm-applet
 # Chat App
