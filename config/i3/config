@@ -132,11 +132,15 @@ exec --no-startup-id feh --bg-scale ~/.config/wall.png
 # Compositor
 exec --no-startup-id compton -b
 
+###---Cursor speed---###
+exec --no-startup-id set-prop 11 295 2
+
 ###---Audio controls---###
-bindsym $mod+p exec amixer -c 0 --  set Headphone 2%+
-bindsym $mod+shift+p exec amixer -c 0 -- set Headphone 2%-
-bindsym $mod+Up exec amixer -c 0 -- set Master 2%+
-bindsym $mod+Down exec amixer -c 0 -- set Master 2%-
+bindsym $mod+p exec volctrl Headphone 2%+
+bindsym $mod+shift+p exec volctrl Headphone 2%-
+
+bindsym $mod+Up exec volctrl Master 2%+
+bindsym $mod+Down exec volctrl Master 2%-
 
 ###---Mount and unmount android---###
 bindsym $mod+a exec simple-mtpfs --device 1 cell/
