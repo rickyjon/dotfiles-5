@@ -31,10 +31,6 @@ bindsym $mod+Shift+l move right
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-#bindsym $mod+b layout tabbed
-#bindsym $mod+s layout toggle split
-
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
@@ -93,16 +89,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -133,7 +123,7 @@ exec --no-startup-id feh --bg-scale ~/.config/wall.png
 exec --no-startup-id compton -b
 
 ###---Cursor speed---###
-exec --no-startup-id set-prop 11 295 2
+exec --no-startup-id xinput set-prop 11 295 1.9
 
 ###---Audio controls---###
 bindsym $mod+p exec volctrl Headphone 2%+
@@ -143,8 +133,7 @@ bindsym $mod+Up exec volctrl Master 2%+
 bindsym $mod+Down exec volctrl Master 2%-
 
 ###---Mount and unmount android---###
-bindsym $mod+a exec simple-mtpfs --device 1 cell/
-bindsym $mod+shift+a exec fusermount -u cell/
+bindsym $mod+a exec mntandroid
 
 ###---Toggle External Display---###
 bindsym $mod+e exec dm
@@ -161,6 +150,7 @@ bindsym $mod+shift+z exec prompt "Are you sure you would like to reboot?" "sudo 
 bindsym $mod+shift+x exec prompt "Are you sure you would like to shutdown?" "sudo shutdown"
 
 ###---Launch programs---###
+bindsym $mod+Mod1+m exec snap run spotify
 bindsym $mod+Mod1+k exec kdenlive
 bindsym $mod+Mod1+s exec obs
 bindsym $mod+Mod1+g exec gimp

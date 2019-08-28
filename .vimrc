@@ -88,6 +88,7 @@ inoremap ;s []<++><Esc>?]<CR>i
 inoremap ;c {}<++><Esc>?}<CR>i
 inoremap ;r ``<++><Esc>?`<CR>i
 
+
 " shell
 map <leader>b i#!/bin/sh<CR><CR>
 autocmd FileType sh inoremap ,f ()<Space>{<CR><Tab><++><CR>}<CR><CR><++><Esc>?()<CR>

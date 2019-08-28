@@ -39,7 +39,7 @@ interval=1800
 [torrent]
 command=~/scripts/i3torrents
 interval=once
-signal=0
+signal=2
 
 # Memory usage
 #
