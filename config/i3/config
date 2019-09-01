@@ -149,6 +149,9 @@ bindsym $mod+Left exec light -U 5
 bindsym $mod+shift+z exec prompt "Are you sure you would like to reboot?" "sudo reboot"
 bindsym $mod+shift+x exec prompt "Are you sure you would like to shutdown?" "sudo shutdown"
 
+###---PyShell - Calculators are a meme---###
+bindsym $mod+y exec pyshell
+
 ###---Launch programs---###
 bindsym $mod+Mod1+m exec snap run spotify
 bindsym $mod+Mod1+k exec kdenlive

@@ -68,7 +68,7 @@ interval=10
 separator=true
 
 [wifi]
-command=~/scripts/wifi wlp2s0
+command=~/scripts/i3wifi wlp2s0
 label=WIFI
 interval=5
 
