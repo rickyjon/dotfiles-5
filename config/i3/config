@@ -149,19 +149,27 @@ bindsym $mod+Left exec light -U 5
 bindsym $mod+shift+z exec prompt "Are you sure you would like to reboot?" "sudo reboot"
 bindsym $mod+shift+x exec prompt "Are you sure you would like to shutdown?" "sudo shutdown"
 
+###---Update Packages---###
+bindsym $mod+u exec updatepackages
+
 ###---PyShell - Calculators are a meme---###
 bindsym $mod+y exec pyshell
 
+bindsym $mod+t exec notifytorrents
+
 ###---Launch programs---###
+bindsym $mod+Mod1+a exec st -e alsamixer
 bindsym $mod+Mod1+m exec snap run spotify
 bindsym $mod+Mod1+k exec kdenlive
-bindsym $mod+Mod1+s exec obs
+bindsym $mod+Mod1+o exec obs
 bindsym $mod+Mod1+g exec gimp
 bindsym $mod+Mod1+b exec firefox
 bindsym $mod+Mod1+d exec discord
 bindsym $mod+Mod1+f exec thunar
-bindsym $mod+Mod1+r exec urxvt -e sh -c "ranger"
+bindsym $mod+Mod1+r exec st -e ranger
 bindsym $mod+Mod1+v exec vscodium
-bindsym $mod+Mod1+t exec urxvt -e sh -c "transmission-remote-cli"
-bindsym $mod+Mod1+p exec urxvt -e sh -c "htop"
+bindsym $mod+Mod1+t exec st -e transmission-remote-cli
+bindsym $mod+Mod1+p exec st -e htop
+bindsym $mod+Mod1+i exec virtualbox
+bindsym $mod+Mod1+Return exec urxvt
 bindsym $mod+Return exec i3-sensible-terminal

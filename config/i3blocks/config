@@ -34,6 +34,7 @@ command=sudo pacman -Qu | wc -l
 label=UPDATES
 separator=true
 interval=1800
+signal=3
 
 # Displays details about the torrents in transmission
 [torrent]
@@ -71,6 +72,13 @@ separator=true
 command=~/scripts/i3wifi wlp2s0
 label=WIFI
 interval=5
+
+# Network Speed
+#
+# Displays the current network speed
+[network_speed]
+interval=1800
+command=~/scripts/i3speedtest
 
 # CPU usage
 #
