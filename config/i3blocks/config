@@ -30,8 +30,7 @@ markup=none
 
 # Display any packages to install
 [packages]
-command=sudo pacman -Qu | wc -l
-label=UPDATES
+command=echo "UPDATES $(sudo pacman -Qu | wc -l)"
 separator=true
 interval=1800
 signal=3
@@ -46,9 +45,9 @@ signal=2
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-label=MEM
 separator=false
 interval=30
+command=echo "MEM $(~/scripts/i3memory)"
 
 # Disk usage
 #
@@ -56,8 +55,8 @@ interval=30
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=HOME
 interval=30
+command=echo "HOME $(~/scripts/i3disk)"
 
 # Network interface monitoring
 #
@@ -67,10 +66,12 @@ interval=30
 color=#00FF00
 interval=10
 separator=true
+command=~/scripts/i3ip
 
+
+# Wifi connectivity level
 [wifi]
-command=~/scripts/i3wifi wlp2s0
-label=WIFI
+command=echo "WIFI $(~/scripts/i3wifi wlp2s0)"
 interval=5
 
 # Network Speed
@@ -85,7 +86,7 @@ command=~/scripts/i3speedtest
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-label=CPU
+command=echo "CPU $(~/scripts/i3cpu)"
 interval=10
 separator=true
 
@@ -93,7 +94,7 @@ separator=true
 #
 # The battery instance defaults to 0.
 [battery]
-label=BAT
+command=echo "BAT $(~/scripts/i3battery)"
 interval=30
 
 # Volume indicator

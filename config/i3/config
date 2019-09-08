@@ -155,7 +155,14 @@ bindsym $mod+u exec updatepackages
 ###---PyShell - Calculators are a meme---###
 bindsym $mod+y exec pyshell
 
+###---List Torrents in Notification
 bindsym $mod+t exec notifytorrents
+
+###---Opens Dev Environment---###
+bindsym $mod+w exec devenv
+
+###---Import Camera Content---###
+bindsym $mod+i exec import
 
 ###---Launch programs---###
 bindsym $mod+Mod1+a exec st -e alsamixer
