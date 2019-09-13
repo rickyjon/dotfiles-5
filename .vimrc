@@ -34,13 +34,13 @@ map <leader>C :setlocal formatoptions=cro<CR>
 map <leader>o :setlocal spell! spelllang=en_au<CR>
 
 " Enable disable auto indent
-map <leader>a :setlocal autoindent<CR>
-map <leader>A :setlocal noautoindent<CR>
+map <leader>i :setlocal autoindent<CR>
+map <leader>I :setlocal noautoindent<CR>
 
 " Shell check
 map <leader>s :!clear && shellcheck %<CR>
 
-map <leader>c :w! \| !comp <c-r>%<CR><CR>
+map <leader>g :w! \| !comp <c-r>%<CR><CR>
 map <leader>p :!opout <c-r>%<CR><CR>
 
 " Shortcutting split navigation
