@@ -1,7 +1,12 @@
 [Added Associations]
 x-scheme-handler/magnet=torrent.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
 application/x.bittorrent=torrent.desktop;
 application/pdf=org.pwmt.zathura.desktop;
 video/x-matroska=mpv.desktop;
-text/plain=vscodium-bin.desktop;vim.desktop;
+text/plain=vscodium-bin.desktop;nvim.desktop;vim.desktop;
 video/mp4=mpv.desktop;
+image/jpeg=feh.desktop;sxiv.desktop;
+text/html=firefox.desktop;
+text/xml=firefox.desktop;
