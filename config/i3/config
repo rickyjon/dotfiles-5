@@ -146,8 +146,10 @@ bindsym $mod+b exec bm "firefox"
 bindsym $mod+Right exec light -A 5
 bindsym $mod+Left exec light -U 5
 
+###---System Control---###
 bindsym $mod+shift+z exec prompt "Are you sure you would like to reboot?" "sudo reboot"
 bindsym $mod+shift+x exec prompt "Are you sure you would like to shutdown?" "sudo shutdown"
+bindsym $mod+shift+s exec betterlockscreen -l
 
 ###---Update Packages---###
 bindsym $mod+u exec updatepackages
@@ -167,6 +169,7 @@ bindsym $mod+i exec import
 ###---Open Youtube Studio In Brave---###
 # The reason I even have this program installed
 bindsym $mod+c exec brave https://studio.youtube.com
+
 
 ###---Launch programs---###
 bindsym $mod+Mod1+a exec st -e alsamixer
