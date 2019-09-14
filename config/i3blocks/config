@@ -110,6 +110,12 @@ signal=1
 command=~/scripts/i3weather
 interval=1800
 
+# Backlight Level
+[light]
+command=echo "B $(light -G)%"
+interval=once
+signal=4
+
 # Date Time
 #
 [time]

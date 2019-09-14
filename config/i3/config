@@ -143,8 +143,8 @@ bindsym $mod+s exec sch "firefox"
 bindsym $mod+b exec bm "firefox"
 
 ###---Brightness---###
-bindsym $mod+Right exec light -A 5
-bindsym $mod+Left exec light -U 5
+bindsym $mod+Right exec light -A 5 && pkill -SIGRTMIN+4 i3block
+bindsym $mod+Left exec light -U 5 && pkill -SIGRTMIN+4 i3block
 
 ###---System Control---###
 bindsym $mod+shift+z exec prompt "Are you sure you would like to reboot?" "sudo reboot"
@@ -164,7 +164,7 @@ bindsym $mod+t exec notifytorrents
 bindsym $mod+w exec devenv
 
 ###---Import Camera Content---###
-bindsym $mod+i exec import
+bindsym $mod+i exec importandroid
 
 ###---Open Youtube Studio In Brave---###
 # The reason I even have this program installed
