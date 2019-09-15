@@ -105,16 +105,16 @@ command=~/scripts/i3volume
 interval=once
 signal=1
 
-## Weather
-[weather]
-command=~/scripts/i3weather
-interval=1800
-
 # Backlight Level
 [light]
 command=echo "B $(light -G)%"
 interval=once
 signal=4
+
+## Weather
+[weather]
+command=~/scripts/i3weather
+interval=1800
 
 # Date Time
 #
