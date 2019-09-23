@@ -1,0 +1,113 @@
+# Basic Settings
+set preview true
+set previewer ~/scripts/lf/preview
+set hidden true
+set color256 true
+
+# Custom Functions
+cmd open ${{
+    case $(file --mime-type $f -b) in
+        text/*) $EDITOR $fx;;
+        *) for f in "$fx"; do $OPENER "$f" > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+cmd mkdir ${{
+    cd "$(pwd)"
+    set -f
+    printf "Directory Name: "
+    read ans
+    mkdir $ans
+}}
+
+cmd mkexec ${{
+    for f in "$fx"; do chmod +x "$f"
+}}
+
+cmd mkfile ${{
+    cd "$(pwd)"
+    set -f
+    printf "File Name: "
+    read ans
+    $EDITOR $ans
+}}
+
+cmd sudomkfile ${{
+    cd "$(pwd)"
+    set -f
+    printf "File Name: "
+    read ans
+    sudo $EDITOR $ans
+}}
+
+# Bindings
+# Remove some defaults
+map m
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+
+# Basic Functions
+map ee $$EDITOR "$f"
+map es $sudo $EDITOR "$f"
+map r $$PAGER "$f"
+map dd delete
+map x cut
+map y copy
+map nf mkfile
+map ns sudomkfile
+map md mkdir
+map mx mkexec
+
+# Movement
+map gv. cd ~/videos
+map gva cd ~/videos/anime
+
+map gy. cd ~/videos/youtube
+map gyt cd ~/videos/youtube/ToUpload
+map gyu cd ~/videos/youtube/Uploaded
+map gya cd ~/videos/youtube/asset
+
+map gp. cd ~/pictures
+map gpm cd ~/pictures/mpvscreenshots
+map gpa cd ~/pictures/Anime
+map gps cd ~/pictures/screenshots
+
+map gw. cd ~/pictures/Wallpapers
+map gww cd ~/pictures/Wallpapers/Wallpapers
+map gwm cd ~/pictures/Wallpapers/MobileWallpapers
+
+map gt. cd ~/documents/Textbooks
+map gt1 cd ~/documents/Textbooks/1stYear
+map gt2 cd ~/documents/Textbooks/2ndYear
+map gt3 cd ~/documents/Textbooks/3rdYear
+map gu cd ~/documents/Uni/3rdYear
+map gd cd ~/documents
+
+map gD cd ~/downloads
+map ge cd ~/desktop
+
+map gs. cd ~/scripts
+map gsl cd ~/scripts/lf
+
+map gr. cd ~/repos
+map grw cd ~/repos/waterlinkprototype
+map grr cd ~/repos/reading-list
+map grd cd ~/repos/dotfiles
+
+map gc cd ~/.config
+map gC cd ~/cell
+map gE cd /etc
+map gU cd /usr
+
+# Open Configs
+map cfb $$EDITOR ~/.bashrc
+map cfp $$EDITOR ~/.profile
+map cfi $$EDITOR ~/.config/i3/config
+map cfr $$EDITOR ~/.config/ranger/rc.conf
+map cfc $$EDITOR ~/.config/compton/compton.conf
+map cfb $$EDITOR ~/.config/i3blocks/config
+map cfl $$EDITOR ~/.config/lf/lfrc
