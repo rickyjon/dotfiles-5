@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "Bottom Right",
-    "current_scene": "Bottom Right",
+    "current_program_scene": "Top Right",
+    "current_scene": "Top Right",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -14,6 +14,7 @@
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
+            "pauseRecordTimer": false,
             "recordTimerHours": 0,
             "recordTimerMinutes": 0,
             "recordTimerSeconds": 30,
@@ -23,7 +24,7 @@
         },
         "scripts-tool": []
     },
-    "name": "Untitled",
+    "name": "Standard Recording",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -58,10 +59,38 @@
             "name": "Bottom Left"
         },
         {
-            "name": "No Cam"
+            "name": "Full Cam"
         }
     ],
     "sources": [
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "v4l2_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Webcam",
+            "prev_ver": 402653185,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "buffering": false,
+                "device_id": "/dev/video2",
+                "input": 0,
+                "pixelformat": 861030210,
+                "resolution": 125830200
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
         {
             "balance": 0.5,
             "deinterlace_field_order": 0,
@@ -77,15 +106,16 @@
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
-                "libobs.hide_scene_item.Screen": [],
+                "libobs.hide_scene_item.Webcam": [],
                 "libobs.show_scene_item.Microphone": [],
-                "libobs.show_scene_item.Screen": []
+                "libobs.show_scene_item.Webcam": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "No Cam",
+            "name": "Full Cam",
+            "prev_ver": 402653185,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -93,7 +123,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 3,
+                "id_counter": 8,
                 "items": [
                     {
                         "align": 5,
@@ -108,7 +138,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 3,
                         "locked": false,
                         "name": "Microphone",
                         "pos": {
@@ -137,9 +167,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 8,
                         "locked": false,
-                        "name": "Screen",
+                        "name": "Webcam",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -168,276 +198,35 @@
                 "OBSBasic.SelectScene": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_3",
+                        "key": "OBS_KEY_2",
                         "shift": true
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
                 "libobs.hide_scene_item.Screen": [],
-                "libobs.hide_scene_item.Webcam": [],
-                "libobs.show_scene_item.Microphone": [],
-                "libobs.show_scene_item.Screen": [],
-                "libobs.show_scene_item.Webcam": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Bottom Left",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 3,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "Microphone",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "Screen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Webcam",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 788.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.40546876192092896,
-                            "y": 0.40555554628372192
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
+                "libobs.hide_scene_item.Webcam": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_4",
+                        "key": "OBS_KEY_W",
                         "shift": true
                     }
                 ],
-                "libobs.hide_scene_item.Microphone": [],
-                "libobs.hide_scene_item.Screen": [],
-                "libobs.hide_scene_item.Webcam": [],
                 "libobs.show_scene_item.Microphone": [],
                 "libobs.show_scene_item.Screen": [],
-                "libobs.show_scene_item.Webcam": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Bottom Right",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 3,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "Microphone",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "Screen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Webcam",
-                        "pos": {
-                            "x": 1401.0,
-                            "y": 788.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.40546876192092896,
-                            "y": 0.40555554628372192
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
+                "libobs.show_scene_item.Webcam": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_1",
+                        "key": "OBS_KEY_W",
                         "shift": true
                     }
-                ],
-                "libobs.hide_scene_item.Microphone": [],
-                "libobs.hide_scene_item.Screen": [],
-                "libobs.hide_scene_item.Webcam": [],
-                "libobs.show_scene_item.Microphone": [],
-                "libobs.show_scene_item.Screen": [],
-                "libobs.show_scene_item.Webcam": []
+                ]
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Top Left",
+            "name": "Top Right",
+            "prev_ver": 402653185,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -445,7 +234,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 3,
+                "id_counter": 9,
                 "items": [
                     {
                         "align": 5,
@@ -460,7 +249,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 2,
                         "locked": false,
                         "name": "Microphone",
                         "pos": {
@@ -489,7 +278,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 3,
                         "locked": false,
                         "name": "Screen",
                         "pos": {
@@ -518,70 +307,24 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
+                        "id": 9,
                         "locked": false,
                         "name": "Webcam",
                         "pos": {
-                            "x": 0.0,
+                            "x": 1442.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.40546876192092896,
-                            "y": 0.40555554628372192
+                            "x": 0.24895833432674408,
+                            "y": 0.24907407164573669
                         },
                         "scale_filter": "disable",
                         "visible": true
                     }
                 ]
             },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "v4l2_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Webcam",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "/dev/video0",
-                "input": 0,
-                "pixelformat": 1448695129
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "xshm_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Screen",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
             "sync": 0,
             "volume": 1.0
         },
@@ -614,6 +357,31 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Microphone",
+            "prev_ver": 402653185,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_id": "front:CARD=Microphone,DEV=0"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "xshm_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Screen",
+            "prev_ver": 402653185,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -633,22 +401,35 @@
                 "OBSBasic.SelectScene": [
                     {
                         "alt": true,
-                        "key": "OBS_KEY_2",
+                        "key": "OBS_KEY_1",
                         "shift": true
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
                 "libobs.hide_scene_item.Screen": [],
-                "libobs.hide_scene_item.Webcam": [],
+                "libobs.hide_scene_item.Webcam": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_W",
+                        "shift": true
+                    }
+                ],
                 "libobs.show_scene_item.Microphone": [],
                 "libobs.show_scene_item.Screen": [],
-                "libobs.show_scene_item.Webcam": []
+                "libobs.show_scene_item.Webcam": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_W",
+                        "shift": true
+                    }
+                ]
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Top Right",
+            "name": "Top Left",
+            "prev_ver": 402653185,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -671,7 +452,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 1,
                         "locked": false,
                         "name": "Microphone",
                         "pos": {
@@ -700,7 +481,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
+                        "id": 2,
                         "locked": false,
                         "name": "Screen",
                         "pos": {
@@ -729,18 +510,298 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 4,
+                        "id": 5,
                         "locked": false,
                         "name": "Webcam",
                         "pos": {
-                            "x": 1401.0,
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.40546876192092896,
-                            "y": 0.40555554628372192
+                            "x": 0.24895833432674408,
+                            "y": 0.24907407164573669
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_4",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Microphone": [],
+                "libobs.hide_scene_item.Screen": [],
+                "libobs.hide_scene_item.Webcam": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_W",
+                        "shift": true
+                    }
+                ],
+                "libobs.show_scene_item.Microphone": [],
+                "libobs.show_scene_item.Screen": [],
+                "libobs.show_scene_item.Webcam": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_W",
+                        "shift": true
+                    }
+                ]
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Bottom Right",
+            "prev_ver": 402653185,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 5,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Microphone",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Screen",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": false,
+                        "name": "Webcam",
+                        "pos": {
+                            "x": 1442.0,
+                            "y": 811.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.24895833432674408,
+                            "y": 0.24907407164573669
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_3",
+                        "shift": true
+                    }
+                ],
+                "libobs.hide_scene_item.Microphone": [],
+                "libobs.hide_scene_item.Screen": [],
+                "libobs.hide_scene_item.Webcam": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_W",
+                        "shift": true
+                    }
+                ],
+                "libobs.show_scene_item.Microphone": [],
+                "libobs.show_scene_item.Screen": [],
+                "libobs.show_scene_item.Webcam": [
+                    {
+                        "alt": true,
+                        "key": "OBS_KEY_W",
+                        "shift": true
+                    }
+                ]
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Bottom Left",
+            "prev_ver": 402653185,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 5,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Microphone",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Screen",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": false,
+                        "name": "Webcam",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 811.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.24895833432674408,
+                            "y": 0.24907407164573669
                         },
                         "scale_filter": "disable",
                         "visible": true
