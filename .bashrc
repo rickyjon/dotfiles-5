@@ -22,7 +22,7 @@ alias ls='ls --color=auto'
 # Git Aliases
 alias g='git'
 alias gst='git status'
-alias gco='git commit'
+alias gc='git commit'
 alias ga='git add'
 alias gpl='git pull'
 alias gpom='git pull origin master'

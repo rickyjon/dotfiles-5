@@ -6,14 +6,13 @@ set color256 true
 
 # Custom Functions
 cmd open ${{
-    case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
-        *) for f in "$fx"; do $OPENER "$f" > /dev/null 2> /dev/null & done;;
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$fx";;
+        *) for f in "$fx"; do xdg-open "$f" > /dev/null 2> /dev/null & done;;
     esac
 }}
 
 cmd mkdir ${{
-    cd "$(pwd)"
     set -f
     printf "Directory Name: "
     read ans
@@ -25,7 +24,6 @@ cmd mkexec ${{
 }}
 
 cmd mkfile ${{
-    cd "$(pwd)"
     set -f
     printf "File Name: "
     read ans
@@ -33,11 +31,18 @@ cmd mkfile ${{
 }}
 
 cmd sudomkfile ${{
-    cd "$(pwd)"
     set -f
     printf "File Name: "
     read ans
     sudo $EDITOR $ans
+}}
+
+cmd setwallpaper ${{
+    cp "$f" ~/.config/wall.png && feh --bg-scale "$f"
+}}
+
+cmd openterm ${{
+    $TERMINAL &
 }}
 
 # Bindings
@@ -50,17 +55,27 @@ map d
 map c
 map e
 
-# Basic Functions
+# File Openers
 map ee $$EDITOR "$f"
 map es $sudo $EDITOR "$f"
-map r $$PAGER "$f"
+map ve $$VISUAL "$f"
+map ve $sudo $VISUAL "$f"
+map r $$READER "$f"
+map b $$BROWSER "$f"
+map s $$PAGER "$f"
+
+# Basic Functions
 map dd delete
 map x cut
 map y copy
+map <enter> open
+map <esc> quit
 map nf mkfile
 map ns sudomkfile
 map md mkdir
 map mx mkexec
+map bg setwallpaper
+map ot openterm
 
 # Movement
 map gv. cd ~/videos
@@ -104,10 +119,11 @@ map gE cd /etc
 map gU cd /usr
 
 # Open Configs
-map cfb $$EDITOR ~/.bashrc
-map cfp $$EDITOR ~/.profile
-map cfi $$EDITOR ~/.config/i3/config
-map cfr $$EDITOR ~/.config/ranger/rc.conf
-map cfc $$EDITOR ~/.config/compton/compton.conf
-map cfb $$EDITOR ~/.config/i3blocks/config
-map cfl $$EDITOR ~/.config/lf/lfrc
+map cb $$EDITOR ~/.bashrc
+map cp $$EDITOR ~/.profile
+map ci $$EDITOR ~/.config/i3/config
+map cr $$EDITOR ~/.config/ranger/rc.conf
+map cc $$EDITOR ~/.config/compton/compton.conf
+map ck $$EDITOR ~/.config/i3blocks/config
+map cl $$EDITOR ~/.config/lf/lfrc
+map co $$EDITOR ~/.config/bookmarks
