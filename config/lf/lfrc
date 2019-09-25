@@ -8,7 +8,8 @@ set color256 true
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$fx";;
-        *) for f in "$fx"; do xdg-open "$f" > /dev/null 2> /dev/null & done;;
+        video/*|application/pdf) xdg-open "$f" & ;;
+        *) for f in "$fx"; do xdg-open "$f"> /dev/null 2> /dev/null & done;;
     esac
 }}
 
@@ -60,12 +61,13 @@ map ee $$EDITOR "$f"
 map es $sudo $EDITOR "$f"
 map ve $$VISUAL "$f"
 map ve $sudo $VISUAL "$f"
-map r $$READER "$f"
+map z $$READER "$f"
 map b $$BROWSER "$f"
 map s $$PAGER "$f"
 
 # Basic Functions
 map dd delete
+map p paste
 map x cut
 map y copy
 map <enter> open
@@ -76,6 +78,7 @@ map md mkdir
 map mx mkexec
 map bg setwallpaper
 map ot openterm
+map r rename
 
 # Movement
 map gv. cd ~/videos

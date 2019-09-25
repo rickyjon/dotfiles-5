@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "Top Right",
-    "current_scene": "Top Right",
+    "current_program_scene": "Full Cam",
+    "current_scene": "Full Cam",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -83,10 +83,10 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "buffering": false,
-                "device_id": "/dev/video2",
+                "device_id": "/dev/video0",
                 "input": 0,
                 "pixelformat": 861030210,
-                "resolution": 125830200
+                "resolution": -1
             },
             "sync": 0,
             "volume": 1.0

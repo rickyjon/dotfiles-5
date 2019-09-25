@@ -1,9 +1,11 @@
 [Added Associations]
 x-scheme-handler/magnet=torrent.desktop;
 application/x.bittorrent=torrent.desktop;
-application/pdf=org.pwmt.zathura.desktop;
 video/x-matroska=mpv.desktop;
 video/mp4=mpv.desktop;
+image/svg+xml=gimp.desktop;brave-browser.desktop;inkscape.desktop;
+image/png=gimp.desktop;
+application/x-php=vscodium-bin.desktop;
 
 [Default Applications]
 image/gif=mpvgif.desktop
@@ -12,3 +14,5 @@ text/xml=firefox.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/ftp=firefox.desktop;
+application/json=nvim.desktop
+application/pdf=org.pwmt.zathura.desktop;

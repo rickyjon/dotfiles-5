@@ -99,13 +99,13 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
 bindsym $mod+r mode "resize"
 
 ###---Start external scripts---###
 # Status Bar
 bar {
-        status_command i3blocks
+    position bottom
+    status_command i3blocks
 }
 # BitTorrent daemon
 #exec --no-startup-id transmission-daemon
