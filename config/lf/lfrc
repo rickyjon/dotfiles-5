@@ -3,6 +3,9 @@ set preview true
 set previewer ~/scripts/lf/preview
 set hidden true
 set color256 true
+set drawbox true
+set icons true
+set ignorecase true
 
 # Custom Functions
 cmd open ${{
@@ -63,7 +66,7 @@ map ve $$VISUAL "$f"
 map ve $sudo $VISUAL "$f"
 map z $$READER "$f"
 map b $$BROWSER "$f"
-map s $$PAGER "$f"
+map a $$PAGER "$f"
 
 # Basic Functions
 map dd delete
@@ -71,7 +74,6 @@ map p paste
 map x cut
 map y copy
 map <enter> open
-map <esc> quit
 map nf mkfile
 map ns sudomkfile
 map md mkdir
@@ -79,6 +81,11 @@ map mx mkexec
 map bg setwallpaper
 map ot openterm
 map r rename
+map H top
+map L bottom
+map R reload
+map C clear
+map U unselect
 
 # Movement
 map gv. cd ~/videos
@@ -119,14 +126,21 @@ map grd cd ~/repos/dotfiles
 map gc cd ~/.config
 map gC cd ~/cell
 map gE cd /etc
-map gU cd /usr
+map gU. cd /usr
+map gUs cd /usr/share
 
 # Open Configs
 map cb $$EDITOR ~/.bashrc
 map cp $$EDITOR ~/.profile
 map ci $$EDITOR ~/.config/i3/config
-map cr $$EDITOR ~/.config/ranger/rc.conf
 map cc $$EDITOR ~/.config/compton/compton.conf
 map ck $$EDITOR ~/.config/i3blocks/config
 map cl $$EDITOR ~/.config/lf/lfrc
 map co $$EDITOR ~/.config/bookmarks
+map cmm $$EDITOR ~/.config/mpv/mpv.conf
+map cmi $$EDITOR ~/.config/mpv/input.conf
+map cv $$EDITOR ~/.config/nvim/init.vim
+map cs $$EDITOR ~/.config/search/search
+map ct $$EDITOR ~/.config/transmission-rss/config.yml
+map ca $$EDITOR ~/.config/mimeapps.list
+map cr $$EDITOR ~/.config/starship.toml
