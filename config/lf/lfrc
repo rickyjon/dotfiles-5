@@ -11,7 +11,7 @@ set ignorecase true
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$fx";;
-        video/*|application/pdf) xdg-open "$f" & ;;
+        video/*|application/pdf) xdg-open "$f" & disown;;
         *) for f in "$fx"; do xdg-open "$f"> /dev/null 2> /dev/null & done;;
     esac
 }}
@@ -122,6 +122,9 @@ map gr. cd ~/repos
 map grw cd ~/repos/waterlinkprototype
 map grr cd ~/repos/reading-list
 map grd cd ~/repos/dotfiles
+map grs cd ~/repos/st
+map grc cd ~/repos/cloud-programming-app
+map gri cd ~/repos/init
 
 map gc cd ~/.config
 map gC cd ~/cell

@@ -17,8 +17,6 @@ set -o vi
 # PS1 Prompt
 #export PS1="\[\e[33m\][\[\e[m\]\[\033[31m\]\u\[\033[33m\]@\[\033[34m\]\h:\[\033[35m\]\w\[\033[m\]\[\e[33m\]]\[\e[m\] (\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \$ "
 
-alias ls='ls --color=auto'
-
 # Git Aliases
 alias g='git'
 alias gst='git status'
@@ -49,7 +47,8 @@ alias nggc='ng generate component'
 alias nggs='ng generate service'
 
 # Aesthetic upgrades
-alias ls='ls -hN -A --color=auto --group-directories-first'
+#alias ls='ls -hNA --group-directories-first'
+alias ls='lsd -hA --group-dirs first'
 alias grep='grep --color=auto'
 
 # Command Aliases
