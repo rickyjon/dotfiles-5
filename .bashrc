@@ -35,7 +35,7 @@ alias gr='git remote'
 alias gcl='git clone'
 alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias gt='git ls-tree -r master --name-only'
-alias gre='git remote'
+alias grm='git remote'
 alias gb='git branch'
 alias gm='git merge'
 alias gf='git fetch'
