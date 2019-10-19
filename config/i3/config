@@ -116,7 +116,7 @@ exec --no-startup-id nm-applet
 # Load Xresources
 exec --no-startup-id xrdb ~/.Xresources
 # Set wallpaper
-exec --no-startup-id feh --bg-scale ~/.config/wall.png
+exec --no-startup-id feh --bg-scale --no-fehbg ~/.config/wall.png
 # Compositor
 exec --no-startup-id compton -b
 
@@ -129,6 +129,8 @@ bindsym $mod+shift+p exec volctrl Headphone 2%-
 
 bindsym $mod+Up exec volctrl Master 2%+
 bindsym $mod+Down exec volctrl Master 2%-
+
+bindsym $mod+M exec volctrl All mute
 
 ###---Mount and unmount android---###
 bindsym $mod+a exec mntandroid
@@ -165,7 +167,10 @@ bindsym $mod+w exec devenv
 bindsym $mod+i exec importandroid
 
 ###---Screenshot---###
-bindsym $mod+Print exec scrot ~/pictures/screenshots/%b%d_%H:%M:%S.png && notify-send "Scrot" "Screenshot Taken"
+bindsym $mod+Print exec scrnshot full
+bindsym $mod+shift+Print exec scrnshot select
+bindsym $mod+control+Print exec scrnshot fulltime
+bindsym $mod+control+shift+Print exec scrnshot selecttime
 
 ###---Open Youtube Studio In Brave---###
 # The reason I even have this program installed

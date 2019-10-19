@@ -1,7 +1,7 @@
 # settings
 
-(GimpGegl-gegl-long-shadow-config "2019-10-02 13:36:51"
-    (time 1569989211)
+(GimpGegl-gegl-long-shadow-config "2019-10-08 17:41:20"
+    (time 1570518680)
     (style finite)
     (angle 45.000000)
     (length 17.300000)

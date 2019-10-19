@@ -30,7 +30,7 @@ markup=none
 
 # Display any packages to install
 [packages]
-command=echo "UPDATES $(sudo pacman -Qu | wc -l)"
+command=echo "📦 $(sudo pacman -Qu | wc -l)"
 separator=true
 interval=1800
 signal=3
@@ -58,17 +58,6 @@ command=echo "MEM $(~/scripts/i3memory)"
 interval=30
 command=echo "HOME $(~/scripts/i3disk)"
 
-# Network interface monitoring
-#
-# If the instance is not specified, use the interface used for default route.
-# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
-[iface]
-color=#00FF00
-interval=10
-separator=true
-command=~/scripts/i3ip
-
-
 # Wifi connectivity level
 [wifi]
 command=echo "WIFI $(~/scripts/i3wifi wlp2s0)"
@@ -88,13 +77,18 @@ command=~/scripts/i3speedtest
 [cpu_usage]
 command=echo "CPU $(~/scripts/i3cpu)"
 interval=10
-separator=true
+separator=false
+
+[temp]
+command=~/scripts/i3temp
+interval=10
+seperator=true
 
 # Battery indicator
 #
 # The battery instance defaults to 0.
 [battery]
-command=echo "BAT $(~/scripts/i3battery)"
+command=~/scripts/i3battery
 interval=30
 
 # Volume indicator
@@ -107,7 +101,7 @@ signal=1
 
 # Backlight Level
 [light]
-command=echo "B $(light -G)%"
+command=echo "☀️️ $(light -G)%"
 interval=once
 signal=4
 

@@ -1,5 +1,5 @@
 # Basic Settings
-set preview true
+set preview false
 set previewer ~/scripts/lf/preview
 set hidden true
 set color256 true
@@ -17,32 +17,25 @@ cmd open ${{
 }}
 
 cmd mkdir ${{
-    set -f
     printf "Directory Name: "
     read ans
     mkdir $ans
 }}
 
-cmd mkexec ${{
-    for f in "$fx"; do chmod +x "$f"
-}}
-
 cmd mkfile ${{
-    set -f
     printf "File Name: "
     read ans
     $EDITOR $ans
 }}
 
 cmd sudomkfile ${{
-    set -f
     printf "File Name: "
     read ans
     sudo $EDITOR $ans
 }}
 
 cmd setwallpaper ${{
-    cp "$f" ~/.config/wall.png && feh --bg-scale "$f"
+    cp "$f" ~/.config/wall.png && feh --bg-scale --no-fehbg "$f"
 }}
 
 cmd openterm ${{
@@ -62,10 +55,9 @@ map e
 # File Openers
 map ee $$EDITOR "$f"
 map es $sudo $EDITOR "$f"
-map ve $$VISUAL "$f"
-map ve $sudo $VISUAL "$f"
+map oe $$CODEEDITOR "$f"
+map os $sudo $CODEEDITOR "$f"
 map z $$READER "$f"
-map b $$BROWSER "$f"
 map a $$PAGER "$f"
 
 # Basic Functions
@@ -74,10 +66,10 @@ map p paste
 map x cut
 map y copy
 map <enter> open
-map nf mkfile
-map ns sudomkfile
+map mf mkfile
+map mr sudomkfile
 map md mkdir
-map mx mkexec
+map ms $mkscript
 map bg setwallpaper
 map ot openterm
 map r rename

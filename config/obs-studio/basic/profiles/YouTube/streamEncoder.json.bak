@@ -3,5 +3,5 @@
     "buffer_size": 0,
     "preset": "ultrafast",
     "use_bufsize": true,
-    "x264opts": "crf=15"
+    "x264opts": "crf=13"
 }
