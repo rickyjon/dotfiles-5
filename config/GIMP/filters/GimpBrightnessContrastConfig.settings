@@ -1,44 +1,44 @@
 # settings
 
-(GimpBrightnessContrastConfig "2019-10-18 15:36:43"
-    (time 1571375203)
-    (brightness -0.125984)
-    (contrast 0.220472))
-(GimpBrightnessContrastConfig "2019-10-18 15:33:39"
-    (time 1571375019)
-    (brightness 0.212598)
-    (contrast 0.251969))
-(GimpBrightnessContrastConfig "2019-10-17 21:56:28"
-    (time 1571311588)
-    (brightness 0.078740)
-    (contrast 0.141732))
-(GimpBrightnessContrastConfig "2019-10-16 18:37:47"
-    (time 1571213267)
+(GimpBrightnessContrastConfig "2019-11-03 22:00:18"
+    (time 1572780618)
+    (brightness 0.181102)
+    (contrast 0.212598))
+(GimpBrightnessContrastConfig "2019-11-02 18:11:00"
+    (time 1572680460)
+    (brightness 0.118110)
+    (contrast 0.188976))
+(GimpBrightnessContrastConfig "2019-11-02 17:59:20"
+    (time 1572679760)
+    (brightness 0.125984)
+    (contrast 0.212598))
+(GimpBrightnessContrastConfig "2019-11-02 11:01:44"
+    (time 1572654704)
+    (brightness 0.039370)
+    (contrast 0.173228))
+(GimpBrightnessContrastConfig "2019-11-01 15:50:55"
+    (time 1572585655)
+    (brightness 0.204724)
+    (contrast 0.283465))
+(GimpBrightnessContrastConfig "2019-10-31 14:09:32"
+    (time 1572493172)
     (brightness 0.173228)
-    (contrast 0.236220))
-(GimpBrightnessContrastConfig "2019-10-15 17:56:19"
-    (time 1571124379)
+    (contrast 0.251969))
+(GimpBrightnessContrastConfig "2019-10-31 13:48:35"
+    (time 1572491915)
+    (brightness 0.125984)
+    (contrast 0.212598))
+(GimpBrightnessContrastConfig "2019-10-29 18:26:40"
+    (time 1572335800)
+    (brightness 0.181102)
+    (contrast 0.220472))
+(GimpBrightnessContrastConfig "2019-10-29 18:14:08"
+    (time 1572335048)
     (brightness 0.188976)
     (contrast 0.212598))
-(GimpBrightnessContrastConfig "2019-10-14 11:18:10"
-    (time 1571014090)
-    (brightness 0.000000)
-    (contrast 0.000000))
-(GimpBrightnessContrastConfig "2019-10-14 11:17:49"
-    (time 1571014069)
-    (brightness 0.212598)
-    (contrast 0.118110))
-(GimpBrightnessContrastConfig "2019-10-13 17:59:34"
-    (time 1570951774)
-    (brightness 0.181102)
-    (contrast 0.141732))
-(GimpBrightnessContrastConfig "2019-10-13 17:46:15"
-    (time 1570950975)
-    (brightness -1.000000)
-    (contrast 0.700787))
-(GimpBrightnessContrastConfig "2019-10-13 17:45:49"
-    (time 1570950949)
-    (brightness 0.322835)
-    (contrast 0.464567))
+(GimpBrightnessContrastConfig "2019-10-28 22:11:45"
+    (time 1572262905)
+    (brightness 0.795276)
+    (contrast 0.188976))
 
 # end of settings
