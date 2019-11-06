@@ -4,10 +4,14 @@ call plug#begin('~/local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'junegunn/goyo.vim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
-let g:airline_theme='powerlineish'
+let g:airline_theme = 'codedark'
 
 " Basic settings
 syntax on
@@ -17,6 +21,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set number relativenumber
+set termguicolors
 
 set clipboard+=unnamedplus
 
@@ -26,22 +31,30 @@ set wildmode=longest,list,full
 " Fix splitting
 set splitbelow splitright
 
+" Enable Disable colourizing
+map <leader>d :ColorizerAttachToBuffer<CR>
+map <leader>D :ColorizerDetachFromBuffer<CR>
+
+map <leader>g :Goyo<CR>
+map <leader>G :Goyo!<CR>
+
 " Enable and disable auto comment
 map <leader>c :setlocal formatoptions-=cro<CR>
 map <leader>C :setlocal formatoptions=cro<CR>
 
 " Enable spell checking, o for othography
-map <leader>o :setlocal spell! spelllang=en_au<CR>
+map <leader>s :setlocal spell! spelllang=en_au<CR>
 
 " Enable disable auto indent
 map <leader>i :setlocal autoindent<CR>
 map <leader>I :setlocal noautoindent<CR>
 
 " Shell check
-map <leader>s :!clear && shellcheck %<CR>
+map <leader>P :!clear && shellcheck %<CR>
 
-map <leader>g :w! \| !comp <c-r>%<CR><CR>
-map <leader>p :!opout <c-r>%<CR><CR>
+" Compile and open output
+map <leader>r :w! \| !comp <c-r>%<CR><CR>
+map <leader>o :!opout <c-r>%<CR><CR>
 
 " Shortcutting split navigation
 map <C-h> <C-w>h
@@ -67,9 +80,6 @@ nnoremap Q :wq<CR>
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
-
-" Update shortcuts on edit
-autocmd BufWritePost ~/.autocd !gencd
 
 " Fix tex file type set
 autocmd BufRead,BufNewFile *.tex set filetype=tex
