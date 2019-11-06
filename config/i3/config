@@ -31,6 +31,10 @@ bindsym $mod+Shift+l move right
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+t layout tabbed
+bindsym $mod+Shift+i layout toggle split
+
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
@@ -136,7 +140,9 @@ bindsym $mod+M exec volctrl All mute
 bindsym $mod+a exec mntandroid
 
 ###---Toggle External Display---###
-bindsym $mod+e exec dm
+bindsym $mod+z exec extramonitor disconnect
+bindsym $mod+o exec extramonitor duplicate
+bindsym $mod+x exec extramonitor extra
 
 ###---Bookmarks/Search---####
 bindsym $mod+s exec sch "firefox"
@@ -149,7 +155,7 @@ bindsym $mod+Left exec light -U 5 && pkill -SIGRTMIN+4 i3block
 ###---System Control---###
 bindsym $mod+shift+z exec prompt "Are you sure you would like to reboot?" "sudo reboot"
 bindsym $mod+shift+x exec prompt "Are you sure you would like to shutdown?" "sudo shutdown"
-bindsym $mod+shift+s exec betterlockscreen -l
+bindsym $mod+Shift+b exec betterlockscreen -l
 
 ###---Update Packages---###
 bindsym $mod+u exec updatepackages

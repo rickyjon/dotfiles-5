@@ -60,7 +60,7 @@ command=echo "HOME $(~/scripts/i3disk)"
 
 # Wifi connectivity level
 [wifi]
-command=echo "WIFI $(~/scripts/i3wifi wlp2s0)"
+command=echo "📡 $(~/scripts/i3wifi wlp2s0)"
 interval=5
 
 # Network Speed
