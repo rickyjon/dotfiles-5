@@ -140,9 +140,7 @@ bindsym $mod+M exec volctrl All mute
 bindsym $mod+a exec mntandroid
 
 ###---Toggle External Display---###
-bindsym $mod+z exec extramonitor disconnect
-bindsym $mod+o exec extramonitor duplicate
-bindsym $mod+x exec extramonitor extra
+bindsym $mod+x exec multimonitor
 
 ###---Bookmarks/Search---####
 bindsym $mod+s exec sch "firefox"
