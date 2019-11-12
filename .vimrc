@@ -45,7 +45,7 @@ map <leader>C :setlocal formatoptions=cro<CR>
 " Enable spell checking, o for othography
 map <leader>s :setlocal spell! spelllang=en_au<CR>
 
-" Enable disable auto indent
+" Enable Disable Auto Indent
 map <leader>i :setlocal autoindent<CR>
 map <leader>I :setlocal noautoindent<CR>
 
@@ -97,7 +97,6 @@ inoremap ;b ()<++><Esc>?)<CR>i
 inoremap ;s []<++><Esc>?]<CR>i
 inoremap ;c {}<++><Esc>?}<CR>i
 inoremap ;r ``<++><Esc>?`<CR>i
-
 
 " shell
 map <leader>b i#!/bin/sh<CR><CR>

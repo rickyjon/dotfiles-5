@@ -14,6 +14,17 @@ neofetch
 
 set -o vi
 
+# cd when exiting lf
+lc () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+
 # PS1 Prompt
 #export PS1="\[\e[33m\][\[\e[m\]\[\033[31m\]\u\[\033[33m\]@\[\033[34m\]\h:\[\033[35m\]\w\[\033[m\]\[\e[33m\]]\[\e[m\] (\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \$ "
 
