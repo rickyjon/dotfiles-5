@@ -1,0 +1,3 @@
+#alias ls='ls -hNA --group-directories-first'
+alias ls='lsd -hA --group-dirs first'
+alias grep='grep --color=auto'
