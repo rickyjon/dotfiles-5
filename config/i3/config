@@ -31,7 +31,7 @@ bindsym $mod+Shift+l move right
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# Never use them
+# Here for testing
 #bindsym $mod+Shift+s layout stacking
 #bindsym $mod+Shift+t layout tabbed
 #bindsym $mod+Shift+i layout toggle split
@@ -50,6 +50,8 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -74,6 +76,34 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+# move focused window and swap to that screen
+bindsym $mod+Control+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Control+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Control+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Control+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Control+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Control+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Control+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Control+8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+Control+9 move container to workspace $ws9; workspace $ws9
+bindsym $mod+Control+0 move container to workspace $ws10; workspace $ws10
+
+# Move workspaces betweeen monitors
+bindsym $mod+Control+m move workspace to output primary
+bindsym $mod+Control+s move workspace to output HDMI-1
+bindsym $mod+Control+l move workspace to output right
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+
+# Moves container to the active workspace on another screen
+bindsym $mod+Shift+Control+m move container to output primary
+bindsym $mod+Shift+Control+s move container to output HDMI-1
+bindsym $mod+Shift+Control+l move container to output right
+bindsym $mod+Shift+Control+h move container to output left
+bindsym $mod+Shift+Control+j move container to output down
+bindsym $mod+Shift+Control+k move container to output up
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -105,6 +135,11 @@ bindsym $mod+r mode "resize"
 ###---Start external scripts---###
 # Status Bar
 bar {
+    tray_output HDMI-1
+    tray_output primary
+    output HDMI-1
+    output primary
+
     position bottom
     status_command i3blocks
 }
@@ -129,7 +164,7 @@ bindsym $mod+p exec volctrl Headphone 2%+
 bindsym $mod+shift+p exec volctrl Headphone 2%-
 bindsym $mod+Up exec volctrl Master 2%+
 bindsym $mod+Down exec volctrl Master 2%-
-bindsym $mod+M exec volctrl All mute
+bindsym $mod+m exec volctrl All mute
 
 ###---Mount and unmount android---###
 bindsym $mod+a exec mntandroid
@@ -165,6 +200,9 @@ bindsym $mod+w exec devenv
 ###---Import Camera Content---###
 bindsym $mod+i exec importandroid
 
+###---Timer(Clock)---###
+bindsym $mod+o exec timer
+
 ###---Screenshot---###
 bindsym $mod+Print exec scrnshot full
 bindsym $mod+shift+Print exec scrnshot select
@@ -185,7 +223,7 @@ bindsym $mod+Mod1+o exec obs
 bindsym $mod+Mod1+g exec gimp
 bindsym $mod+Mod1+b exec firefox
 bindsym $mod+Mod1+e exec brave
-bindsym $mod+Mod1+f exec thunar
+bindsym $mod+Mod1+f exec dolphin
 bindsym $mod+Mod1+r exec st -e lf
 bindsym $mod+Mod1+c exec vscodium
 bindsym $mod+Mod1+t exec st -e transmission-remote-cli
