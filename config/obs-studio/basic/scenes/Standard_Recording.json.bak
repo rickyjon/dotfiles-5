@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "Full Cam",
-    "current_scene": "Full Cam",
+    "current_program_scene": "Bottom Right",
+    "current_scene": "Bottom Right",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -208,7 +208,7 @@
                             "y": 0.24907407164573669
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -348,7 +348,7 @@
                             "y": 0.24907407164573669
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -488,7 +488,7 @@
                             "y": 0.24907407164573669
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -650,7 +650,7 @@
                             "y": 0.24907407164573669
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,

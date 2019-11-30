@@ -9,6 +9,12 @@ lc () {
     fi
 }
 
+dc () {
+    dfm
+    dir="$(cat ~/.config/dmenufm/dmenufm_lastpath)"
+    [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+}
+
 helloworld() {
     echo "HelloWorld"
 }
