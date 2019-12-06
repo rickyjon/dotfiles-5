@@ -52,7 +52,8 @@ set clipboard+=unnamedplus
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-" NERDTree Settings
+
+" ------NERDTree Settings------
 nmap <C-f> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
@@ -89,10 +90,10 @@ function! IsNERDTreeOpen()
   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
 
-" Vim Auto Closetag
+
+" ------Vim Auto Closetag------
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
-"
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js'
 
 " filenames like *.xml, *.xhtml, ...
@@ -124,7 +125,8 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 let g:closetag_close_shortcut = '<leader>>'
 
-" COC SETTINGS
+
+" ------COC SETTINGS------
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -225,10 +227,6 @@ xmap af <Plug>(coc-funcobj-a)
 omap if <Plug>(coc-funcobj-i)
 omap af <Plug>(coc-funcobj-a)
 
-" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
-nmap <silent> <C-d> <Plug>(coc-range-select)
-xmap <silent> <C-d> <Plug>(coc-range-select)
-
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
@@ -241,23 +239,11 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-" Using CocList
-" Show all diagnostics
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
-" Manage extensions
-nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
-" Show commands
-nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document
-nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
-" Search workspace symbols
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
-" Do default action for next item.
-nnoremap <silent> <space>j  :<C-u>CocNext<CR>
-" Do default action for previous item.
-nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" ------Standard Bindings------
+" Basic file system commands
+nnoremap <C-t> :!touch<Space>
+nnoremap <C-d> :!mkdir<Space>
+nnoremap <C-m> :!mv<Space>%<Space>
 
 " Enable Disable colourizing
 map <leader>d :ColorizerAttachToBuffer<CR>
@@ -320,12 +306,6 @@ vnoremap <leader><Tab> <Esc>/<++><Enter>"_c4l
 
 " general insert commands
 inoremap ;g <++>
-inoremap ;q ""<++><Esc>?"<CR>i
-inoremap ;a ''<++><Esc>?'<CR>i
-inoremap ;b ()<++><Esc>?)<CR>i
-inoremap ;s []<++><Esc>?]<CR>i
-inoremap ;c {}<++><Esc>?}<CR>i
-inoremap ;r ``<++><Esc>?`<CR>i
 
 " shell
 map <leader>b i#!/bin/sh<CR><CR>
