@@ -132,6 +132,7 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-html',
+  \ 'coc-css',
   \ 'coc-prettier',
   \ 'coc-json',
   \ 'coc-angular',
