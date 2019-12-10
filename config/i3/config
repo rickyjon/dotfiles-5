@@ -216,6 +216,9 @@ bindsym $mod+control+shift+Print exec scrnshot selecttime
 # The reason I even have this program installed
 bindsym $mod+c exec brave https://studio.youtube.com
 
+###---Toggle touchpad---###
+bindsym F7 exec toggleTouch
+
 ###---Launch programs---###
 bindsym $mod+Mod1+a exec st -e alsamixer
 bindsym $mod+Mod1+s exec snap run spotify
