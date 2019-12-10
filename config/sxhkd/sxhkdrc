@@ -1,0 +1,75 @@
+#---System Control---#
+super + shift + {z, x}
+  prompt {"Are you sure you would like to reboot?" "sudo reboot", "Are you sure you would like to shutdown" "sudo shutdown"}
+
+super + shift + s
+  betterlockscreen -l
+
+super + shift + r
+  killandnotify "sxhkd" "Config reloaded" && sxhkd
+
+super + shift + p
+  toggleprogram "picom" "-b"
+
+#---Script Keys---#
+super + {a, x, u, y, t, w, i, o, g}
+  {mntandroid, multimonitor, updatepackages, pyshell, notifytorrents, devenv, importandroid, timer, openterminalin}
+
+super + {b, s}
+  {bm, sch} firefox
+
+F7
+  toggleTouch
+
+# Audio Control
+super + {p, shift +} p
+  volctrl Headphone {2%+, 2%-}
+
+super + {Up, Down}
+  volctrl Master {2%+, 2%-}
+
+super + m
+  volctrl All mute
+
+# Brightness
+super + {Right, Left}
+  light {-A 5, -U 5}
+
+# Screenshots
+Print
+  screenshot full
+
+Shift_L + Print
+  screenshot select
+
+Control_L + Print
+  screenshot fulltime
+
+super + Print
+  screenshot selecttime
+
+
+#---Application Launchers---#
+super + d
+  dmenu_run
+
+super + Return
+  $TERMINAL
+
+super + c
+  brave https://studio.youtube.com
+
+super + {alt, Shift_L} + Return
+  {urxvt, stabmux}
+
+super + alt + {s, l}
+  snap run {spotify, slack}
+
+super + alt + {k, o, g, b, e, f, v}
+  {kdenlive, obs, gimp, firefox, brave, dolphin, virtualbox}
+
+super + alt + {a, r, t, p, n, c, j}
+  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
+
+super + alt + d
+  apulse discord
