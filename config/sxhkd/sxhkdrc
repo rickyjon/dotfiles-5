@@ -1,12 +1,66 @@
+#---BSPWM Bindings
+# Quit bspwm
+super + shift + Escape
+  prompt "Are you sure you would like to quick this Xsession" "bspc quit"
+
+# Restart bspwm
+super + shift + w
+  bspc wm -r
+
+# Kill Window
+super + shift + q
+	bspc node -c && bspunhide
+
+# Focus on window in direction
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+#	Send window to desktop
+super + shift + {1-8}
+  bspc node -d {1-8} && bspunhide
+
+# Send window to desktop and swap to desktop
+super + control + {0-9}
+  bspc node -d {0-9} && bspunhide && bspc desktop -f {0-9}
+
+# Toggle fullscreen on and off
+super + f
+  bspfullscreen
+
+# Swap window with direction
+super + shift + {h,j,k,l}
+	bspc node -s {west,south,north,east}
+
+# Focus on desktop
+super + {1-8}
+	bspc desktop -f {1-8}
+
+# expand a window by moving one of its side outward
+ctrl + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+#ctrl + alt + shift + {h,j,k,l}
+#	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+#super + {Left,Down,Up,Right}
+#	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Swap the current node and the biggest node
+super + g
+	bspc node -s biggest
+
 #---System Control---#
+# Restart hotkey damon
+super + shift + r
+  killandnotify "sxhkd" "Config reloaded" && sxhkd &
+
 super + shift + {z, x}
   prompt {"Are you sure you would like to reboot?" "sudo reboot", "Are you sure you would like to shutdown" "sudo shutdown"}
 
 super + shift + s
   betterlockscreen -l
-
-super + shift + r
-  killandnotify "sxhkd" "Config reloaded" && sxhkd
 
 super + shift + p
   toggleprogram "picom" "-b"
@@ -39,15 +93,14 @@ super + {Right, Left}
 Print
   screenshot full
 
-Shift_L + Print
+shift + Print
   screenshot select
 
-Control_L + Print
+control + Print
   screenshot fulltime
 
 super + Print
   screenshot selecttime
-
 
 #---Application Launchers---#
 super + d
@@ -66,7 +119,7 @@ super + alt + {s, l}
   snap run {spotify, slack}
 
 super + alt + {k, o, g, b, e, f, v}
-  {kdenlive, obs, gimp, firefox, brave, dolphin, virtualbox}
+  {kdenlive, obs, gimp, firefox, brave, pcmanfm, virtualbox}
 
 super + alt + {a, r, t, p, n, c, j}
   $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}

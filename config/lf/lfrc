@@ -139,3 +139,4 @@ map cs $$EDITOR ~/.config/search/search
 map ct $$EDITOR ~/.config/transmission-rss/config.yml
 map ca $$EDITOR ~/.config/mimeapps.list
 map cr $$EDITOR ~/.config/starship.toml
+map cx $$EDITOR ~/.config/sxhkd/sxhkdrc
