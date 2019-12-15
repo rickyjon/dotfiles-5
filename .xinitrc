@@ -1,1 +1,2 @@
-exec dbus-launch i3
+sxhkd &
+exec bspwm
