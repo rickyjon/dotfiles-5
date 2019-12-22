@@ -1,7 +1,7 @@
 #---BSPWM Bindings
 # Quit bspwm
 super + shift + Escape
-  prompt "Are you sure you would like to quick this Xsession" "bspc quit"
+  prompt "Are you sure you would like to quit this Xsession" "bspc quit"
 
 # Restart bspwm
 super + shift + w
@@ -9,15 +9,15 @@ super + shift + w
 
 # Kill Window
 super + shift + q
-	bspc node -c && bspunhide
+  xdo close && bspunhide
 
 # Focus on window in direction
 super + {h,j,k,l}
 	bspc node -f {west,south,north,east}
 
 #	Send window to desktop
-super + shift + {1-8}
-  bspc node -d {1-8} && bspunhide
+super + shift + {0-9}
+  bspc node -d {0-9} && bspunhide
 
 # Send window to desktop and swap to desktop
 super + control + {0-9}
@@ -27,57 +27,65 @@ super + control + {0-9}
 super + f
   bspfullscreen
 
+# Toggle floating on and off
+super + o
+  bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
+
 # Swap window with direction
 super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}
 
 # Focus on desktop
-super + {1-8}
-	bspc desktop -f {1-8}
+super + {0-9}
+	bspc desktop -f {0-9}
 
-# expand a window by moving one of its side outward
+# Expand a window by moving one of its side outward
 ctrl + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+  #xdo resize {-w -20, -h +20, -h -20, -w +20}
 
-# contract a window by moving one of its side inward
-#ctrl + alt + shift + {h,j,k,l}
-#	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+# Contract a window by moving one of its side inward
+ctrl + super + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+  #xdo resize {-w +20, -h -20, -h +20, -w -20}
 
-# move a floating window
-#super + {Left,Down,Up,Right}
-#	bspc node -v {-20 0,0 20,0 -20,20 0}
-
-# Swap the current node and the biggest node
-super + g
-	bspc node -s biggest
+# Move a floating window
+ctrl + alt + {Left,Right,Up,Down}
+  xdo move {-x -20, -x +20, -y -20, -y +20}
 
 #---System Control---#
 # Restart hotkey damon
-super + shift + r
+super + shift + x
   killandnotify "sxhkd" "Config reloaded" && sxhkd &
 
-super + shift + {z, x}
+super + shift + o
+  reloadpolybar
+
+super + shift + {r, d}
   prompt {"Are you sure you would like to reboot?" "sudo reboot", "Are you sure you would like to shutdown" "sudo shutdown"}
 
-super + shift + s
+super + shift + l
   betterlockscreen -l
 
-super + shift + p
+super + shift + c
   toggleprogram "picom" "-b"
 
 #---Script Keys---#
-super + {a, x, u, y, t, w, i, o, g}
+super + {a, x, u, y, t, w, i, c, g}
   {mntandroid, multimonitor, updatepackages, pyshell, notifytorrents, devenv, importandroid, timer, openterminalin}
 
-super + {b, s}
+super + {b, e}
   {bm, sch} firefox
 
 F7
-  toggleTouch
+  toggletouch
 
 # Audio Control
-super + {p, shift +} p
+super + {_, shift} + p
   volctrl Headphone {2%+, 2%-}
+
+super + {_, shift} + s
+  volctrl Speaker {2%+, 2%-}
 
 super + {Up, Down}
   volctrl Master {2%+, 2%-}
@@ -87,7 +95,7 @@ super + m
 
 # Brightness
 super + {Right, Left}
-  light {-A 5, -U 5}
+  light {-A 5, -U 5} && polybar-msg hook backlight 1
 
 # Screenshots
 Print
@@ -109,7 +117,7 @@ super + d
 super + Return
   $TERMINAL
 
-super + c
+super + q
   brave https://studio.youtube.com
 
 super + {alt, Shift_L} + Return
