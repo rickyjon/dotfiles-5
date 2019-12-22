@@ -125,18 +125,25 @@ map gU. cd /usr
 map gUs cd /usr/share
 
 # Open Configs
-map cb $$EDITOR ~/.bashrc
-map cp $$EDITOR ~/.profile
-map ci $$EDITOR ~/.config/i3/config
-map cc $$EDITOR ~/.config/compton/compton.conf
-map ck $$EDITOR ~/.config/i3blocks/config
-map cl $$EDITOR ~/.config/lf/lfrc
-map co $$EDITOR ~/.config/bookmarks
+map cba $$EDITOR ~/.bashrc
+map cbs $$EDITOR ~/.config/bspwm/bspwmrc
+
+map cpi $$EDITOR ~/.config/picom.conf
+map cpr $$EDITOR ~/.profile
+map cpo $$EDITOR ~/.config/polybar/config
+
 map cmm $$EDITOR ~/.config/mpv/mpv.conf
 map cmi $$EDITOR ~/.config/mpv/input.conf
-map cv $$EDITOR ~/.config/nvim/init.vim
-map cs $$EDITOR ~/.config/search/search
+
+map css $$EDITOR ~/.config/search/search
+map csx $$EDITOR ~/.config/sxhkd/sxhkdrc
+
+map cic $$EDITOR ~/.config/i3/config
+map cib $$EDITOR ~/.config/i3blocks/config
+
+map cl $$EDITOR ~/.config/lf/lfrc
+map co $$EDITOR ~/.config/bookmarks
+map cn $$EDITOR ~/.config/nvim/init.vim
 map ct $$EDITOR ~/.config/transmission-rss/config.yml
 map ca $$EDITOR ~/.config/mimeapps.list
 map cr $$EDITOR ~/.config/starship.toml
-map cx $$EDITOR ~/.config/sxhkd/sxhkdrc

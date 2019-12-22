@@ -36,7 +36,7 @@ URxvt.keysym.C-0:resize-font:reset
 *.color13:      #c583d0
 
 ! cyan
-*.color6:       #3bc9f1
+*.color6:       #32d0fc
 *.color14:      #8adaf1
 
 ! white

@@ -28,9 +28,6 @@ command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-#[Arch]
-#command=echo "ARCH IS THE BEST DISTRO"
-#interval=once
 
 # Display any packages to install
 [packages]
