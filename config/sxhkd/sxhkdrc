@@ -129,6 +129,10 @@ super + alt + {s, l}
 super + alt + {k, o, g, b, e, f, v}
   {kdenlive, obs, gimp, firefox, brave, pcmanfm, virtualbox}
 
+# Tracking Apps
+#super + alt + {a, r, t, p, n, c, j}
+#  bspc rule -a st-256color -o state=floating rectangle=800x500+100+100 sticky=on && $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
+
 super + alt + {a, r, t, p, n, c, j}
   $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
 
