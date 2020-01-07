@@ -9,28 +9,42 @@ secondary = ${xrdb:color3}
 alert = #ed0b0b
 
 [bar/bar]
-#monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:eDP-1}
+monitor-fallback =
+monitor-strict = false
+monitor-exact = true
+#override-redirect = true
 wm-restack = bspwm
 enable-ipc = true
+fixed-center = false
+bottom = false
+separator =
+#dim-value = 1.0
+
 width = 100%
 height = 32
-fixed-center = false
+offset-x = 0
+offset-y = 0
+radius = 0.0
 
+#background-0 = ${colors.primary}
+#background-1 = ${colors.secondary}
+#background-2 = ${colors.alert}
 background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 3
 line-color = #f00
 
-padding-left = 0
-padding-right = 0
-
+padding = 0
 module-margin-left = 0
 module-margin-right = 1
 
 font-0 = SourceCodeProMedium:pixelsize=10;
 font-1 = HackNerdFont:pixelsize=10;
 font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
+#dpi-x = 96
+#dpi-y = 96
 
 modules-left = bspwm xwindow
 modules-right = pacman-packages torrents cpu-usage cpu-temperature memory backlight volume battery weather time
@@ -38,12 +52,15 @@ modules-right = pacman-packages torrents cpu-usage cpu-temperature memory backli
 tray-position = right
 tray-padding = 1
 tray-background = ${colors.background-alt}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
 cursor-click = pointer
-cursor-scroll = ns-resize
+cursor-scroll = default
 
 [module/xwindow]
 type = internal/xwindow
@@ -241,7 +258,10 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
-;pseudo-transparency = false
+pseudo-transparency = true
+#throttle-output = 5
+#throttle-output-for = 10
+#throttle-input-for = 30
 
 [global/wm]
 margin-top = 0
