@@ -1,3 +1,4 @@
+# Flex on the ubuntu users
 neofetch
 
 # If not running interactively, don't do anything
@@ -16,6 +17,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
@@ -23,6 +25,13 @@ _comp_options+=(globdots)		# Include hidden files.
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
+
+# Enable searching through history
+bindkey '^R' history-incremental-pattern-search-backward
+
+# Edit line in vim buffer ctrl-v
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^v' edit-command-line
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -59,20 +68,20 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-# Edit line in vim with ctrl-e:
-autoload edit-command-line; zle -N edit-command-line
-bindkey '^v' edit-command-line
-
 # Control bindings for programs
 bindkey -s "^g" "lc\n"
-bindkey -s "^h" "history\n"
+bindkey -s "^h" "history 1\n"
 bindkey -s "^l" "clear\n"
 
 # Source configs
 for f in ~/.config/shellconfig/*; do source "$f"; done
 
-# Load zsh-syntax-highlighting; should be last.
+# Load zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# Suggest aliases for commands
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh 2>/dev/null
+# Search repos for programs that can't be found
+source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
