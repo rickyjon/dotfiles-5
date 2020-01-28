@@ -39,6 +39,10 @@ super + shift + {h,j,k,l}
 super + {0-9}
 	bspc desktop -f {0-9}
 
+# Cycle through desktops
+super + alt + {Left, Right}
+  bspc desktop -f {prev, next}
+
 # Expand a window by moving one of its side outward
 ctrl + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
@@ -61,10 +65,11 @@ super + shift + x
 super + shift + o
   reloadpolybar
 
-super + shift + {r, d}
+super + shift + {r, s}
   prompt {"Are you sure you would like to reboot?" "sudo reboot", "Are you sure you would like to shutdown" "sudo shutdown"}
 
-super + shift + l
+# Lock the screen
+super + shift + e
   betterlockscreen -l
 
 super + shift + c
@@ -75,7 +80,10 @@ super + {a, x, u, y, t, w, i, c, g}
   {mntandroid, multimonitor, updatepackages, pyshell, notifytorrents, devenv, importandroid, timer, openterminalin}
 
 super + {b, e}
-  {bm, sch} firefox
+  {bookmenu ~/.config/bookmenu/browser : $BROWSER, sch}
+
+super + r
+  $TERMINAL -e dman .
 
 F7
   toggletouch
@@ -117,17 +125,17 @@ super + d
 super + Return
   $TERMINAL
 
-super + q
-  brave https://studio.youtube.com
-
 super + {alt, Shift_L} + Return
-  {urxvt, stabmux}
+  {kitty, stabmux}
 
 super + alt + {s, l}
   snap run {spotify, slack}
 
 super + alt + {k, o, g, b, e, f, v}
-  {kdenlive, obs, gimp, firefox, brave, pcmanfm, virtualbox}
+  {kdenlive, obs, gimp, $BROWSER, brave, pcmanfm, virtualbox}
+
+super + q
+  brave https://studio.youtube.com
 
 # Tracking Apps
 #super + alt + {a, r, t, p, n, c, j}

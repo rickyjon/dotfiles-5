@@ -1,6 +1,7 @@
 # Basic Settings
 set preview false
 set previewer ~/scripts/lf/preview
+#set previewer pistol
 set hidden true
 set color256 true
 set drawbox true
@@ -10,9 +11,9 @@ set ignorecase true
 # Custom Functions
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
-        text/*|application/json) $EDITOR "$fx";;
-        video/*|application/pdf) xdg-open "$f" & disown;;
-        *) for f in "$fx"; do xdg-open "$f"> /dev/null 2> /dev/null & done;;
+        text/*|application/json) $EDITOR "$f";;
+        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+        *) xdg-open "$f" ;;
     esac
 }}
 
