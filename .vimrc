@@ -25,6 +25,9 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
+Plug 'romainl/vim-devdocs'
+
+
 call plug#end()
 
 let g:airline_theme = 'codedark'
@@ -52,6 +55,7 @@ set clipboard+=unnamedplus
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
+set keywordprg=:DD
 
 " ------NERDTree Settings------
 nmap <C-f> :NERDTreeToggle<CR>
@@ -125,7 +129,6 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 let g:closetag_close_shortcut = '<leader>>'
 
-
 " ------COC SETTINGS------
 let g:coc_global_extensions = [
   \ 'coc-snippets',
@@ -184,8 +187,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" Use D to show documentation in preview window
+nnoremap <silent> D :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -243,6 +246,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " ------Standard Bindings------
 " Basic file system commands
 nnoremap <C-t> :!touch<Space>
+nnoremap <C-e> :!crf<Space>
 nnoremap <C-d> :!mkdir<Space>
 nnoremap <C-m> :!mv<Space>%<Space>
 
@@ -284,6 +288,7 @@ nnoremap <leader>v :vsplit<Space>
 
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
+
 
 " Alias replace all to S
 nnoremap S :%s//g<Left><Left>
