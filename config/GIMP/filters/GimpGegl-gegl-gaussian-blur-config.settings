@@ -1,5 +1,33 @@
 # settings
 
+(GimpGegl-gegl-gaussian-blur-config "2020-02-02 15:27:57"
+    (time 1580619477)
+    (std-dev-x 6.1900000000000004)
+    (std-dev-y 6.1900000000000004)
+    (filter auto)
+    (abyss-policy clamp)
+    (clip-extent yes))
+(GimpGegl-gegl-gaussian-blur-config "2020-02-02 14:50:18"
+    (time 1580617218)
+    (std-dev-x 7.8399999999999999)
+    (std-dev-y 7.8399999999999999)
+    (filter auto)
+    (abyss-policy clamp)
+    (clip-extent yes))
+(GimpGegl-gegl-gaussian-blur-config "2020-02-01 15:59:46"
+    (time 1580534986)
+    (std-dev-x 6.8499999999999996)
+    (std-dev-y 6.8499999999999996)
+    (filter auto)
+    (abyss-policy clamp)
+    (clip-extent yes))
+(GimpGegl-gegl-gaussian-blur-config "2020-01-31 17:42:51"
+    (time 1580454771)
+    (std-dev-x 8.5)
+    (std-dev-y 8.5)
+    (filter auto)
+    (abyss-policy clamp)
+    (clip-extent yes))
 (GimpGegl-gegl-gaussian-blur-config "2020-01-28 13:02:52"
     (time 1580178772)
     (std-dev-x 9.4900000000000002)
@@ -35,38 +63,10 @@
     (filter auto)
     (abyss-policy clamp)
     (clip-extent yes))
-(GimpGegl-gegl-gaussian-blur-config "2020-01-21 18:19:25"
-    (time 1579592965)
-    (std-dev-x 8.5)
-    (std-dev-y 8.5)
-    (filter auto)
-    (abyss-policy clamp)
-    (clip-extent yes))
 (GimpGegl-gegl-gaussian-blur-config "2020-01-20 16:43:09"
     (time 1579500789)
     (std-dev-x 6.5199999999999996)
     (std-dev-y 6.5199999999999996)
-    (filter auto)
-    (abyss-policy clamp)
-    (clip-extent yes))
-(GimpGegl-gegl-gaussian-blur-config "2020-01-19 13:36:41"
-    (time 1579403201)
-    (std-dev-x 7.5099999999999998)
-    (std-dev-y 7.5099999999999998)
-    (filter auto)
-    (abyss-policy clamp)
-    (clip-extent yes))
-(GimpGegl-gegl-gaussian-blur-config "2020-01-19 13:11:19"
-    (time 1579401679)
-    (std-dev-x 8.1699999999999999)
-    (std-dev-y 8.1699999999999999)
-    (filter auto)
-    (abyss-policy clamp)
-    (clip-extent yes))
-(GimpGegl-gegl-gaussian-blur-config "2020-01-18 16:03:09"
-    (time 1579325589)
-    (std-dev-x 5.8600000000000003)
-    (std-dev-y 5.8600000000000003)
     (filter auto)
     (abyss-policy clamp)
     (clip-extent yes))
