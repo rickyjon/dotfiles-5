@@ -2,11 +2,13 @@ let mapleader=" "
 
 call plug#begin('~/local/share/nvim/plugged')
 
+" Themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'norcalli/nvim-colorizer.lua'
-Plug 'junegunn/goyo.vim'
 Plug 'tomasiser/vim-code-dark'
+
+Plug 'junegunn/goyo.vim'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'terryma/vim-multiple-cursors'
@@ -24,9 +26,8 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-
+" Dev Dock integration
 Plug 'romainl/vim-devdocs'
-
 
 call plug#end()
 
@@ -250,10 +251,6 @@ nnoremap <C-e> :!crf<Space>
 nnoremap <C-d> :!mkdir<Space>
 nnoremap <C-m> :!mv<Space>%<Space>
 
-" Enable Disable colourizing
-map <leader>d :ColorizerAttachToBuffer<CR>
-map <leader>D :ColorizerDetachFromBuffer<CR>
-
 " Enable disable Goyo
 map <leader>g :Goyo<CR>
 map <leader>G :Goyo!<CR>
@@ -262,7 +259,7 @@ map <leader>G :Goyo!<CR>
 map <leader>c :setlocal formatoptions-=cro<CR>
 map <leader>C :setlocal formatoptions=cro<CR>
 
-" Enable spell checking, o for othography
+" Enable spell checking, s for spell check
 map <leader>s :setlocal spell! spelllang=en_au<CR>
 
 " Enable Disable Auto Indent
@@ -288,7 +285,6 @@ nnoremap <leader>v :vsplit<Space>
 
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
-
 
 " Alias replace all to S
 nnoremap S :%s//g<Left><Left>

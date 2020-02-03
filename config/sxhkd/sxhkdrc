@@ -73,7 +73,7 @@ super + shift + e
   betterlockscreen -l
 
 super + shift + c
-  toggleprogram "picom" "-b"
+  toggleprogram "compton" "-b"
 
 #---Script Keys---#
 super + {a, x, u, y, t, w, i, c, g}
@@ -120,7 +120,7 @@ super + Print
 
 #---Application Launchers---#
 super + d
-  dmenu_run
+  dmenu_run -fn "JetBrains Mono Medium-10"
 
 super + Return
   $TERMINAL
@@ -128,11 +128,12 @@ super + Return
 super + {alt, Shift_L} + Return
   {kitty, stabmux}
 
-super + alt + {s, l}
-  snap run {spotify, slack}
+# Snaps
+super + alt + l
+  snap run slack
 
-super + alt + {k, o, g, b, e, f, v}
-  {kdenlive, obs, gimp, $BROWSER, brave, pcmanfm, virtualbox}
+super + alt + {k, o, g, b, e, f, v, s}
+  {kdenlive, obs, gimp, $BROWSER, brave, pcmanfm, virtualbox, spotify}
 
 super + q
   brave https://studio.youtube.com

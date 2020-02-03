@@ -43,6 +43,17 @@ cmd openterm ${{
     $TERMINAL &
 }}
 
+cmd fzf_jump ${{
+   res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"
+   if [ -f "$res" ]; then
+     cmd="select"
+   elif [ -d "$res" ]; then
+     cmd="cd"
+   fi
+lf -remote "send $id $cmd \"$res\""
+}}
+
+
 # Bindings
 # Remove some defaults
 map m
@@ -52,6 +63,7 @@ map '"'
 map d
 map c
 map e
+map f
 
 # File Openers
 map ee $$EDITOR "$f"
@@ -61,7 +73,9 @@ map os $sudo $CODEEDITOR "$f"
 map z $$READER "$f"
 map a $$PAGER "$f"
 
+
 # Basic Functions
+map f :fzf_jump
 map dd delete
 map p paste
 map x cut
