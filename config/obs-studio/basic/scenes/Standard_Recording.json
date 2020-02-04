@@ -1,4 +1,62 @@
 {
+    "AuxAudioDevice1": {
+        "balance": 0.5,
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
+        "enabled": true,
+        "flags": 0,
+        "hotkeys": {
+            "libobs.mute": [],
+            "libobs.push-to-mute": [],
+            "libobs.push-to-talk": [],
+            "libobs.unmute": []
+        },
+        "id": "pulse_input_capture",
+        "mixers": 255,
+        "monitoring_type": 0,
+        "muted": false,
+        "name": "Mic/Aux",
+        "prev_ver": 402653189,
+        "private_settings": {},
+        "push-to-mute": false,
+        "push-to-mute-delay": 0,
+        "push-to-talk": false,
+        "push-to-talk-delay": 0,
+        "settings": {
+            "device_id": "alsa_input.usb-Blue_Microphones_Yeti_Stereo_Microphone_797_2018_12_02_00943-00.analog-stereo"
+        },
+        "sync": 0,
+        "volume": 1.0
+    },
+    "DesktopAudioDevice1": {
+        "balance": 0.5,
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
+        "enabled": true,
+        "flags": 0,
+        "hotkeys": {
+            "libobs.mute": [],
+            "libobs.push-to-mute": [],
+            "libobs.push-to-talk": [],
+            "libobs.unmute": []
+        },
+        "id": "pulse_output_capture",
+        "mixers": 255,
+        "monitoring_type": 0,
+        "muted": false,
+        "name": "Desktop Audio",
+        "prev_ver": 402653189,
+        "private_settings": {},
+        "push-to-mute": false,
+        "push-to-mute-delay": 0,
+        "push-to-talk": false,
+        "push-to-talk-delay": 0,
+        "settings": {
+            "device_id": "alsa_output.pci-0000_00_1f.3.analog-stereo.monitor"
+        },
+        "sync": 0,
+        "volume": 1.0
+    },
     "current_program_scene": "Full Cam",
     "current_scene": "Full Cam",
     "current_transition": "Fade",
@@ -718,7 +776,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 11,
+                "id_counter": 13,
                 "items": [
                     {
                         "align": 5,
@@ -804,10 +862,10 @@
             "settings": {
                 "buffering": false,
                 "color_range": 0,
-                "device_id": "/dev/video0",
+                "device_id": "/dev/video2",
                 "input": 0,
                 "pixelformat": 861030210,
-                "resolution": -1
+                "resolution": 125830200
             },
             "sync": 0,
             "volume": 1.0

@@ -89,17 +89,25 @@ F7
   toggletouch
 
 # Audio Control
-super + {_, shift} + p
-  volctrl Headphone {2%+, 2%-}
+# ALSA Controls
+#super + {_, shift} + p
+#  alsavolctrl Headphone {2%+, 2%-}
+#
+#super + {_, shift} + s
+#  alsavolctrl Speaker {2%+, 2%-}
+#
+#super + {Up, Down}
+#  alsavolctrl Master {2%+, 2%-}
+#
+#super + m
+#  alsavolctrl All mute
 
-super + {_, shift} + s
-  volctrl Speaker {2%+, 2%-}
-
+# Pulse Controls
 super + {Up, Down}
-  volctrl Master {2%+, 2%-}
+  pulsevolctrl "output-vol" alsa_output.pci-0000_00_1f.3.analog-stereo {+2%, -2%}
 
 super + m
-  volctrl All mute
+  pulsevolctrl "output-mute" alsa_output.pci-0000_00_1f.3.analog-stereo
 
 # Brightness
 super + {Right, Left}
@@ -132,8 +140,8 @@ super + {alt, Shift_L} + Return
 super + alt + l
   snap run slack
 
-super + alt + {k, o, g, b, e, f, v, s}
-  {kdenlive, obs, gimp, $BROWSER, brave, pcmanfm, virtualbox, spotify}
+super + alt + {k, o, g, b, e, f, v, s, d}
+  {kdenlive, obs, gimp, $BROWSER, brave, pcmanfm, virtualbox, spotify, discord}
 
 super + q
   brave https://studio.youtube.com
@@ -142,8 +150,5 @@ super + q
 #super + alt + {a, r, t, p, n, c, j}
 #  bspc rule -a st-256color -o state=floating rectangle=800x500+100+100 sticky=on && $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
 
-super + alt + {a, r, t, p, n, c, j}
-  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
-
-super + alt + d
-  apulse discord
+super + alt + {a, r, t, h, n, c, j, p}
+  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin, pamix}
