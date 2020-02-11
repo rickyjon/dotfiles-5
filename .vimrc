@@ -16,16 +16,17 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
 " Nerd Tree plugins
-Plug 'scrooloose/nerdtree'
-Plug 'tsony-tsonev/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/nerdcommenter'
+"Plug 'scrooloose/nerdtree'
+"Plug 'tsony-tsonev/nerdtree-git-plugin'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-commentary'
 " Syntax highlighting
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " Dev Dock integration
 Plug 'romainl/vim-devdocs'
 
@@ -34,7 +35,10 @@ call plug#end()
 let g:airline_theme = 'codedark'
 
 " Basic settings
+set mouse=a
 syntax on
+set ignorecase
+set smartcase
 set encoding=utf-8
 set expandtab
 set shiftwidth=2
@@ -56,44 +60,125 @@ set clipboard+=unnamedplus
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
+" Vim dev docs
 set keywordprg=:DD
 
+" Vim Hexokinase
+let g:Hexokinase_optInPatterns = [
+\     'full_hex',
+\     'triple_hex',
+\     'rgb',
+\     'rgba',
+\     'hsl',
+\     'hsla',
+\     'colour_names'
+\ ]
+let g:Hexokinase_highlighters = ['backgroundfull']
+
+" Reenable hexokinase on enter
+autocmd VimEnter * HexokinaseTurnOn
+
+" Netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 20
+let g:netrw_alto = 1
+
+" Allow for netrw to be toggled
+function! ToggleNetrw()
+    if g:NetrwIsOpen
+        let i = bufnr("$")
+        while (i >= 1)
+            if (getbufvar(i, "&filetype") == "netrw")
+                silent exe "bwipeout " . i
+            endif
+            let i-=1
+        endwhile
+        let g:NetrwIsOpen=0
+    else
+        let g:NetrwIsOpen=1
+        silent Lexplore
+    endif
+endfunction
+
+function! OpenToRight()
+  :normal v
+  let g:path=expand('%:p')
+  :q!
+  execute 'belowright vnew' g:path
+  :normal <C-l>
+endfunction
+
+function! OpenBelow()
+  :normal v
+  let g:path=expand('%:p')
+  :q!
+  execute 'belowright new' g:path
+  :normal <C-l>
+endfunction
+
+augroup netrw_mappings
+    autocmd!
+    autocmd filetype netrw call NetrwMappings()
+augroup END
+
+function! NetrwMappings()
+    " Hack fix to make ctrl-l work properly
+    noremap <buffer> <C-l> <C-w>l
+    noremap <silent> <C-f> :call ToggleNetrw()<CR>
+    noremap <buffer> V :call OpenToRight()<cr>
+    noremap <buffer> H :call OpenBelow()<cr>
+
+endfunction
+
+" Close Netrw if it's the only buffer open
+autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
+
+" Make netrw act like a project Draw
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :call ToggleNetrw()
+augroup END
+
+let g:NetrwIsOpen=0
+
+" Vim Commentary
+
+
 " ------NERDTree Settings------
-nmap <C-f> :NERDTreeToggle<CR>
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
+"nmap <C-f> :NERDTreeToggle<CR>
+"vmap ++ <plug>NERDCommenterToggle
+"nmap ++ <plug>NERDCommenterToggle
 
 " open NERDTree automatically
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 
 " Close if only NERDTree is open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let g:NERDTreeGitStatusWithFlags = 1
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:NERDTreeGitStatusNodeColorization = 1
-let g:NERDTreeColorMapCustom = {
-    \ "Staged"    : "#0ee375",
-    \ "Modified"  : "#d9bf91",
-    \ "Renamed"   : "#51C9FC",
-    \ "Untracked" : "#FCE77C",
-    \ "Unmerged"  : "#FC51E6",
-    \ "Dirty"     : "#FFBD61",
-    \ "Clean"     : "#87939A",
-    \ "Ignored"   : "#808080"
-    \ }
+" let g:NERDTreeGitStatusWithFlags = 1
+" let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+" let g:NERDTreeGitStatusNodeColorization = 1
+" let g:NERDTreeColorMapCustom = {
+"     \ "Staged"    : "#0ee375",
+"     \ "Modified"  : "#d9bf91",
+"     \ "Renamed"   : "#51C9FC",
+"     \ "Untracked" : "#FCE77C",
+"     \ "Unmerged"  : "#FC51E6",
+"     \ "Dirty"     : "#FFBD61",
+"     \ "Clean"     : "#87939A",
+"     \ "Ignored"   : "#808080"
+"     \ }
 
 
-let g:NERDTreeIgnore = ['^node_modules$']
-
-" prettier command for coc
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" let g:NERDTreeIgnore = ['^node_modules$']
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
-function! IsNERDTreeOpen()
-  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
+" function! IsNERDTreeOpen()
+"   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+" endfunction
 
 
 " ------Vim Auto Closetag------
@@ -131,6 +216,8 @@ let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
 " ------COC SETTINGS------
+" prettier command for coc
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -200,7 +287,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
+"autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
 nmap <rn> <Plug>(coc-rename)
@@ -287,13 +374,11 @@ nnoremap <leader>v :vsplit<Space>
 autocmd InsertEnter * norm zz
 
 " Alias replace all to S
-nnoremap S :%s//g<Left><Left>
-
-" Alias write to W
-nnoremap W :w<CR>
+nnoremap S :%s//gI<Left><Left><Left>
 
 " Alias write and quit to Q
-nnoremap Q :wq<CR>
+nnoremap <leader>q :wq<CR>
+nnoremap <leader>w :w<CR>
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
@@ -315,7 +400,7 @@ autocmd FileType sh inoremap ,f ()<Space>{<CR><Tab><++><CR>}<CR><CR><++><Esc>?()
 autocmd FileType sh inoremap ,i if<Space>[<Space>];<Space>then<CR><++><CR>fi<CR><CR><++><Esc>?];<CR>hi<Space>
 autocmd FileType sh inoremap ,ei elif<Space>[<Space>];<Space>then<CR><++><CR><Esc>?];<CR>hi<Space>
 autocmd FileType sh inoremap ,sw case<Space>""<Space>in<CR><++>)<Space><++><Space>;;<CR><++><CR>esac<CR><CR><++><Esc>?"<CR>i
-autocmd FileType sh inoremap ,ca )<Space><++><Space>;;<CR><++><Esc>?)<CR>
+autocmd FileType sh inoremap ,ca )<Space><++><Space>;;<CR><++><Esc>?)<CR>i
 
 " html
 autocmd FileType html noremap <leader>d i<!DOCTYPE html><CR><html><CR><head><CR><meta charset="UTF-8"><CR><title><++></title><CR></head><CR><body><CR><++><CR></body><CR></html>
