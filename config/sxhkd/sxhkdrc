@@ -76,11 +76,11 @@ super + shift + c
   toggleprogram "compton" "-b"
 
 #---Script Keys---#
-super + {a, x, u, y, t, w, i, c, g}
+super + {a, x, u, y, t, w, i, s, g}
   {mntandroid, multimonitor, updatepackages, pyshell, notifytorrents, devenv, importandroid, timer, openterminalin}
 
-super + {b, e}
-  {bookmenu ~/.config/bookmenu/browser : $BROWSER, sch}
+super + {b, c, e}
+  {bookmenu -p "Select a bookmark" -fn "JetBrains Mono Medium-10" -s ":" -br ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -fn "JetBrains Mono Medium-10" -s ":" -br ~/.config/bookmenu/configs -co "$TERMINAL -e nvim", sch}
 
 super + r
   $TERMINAL -e dman .
@@ -141,7 +141,7 @@ super + alt + l
   snap run slack
 
 super + alt + {k, o, g, b, e, f, v, s, d}
-  {kdenlive, obs, gimp, $BROWSER, brave, pcmanfm, virtualbox, spotify, discord}
+  {kdenlive, obs, gimp, $BROWSER, thunderbird, spacefm, virtualbox, spotify, discord}
 
 super + q
   brave https://studio.youtube.com
