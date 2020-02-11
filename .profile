@@ -1,6 +1,6 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-export PATH="$PATH:/home/brodie/scripts:$(ruby -e 'puts Gem.user_dir')/bin"
+export PATH="$PATH:/home/brodie/scripts:$(ruby -e 'puts Gem.user_dir')/bin:$HOME/.cargo/bin"
 export EDITOR="nvim"
 export READER="zathura"
 export VISUAL="nvim"

@@ -1,13 +1,13 @@
 typeset -U PATH path
-path=("$HOME/scripts" "$(ruby -e 'puts Gem.user_dir')/bin" "$HOME/go/bin" "$path[@]")
+path=("$HOME/scripts" "$(ruby -e 'puts Gem.user_dir')/bin" "$HOME/go/bin" "$HOME/.cargo/bin" "$path[@]")
 export PATH
 
 export EDITOR="nvim"
 export READER="zathura"
 export VISUAL="nvim"
-export CODEEDITOR="vscodium"
 export TERMINAL="st"
 export BROWSER="brave"
+export VIDEO="mpv"
 export COLORTERM="truecolor"
 export OPENER="xdg-open"
 export PAGER="less"

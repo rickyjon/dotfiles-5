@@ -23,6 +23,8 @@ set -o vi
 
 # Source configs
 for f in ~/.config/shellconfig/*; do source "$f"; done
+source /home/brodie/.config/broot/launcher/bash/br
 
 # Starship Prompt
 eval "$(starship init bash)"
+
