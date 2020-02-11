@@ -18,39 +18,52 @@ cmd open ${{
 }}
 
 cmd mkdir ${{
-    printf "Directory Name: "
-    read ans
-    mkdir $ans
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
 }}
 
 cmd mkfile ${{
-    printf "File Name: "
-    read ans
-    $EDITOR $ans
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
 }}
 
 cmd sudomkfile ${{
-    printf "File Name: "
-    read ans
-    sudo $EDITOR $ans
+  printf "File Name: "
+  read ans
+  sudo $EDITOR $ans
 }}
 
 cmd setwallpaper ${{
-    cp "$f" ~/.config/wall.png && feh --bg-scale --no-fehbg "$f"
+  cp "$f" ~/.config/wall.png && feh --bg-scale --no-fehbg "$f"
 }}
 
 cmd openterm ${{
-    $TERMINAL &
+  $TERMINAL &
 }}
 
 cmd fzf_jump ${{
-   res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"
-   if [ -f "$res" ]; then
-     cmd="select"
-   elif [ -d "$res" ]; then
-     cmd="cd"
-   fi
-lf -remote "send $id $cmd \"$res\""
+  res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"
+  if [ -f "$res" ]; then
+    cmd="select"
+  elif [ -d "$res" ]; then
+    cmd="cd"
+  fi
+  lf -remote "send $id $cmd \"$res\""
+}}
+
+cmd broot_jump ${{
+  f=$(mktemp)
+  res="$(broot --outcmd $f && cat $f | sed 's/cd //')"
+  rm -f "$f"
+  if [ -f "$res" ]; then
+    cmd="select"
+  elif [ -d "$res" ]; then
+    cmd="cd"
+  fi
+  lf -remote "send $id $cmd \"$res\""
+
 }}
 
 
@@ -68,14 +81,11 @@ map f
 # File Openers
 map ee $$EDITOR "$f"
 map es $sudo $EDITOR "$f"
-map oe $$CODEEDITOR "$f"
-map os $sudo $CODEEDITOR "$f"
-map z $$READER "$f"
-map a $$PAGER "$f"
+map z $view "$f"
 
 
 # Basic Functions
-map f :fzf_jump
+map f :broot_jump
 map dd delete
 map p paste
 map x cut
