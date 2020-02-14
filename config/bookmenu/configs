@@ -1,5 +1,6 @@
 bookmenu:~/.config/bookmenu/config
 zshrc:/home/brodie/.zshrc
+zshrc:~/.zshenv
 zprofile:~/.zprofile
 bashrc:~/.bashrc
 bashlogout:~/.bashlogout
