@@ -6,11 +6,13 @@ call plug#begin('~/local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tomasiser/vim-code-dark'
-
+" Center text
 Plug 'junegunn/goyo.vim'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
-Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
+" Code Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Fuzzy find files
+Plug 'ctrlpvim/ctrlp.vim'
+" This objectively makes vim better
 Plug 'terryma/vim-multiple-cursors'
 " Working with tags
 Plug 'alvan/vim-closetag'

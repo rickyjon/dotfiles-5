@@ -1,5 +1,29 @@
 # settings
 
+(GimpBrightnessContrastConfig "2020-02-14 13:20:40"
+    (time 1581648640)
+    (brightness 0.07874015748031496)
+    (contrast 0.094488188976377951))
+(GimpBrightnessContrastConfig "2020-02-13 18:38:38"
+    (time 1581581318)
+    (brightness 0.10236220472440945)
+    (contrast 0.14173228346456693))
+(GimpBrightnessContrastConfig "2020-02-13 18:36:54"
+    (time 1581581214)
+    (brightness 0.062992125984251968)
+    (contrast 0.11023622047244094))
+(GimpBrightnessContrastConfig "2020-02-12 17:18:06"
+    (time 1581490086)
+    (brightness 0.07874015748031496)
+    (contrast 0.13385826771653545))
+(GimpBrightnessContrastConfig "2020-02-12 11:31:18"
+    (time 1581469278)
+    (brightness -0.023622047244094488)
+    (contrast 0.11023622047244094))
+(GimpBrightnessContrastConfig "2020-02-11 23:59:18"
+    (time 1581427758)
+    (brightness 0.07874015748031496)
+    (contrast 0.16535433070866143))
 (GimpBrightnessContrastConfig "2020-02-10 22:51:42"
     (time 1581337302)
     (brightness 0.055118110236220472)
@@ -16,29 +40,5 @@
     (time 1581134490)
     (brightness 0.07874015748031496)
     (contrast 0.12598425196850394))
-(GimpBrightnessContrastConfig "2020-02-07 14:37:29"
-    (time 1581048449)
-    (brightness 0.11023622047244094)
-    (contrast 0.19685039370078741))
-(GimpBrightnessContrastConfig "2020-02-06 16:05:34"
-    (time 1580967334)
-    (brightness 0.11023622047244094)
-    (contrast 0.22047244094488189))
-(GimpBrightnessContrastConfig "2020-02-06 15:53:18"
-    (time 1580966598)
-    (brightness 0.047244094488188976)
-    (contrast 0.12598425196850394))
-(GimpBrightnessContrastConfig "2020-02-04 11:57:21"
-    (time 1580779641)
-    (brightness 0.10236220472440945)
-    (contrast 0.15748031496062992))
-(GimpBrightnessContrastConfig "2020-02-03 13:43:36"
-    (time 1580699616)
-    (brightness 0.070866141732283464)
-    (contrast 0.12598425196850394))
-(GimpBrightnessContrastConfig "2020-02-02 15:27:25"
-    (time 1580619445)
-    (brightness 0.10236220472440945)
-    (contrast 0.16535433070866143))
 
 # end of settings
