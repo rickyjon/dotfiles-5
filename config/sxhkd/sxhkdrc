@@ -57,6 +57,16 @@ ctrl + super + {h,j,k,l}
 ctrl + alt + {Left,Right,Up,Down}
   xdo move {-x -20, -x +20, -y -20, -y +20}
 
+# Add focused window to a tabbed instance in given direction
+super + t; {h,j,k,l}
+    tabc add {west,south,north,east} $(bspc query -N -n focused)
+
+# Remove one tab from tabbed
+super + t; r
+    tabbed=$(bspc query -N -n focused); \
+    child=$(tabc list $tabbed | head -n1); \
+    tabc remove $child
+
 #---System Control---#
 # Restart hotkey damon
 super + shift + x
@@ -76,11 +86,11 @@ super + shift + c
   toggleprogram "compton" "-b"
 
 #---Script Keys---#
-super + {a, x, u, y, t, w, i, s, g}
+super + {a, x, u, y, n, w, i, s, g}
   {mntandroid, multimonitor, updatepackages, pyshell, notifytorrents, devenv, importandroid, timer, openterminalin}
 
 super + {b, c, e}
-  {bookmenu -p "Select a bookmark" -fn "JetBrains Mono Medium-10" -s ":" -br ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -fn "JetBrains Mono Medium-10" -s ":" -br ~/.config/bookmenu/configs -co "$TERMINAL -e nvim", sch}
+  {bookmenu -p "Select a bookmark" -b ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim", sch}
 
 super + r
   $TERMINAL -e dman .
