@@ -45,13 +45,8 @@ cmd sudomkfile ${{
   sudo $EDITOR $ans
 }}
 
-
 cmd setwallpaper ${{
   cp "$f" ~/.config/wall.png && feh --bg-scale --no-fehbg "$f"
-}}
-
-cmd openterm ${{
-  $TERMINAL &
 }}
 
 cmd fzf_jump ${{
@@ -76,10 +71,14 @@ cmd broot_jump ${{
   lf -remote "send $id $cmd \"$res\""
 }}
 
+cmd open_config  ${{
+  $EDITOR $(bookmenu -b ~/.config/bookmenu/configs -f fzf -o)
+}}
+
 # Archive bindings
 cmd unarchive ${{
   case "$f" in
-      *.zip) $EDITOR "$f" ;;
+      *.zip) unzip "$f" ;;
       *.tar.gz) tar -xzvf "$f" ;;
       *.tar.bz2) tar -xjvf "$f" ;;
       *.tar) tar -xvf "$f" ;;
@@ -96,13 +95,17 @@ cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 cmd trash ${{
   for file in "$fx"
   do
-    trash-put "$(basename "$file")"
-    #$(echo "$file" | sed 's/ /\\ /')
+    trash-put "$(basename $file)"
   done
 }}
 
 cmd clear_trash %trash-empty
+
 cmd restore_trash %trash-restore
+
+# cmd restore_trash ${{
+#   trash-restore
+# }}
 
 # Bindings
 # Remove some defaults
@@ -133,7 +136,7 @@ map tc clear_trash
 map tr restore_trash
 
 # Broot Mapping
-map f :broot_jump
+map f fzf_jump
 
 # Basic Functions
 map DD delete
@@ -147,7 +150,7 @@ map md mkdir
 map ms $mkscript
 map ch chmod
 map bg setwallpaper
-map ot openterm
+map o open_config
 map r rename
 map H top
 map L bottom
