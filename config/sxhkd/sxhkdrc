@@ -59,7 +59,7 @@ ctrl + alt + {Left,Right,Up,Down}
 
 # Add focused window to a tabbed instance in given direction
 super + t; {h,j,k,l}
-    tabc add {west,south,north,east} $(bspc query -N -n focused)
+    tabc add {west,south,north,east} "$(bspc query -N -n focused)"
 
 # Remove one tab from tabbed
 super + t; r
