@@ -81,24 +81,6 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_winsize = 20
-let g:netrw_alto = 1
-
-" Allow for netrw to be toggled
-function! ToggleNetrw()
-    if g:NetrwIsOpen
-        let i = bufnr("$")
-        while (i >= 1)
-            if (getbufvar(i, "&filetype") == "netrw")
-                silent exe "bwipeout " . i
-            endif
-            let i-=1
-        endwhile
-        let g:NetrwIsOpen=0
-    else
-        let g:NetrwIsOpen=1
-        silent Lexplore
-    endif
-endfunction
 
 function! OpenToRight()
   :normal v
@@ -116,10 +98,6 @@ function! OpenBelow()
   :normal <C-l>
 endfunction
 
-augroup netrw_mappings
-    autocmd!
-    autocmd filetype netrw call NetrwMappings()
-augroup END
 
 function! NetrwMappings()
     " Hack fix to make ctrl-l work properly
@@ -127,7 +105,28 @@ function! NetrwMappings()
     noremap <silent> <C-f> :call ToggleNetrw()<CR>
     noremap <buffer> V :call OpenToRight()<cr>
     noremap <buffer> H :call OpenBelow()<cr>
+endfunction
 
+augroup netrw_mappings
+    autocmd!
+    autocmd filetype netrw call NetrwMappings()
+augroup END
+
+" Allow for netrw to be toggled
+function! ToggleNetrw()
+    if g:NetrwIsOpen
+        let i = bufnr("$")
+        while (i >= 1)
+            if (getbufvar(i, "&filetype") == "netrw")
+                silent exe "bwipeout " . i
+            endif
+            let i-=1
+        endwhile
+        let g:NetrwIsOpen=0
+    else
+        let g:NetrwIsOpen=1
+        silent Lexplore
+    endif
 endfunction
 
 " Close Netrw if it's the only buffer open
