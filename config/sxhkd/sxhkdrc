@@ -57,6 +57,11 @@ ctrl + super + {h,j,k,l}
 ctrl + alt + {Left,Right,Up,Down}
   xdo move {-x -20, -x +20, -y -20, -y +20}
 
+#---Tabbing---#
+# Prompt to open new app as a new tab
+super + t; d
+    tabdmenu
+
 # Add focused window to a tabbed instance in given direction
 super + t; {h,j,k,l}
     tabc add {west,south,north,east} "$(bspc query -N -n focused)"
@@ -86,14 +91,14 @@ super + shift + c
   toggleprogram "compton" "-b"
 
 #---Script Keys---#
-super + {a, x, u, y, n, w, i, s, g}
-  {mntandroid, multimonitor, updatepackages, pyshell, notifytorrents, devenv, importandroid, timer, openterminalin}
+super + {a, x, u, y, n, w, i, g}
+  {mntandroid, multimonitor "eDP-1" "HDMI-1", updatepackages, pyshell, notifytorrents, devenv, importandroid, openterminalin}
 
 super + {b, c, e}
-  {bookmenu -p "Select a bookmark" -b ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim", sch}
+  {bookmenu -p "Select a bookmark" -b ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim"}
 
-super + r
-  $TERMINAL -e dman .
+super + {r, s}
+  $TERMINAL -e {dman ., dlfile}
 
 F7
   toggletouch
@@ -114,10 +119,10 @@ F7
 
 # Pulse Controls
 super + {Up, Down}
-  pulsevolctrl "output-vol" alsa_output.pci-0000_00_1f.3.analog-stereo {+2%, -2%}
+  pulsevolctrl "output-vol" @DEFAULT_SINK@ {+2%, -2%}
 
 super + m
-  pulsevolctrl "output-mute" alsa_output.pci-0000_00_1f.3.analog-stereo
+  pulsevolctrl "output-mute" @DEFAULT_SINK@
 
 # Brightness
 super + {Right, Left}
