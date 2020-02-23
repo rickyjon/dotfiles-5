@@ -219,7 +219,7 @@ format-padding = 1
 
 [module/volume]
 type = custom/ipc
-hook-0 = i3volume
+hook-0 = polypulsevolume
 click-left = $TERMINAL -e alsamixer
 initial = 1
 format-background = ${colors.background-alt}
