@@ -1,5 +1,5 @@
 typeset -U PATH path
-path=("$HOME/scripts" "$(ruby -e 'puts Gem.user_dir')/bin" "$HOME/go/bin" "$HOME/.cargo/bin" "$path[@]")
+path=("$HOME/scripts" "$HOME/scripts/alsa" "$HOME/scripts/lf" "$HOME/scripts/i3" "$HOME/scripts/pulse" "$HOME/scripts/polybar" "$HOME/scripts/bspwm" "$HOME/scripts/lemonbar" "$HOME/scripts/transmission" "$(ruby -e 'puts Gem.user_dir')/bin" "$HOME/go/bin" "$HOME/.cargo/bin" "$path[@]")
 export PATH
 
 export EDITOR="nvim"
@@ -8,18 +8,15 @@ export VISUAL="nvim"
 export TERMINAL="st"
 export BROWSER="brave"
 export VIDEO="mpv"
+export IMAGE="sxiv"
 export COLORTERM="truecolor"
 export OPENER="xdg-open"
 export PAGER="less"
 export WM="bspwm"
 
-#export LESS_TERMCAP_mb=$'\e[1;32m'
-#export LESS_TERMCAP_md=$'\e[1;32m'
-#export LESS_TERMCAP_me=$'\e[0m'
-#export LESS_TERMCAP_so=$'\e[01;33m'
-#export LESS_TERMCAP_se=$'\e[0m'
-#export LESS_TERMCAP_us=$'\e[1;4;31m'
-#export LESS_TERMCAP_ue=$'\e[0m'
+export NNN_BMS='v:~/videos;a:~/videos/anime'
+export NNN_TRASH=1
+export NNN_PLUG='o:fzopen'
 
 # Start blinking
 export LESS_TERMCAP_mb=$(tput bold; tput setaf 2) # green

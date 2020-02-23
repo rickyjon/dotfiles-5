@@ -93,6 +93,7 @@ precmd() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 bindkey -s "^g" "lc\n"
 bindkey -s "^h" "history 1\n"
 bindkey -s "^l" "clear\n"
+bindkey -s "^d" "dlfile\n"
 
 # Source configs
 for f in ~/.config/shellconfig/*; do source "$f"; done
