@@ -22,13 +22,13 @@
 # SELECTED_FOREGROUND_COLOR=#268bd2
 
 # Sets the font used by the dmenu prompt
-FONT=JetBrains Mono Medium-10
+Font=JetBrains Mono Medium-10
 
 # Sets the seperator to be used to split the names and the paths in the bookmark files
-SEPERATOR=:
+Seperator=:
 
 # Leave this value unset to use a horizontal dmenu prompt, set it to a number to use a vertical prompt
-VERTICAL_LINES=
+VerticalLines=
 
 # Sets the location of the bookmarks file
 # BOOKMARKS_LOCATION=~/.config/bookmenu/bookmarks
