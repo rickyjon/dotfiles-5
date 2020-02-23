@@ -16,7 +16,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
 " Working with tags
 Plug 'alvan/vim-closetag'
-Plug 'AndrewRadev/tagalong.vim'
+Plug 'tpope/vim-surround'
 " Commenting
 Plug 'tpope/vim-commentary'
 " Syntax highlighting
@@ -25,8 +25,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-" Dev Dock integration
-Plug 'romainl/vim-devdocs'
+Plug 'unblevable/quick-scope'
 
 call plug#end()
 
@@ -55,11 +54,14 @@ set splitbelow splitright
 " Use system clipboard
 set clipboard+=unnamedplus
 
+" Vim Quickscope
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-" Vim dev docs
-set keywordprg=:DD
 
 " Vim Hexokinase
 let g:Hexokinase_optInPatterns = [
