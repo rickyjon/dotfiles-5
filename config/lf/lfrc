@@ -96,7 +96,9 @@ cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 
 # Trash cli bindings
 cmd trash ${{
-  for file in $fx
+  files=$(echo "$fx" | sed "s/ /\\\ /g;s/\[/\\\[/g;s/\]/\\\]/g")
+  IFS=$'\n'
+  for file in $files
   do
     trash-put "$(basename "$file")"
   done

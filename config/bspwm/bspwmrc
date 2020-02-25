@@ -5,7 +5,7 @@ bspc rule -r "*"
 nm-applet &
 xrdb ~/.Xresources &
 compton -b &
-feh --bg-scale --no-fehbg ~/.config/wall.png &
+nitrogen --set-scaled ~/.config/wall.png &
 #killall "launchlemon"
 #launchlemon &
 launchpolybar &
