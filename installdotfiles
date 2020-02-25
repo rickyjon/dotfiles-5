@@ -1,0 +1,153 @@
+#!/bin/sh
+path=$(pwd)
+
+# Home directory
+ln -sf $path/.bash_profile $HOME/.bash_profile
+ln -sf $path/.bashrc $HOME/.bashrc
+ln -sf $path/.gitconfig $HOME/.gitconfig
+ln -sf $path/.imwheelrc $HOME/.imwheelrc
+ln -sf $path/.profile $HOME/.profile
+ln -sf $path/.vimrc $HOME/.vimrc
+ln -sf $path/.Xresources $HOME/.Xresources
+ln -sf $path/.xinitrc $HOME/.xinitrc
+ln -sf $path/.Xmodmap $HOME/.Xmodmap
+ln -sf $path/.zcompdump $HOME/.zcompdump
+ln -sf $path/.zprofile $HOME/.zprofile
+ln -sf $path/.zshenv $HOME/.zshenv
+ln -sf $path/.zshrc $HOME/.zshrc
+
+# Config directory
+[ ! -d $HOME/.config ] && mkdir $HOME/.config
+
+[ ! -d $HOME/.config/GIMP ] && mkdir $HOME/.config/GIMP
+ln -sf $path/config/GIMP/filters $HOME/.config/GIMP/2.10/filters
+ln -sf $path/config/GIMP/patterns $HOME/.config/GIMP/2.10/patterns
+
+[ ! -d $HOME/.config/joplin ] && mkdir $HOME/.config/joplin
+ln -sf $path/config/joplin/keymap.json $HOME/.config/joplin/keymap.json
+
+[ ! -d $HOME/.config/nnn ] && mkdir $HOME/.config/nnn
+ln -sf $path/config/nnn/plugins $HOME/.config/nnn/plugins
+
+[ ! -d $HOME/.config/obs-studio ] && mkdir $HOME/.config/obs-studio
+ln -sf $path/config/obs-studio/basic $HOME/.config/obs-studio/basic
+
+[ ! -d $HOME/.config/transmission-daemon ] && mkdir $HOME/.config/transmission-daemon
+ln -sf $path/config/transmission-daemon/settings.json $HOME/.config/transmission-daemon/settings.json
+
+[ ! -d $HOME/.config/VSCodium ] && mkdir $HOME/.config/VSCodium
+[ ! -d $HOME/.config/VSCodium/User ] && mkdir $HOME/.config/VSCodium/User
+ln -sf $path/config/VSCodium/User/settings.json $HOME/.config/VSCodium/User/keybindings.json
+ln -sf $path/config/VSCodium/settings.json $HOME/.config/VSCodium/User/settings.json
+
+[ -d $HOME/.config/bookmenu ] && rm -r $HOME/.config/bookmenu
+ln -sf $path/config/bookmenu $HOME/.config/bookmenu
+
+[ -d $HOME/.config/broot ] && rm -r $HOME/.config/broot
+ln -sf $path/config/broot $HOME/.config/broot
+
+[ -d $HOME/.config/bspwm ] && rm -r $HOME/.config/bspwm
+ln -sf $path/config/bspwm $HOME/.config/bspwm
+
+[ -d $HOME/.config/btops ] && rm -r $HOME/.config/btops
+ln -sf $path/config/btops $HOME/.config/btops
+
+[ -d $HOME/.config/cfiles ] && rm -r $HOME/.config/cfiles
+ln -sf $path/config/cfiles $HOME/.config/cfiles
+
+[ -d $HOME/.config/dunst ] && rm -r $HOME/.config/dunst
+ln -sf $path/config/dunst $HOME/.config/dunst
+
+[ -d $HOME/.config/gtk-2.0 ] && rm -r $HOME/.config/gtk-2.0
+ln -sf $path/config/gtk-2.0 $HOME/.config/gtk-2.0
+
+[ -d $HOME/.config/gtk-3.0 ] && rm -r $HOME/.config/gtk-3.0
+ln -sf $path/config/gtk-3.0 $HOME/.config/gtk-3.0
+
+[ -d $HOME/.config/hunter ] && rm -r $HOME/.config/hunter
+ln -sf $path/config/hunter $HOME/.config/hunter
+
+[ -d $HOME/.config/i3 ] && rm -r $HOME/.config/i3
+ln -sf $path/config/i3 $HOME/.config/i3
+
+[ -d $HOME/.config/i3blocks ] && rm -r $HOME/.config/i3blocks
+ln -sf $path/config/i3blocks $HOME/.config/i3blocks
+
+[ -d $HOME/.config/import ] && rm -r $HOME/.config/import
+ln -sf $path/config/import $HOME/.config/import
+
+[ -d $HOME/.config/kitty ] && rm -r $HOME/.config/kitty
+ln -sf $path/config/kitty $HOME/.config/kitty
+
+[ -d $HOME/.config/lf ] && rm -r $HOME/.config/lf
+ln -sf $path/config/lf $HOME/.config/lf
+
+[ -d $HOME/.config/neofetch ] && rm -r $HOME/.config/neofetch
+ln -sf $path/config/neofetch $HOME/.config/neofetch
+
+[ -d $HOME/.config/newsboat ] && rm -r $HOME/.config/newsboat
+ln -sf $path/config/newsboat $HOME/.config/newsboat
+
+[ -d $HOME/.config/broot ] && rm -r $HOME/.config/broot
+ln -sf $path/config/broot $HOME/.config/broot
+
+[ -d $HOME/.config/nvim ] && rm -r $HOME/.config/nvim
+ln -sf $path/config/nvim $HOME/.config/nvim
+
+[ -d $HOME/.config/pcmanfm ] && rm -r $HOME/.config/pcmanfm
+ln -sf $path/config/pcmanfm $HOME/.config/pcmanfm
+
+[ -d $HOME/.config/pistol ] && rm -r $HOME/.config/pistol
+ln -sf $path/config/pistol $HOME/.config/pistol
+
+[ -d $HOME/.config/polybar ] && rm -r $HOME/.config/polybar
+ln -sf $path/config/polybar $HOME/.config/polybar
+
+[ -d $HOME/.config/powerline-shell ] && rm -r $HOME/.config/powerline-shell
+ln -sf $path/config/powerline-shell $HOME/.config/powerline-shell
+
+[ -d $HOME/.config/search ] && rm -r $HOME/.config/search
+ln -sf $path/config/search $HOME/.config/search
+
+[ -d $HOME/.config/shellconfig ] && rm -r $HOME/.config/shellconfig
+ln -sf $path/config/shellconfig $HOME/.config/shellconfig
+
+[ -d $HOME/.config/sxhkd ] && rm -r $HOME/.config/sxhkd
+ln -sf $path/config/sxhkd $HOME/.config/sxhkd
+
+[ -d $HOME/.config/tabdmenu ] && rm -r $HOME/.config/tabdmenu
+ln -sf $path/config/tabdmenu $HOME/.config/tabdmenu
+
+[ -d $HOME/.config/transmission-rss ] && rm -r $HOME/.config/transmission-rss
+ln -sf $path/config/transmission-rss $HOME/.config/transmission-rss
+
+[ -d $HOME/.config/twmn ] && rm -r $HOME/.config/twmn
+ln -sf $path/config/twmn $HOME/.config/twmn
+
+[ -d $HOME/.config/vifm ] && rm -r $HOME/.config/vifm
+ln -sf $path/config/vifm $HOME/.config/vifm
+
+[ -d $HOME/.config/yay ] && rm -r $HOME/.config/yay
+ln -sf $path/config/yay $HOME/.config/yay
+
+[ -d $HOME/.config/zathura ] && rm -r $HOME/.config/zathura
+ln -sf $path/config/zathura $HOME/.config/zathura
+
+ln -sf $path/config/compton.conf $HOME/.config/compton.conf
+ln -sf $path/config/dolphinrc $HOME/.config/dolphinrc
+ln -sf $path/config/kdeglobals $HOME/.config/kdeglobals
+ln -sf $path/config/kdenliverc $HOME/.config/kdenliverc
+ln -sf $path/config/kiorc $HOME/.config/kiorc
+ln -sf $path/config/kservicemenurc $HOME/.config/kservicemenurc
+ln -sf $path/config/ktrashrc $HOME/.config/ktrashrc
+ln -sf $path/config/mimeapps.list $HOME/.config/mimeapps.list
+ln -sf $path/config/pavucontrol.ini $HOME/.config/pavucontrol.ini
+ln -sf $path/config/starship.toml $HOME/.config/starship.toml
+ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.dirs
+ln -sf $path/config/wall.png $HOME/.config/wall.png
+
+# Local directory
+[ ! -d $HOME/.local ] && mkdir $HOME/.local
+[ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
+[ -d $HOME/.local/share/applications ] && rm -r $HOME/.local/share/applications
+ln -sf $path/local/share/applications $HOME/.local/share/applications
