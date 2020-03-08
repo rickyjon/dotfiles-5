@@ -175,7 +175,7 @@ map U unselect
 
 # Movement
 map gtr cd ~/.local/share/Trash/files
-map gusb cd /run/media/brodie
+map gus cd /run/media/brodie
 
 map gv. cd ~/videos
 map gva cd ~/videos/anime
@@ -209,14 +209,25 @@ map ge cd ~/desktop
 
 map gs. cd ~/scripts
 map gsl cd ~/scripts/lf
+map gsa cd ~/scripts/alsa
+map gsi cd ~/scripts/i3
+map gse cd ~/scripts/lemonbar
+map gsp cd ~/scripts/polybar
+map gsb cd ~/scripts/bspwm
+map gsu cd ~/scripts/pulse
+map gdt cd ~/scripts/transmission
 
 map gr. cd ~/repos
-map grw cd ~/repos/waterlinkprototype
 map grr cd ~/repos/reading-list
 map grd cd ~/repos/dotfiles
 map grs cd ~/repos/st
 map grc cd ~/repos/cloud-programming-app
 map gri cd ~/repos/init
+map grb cd ~/repos/bookmenu
+map grk cd ~/repos/kanban-board
+map grP cd ~/repos/PerlProjects
+map grw cd ~/repos/website
+map grf cd ~/repos/cleanfullscreen
 
 map gc cd ~/.config
 map gC cd ~/cell
