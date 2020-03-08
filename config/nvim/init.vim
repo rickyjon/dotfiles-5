@@ -317,7 +317,7 @@ map <leader>i :setlocal autoindent<CR>
 map <leader>I :setlocal noautoindent<CR>
 
 " Shell check
-map <leader>P :!clear && shellcheck %<CR>
+map <leader>p :!clear && shellcheck %<CR>
 
 " Compile and open output
 map <leader>r :w! \| !comp <c-r>%<CR><CR>
@@ -346,8 +346,12 @@ nnoremap <leader>w :w<CR>
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
+" Save file as sudo when no sudo permissions
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
 " Fix tex file type set
 autocmd BufRead,BufNewFile *.tex set filetype=tex
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
 " Guide navigation
 noremap <leader><Tab> <Esc>/<++><Enter>"_c4l

@@ -53,8 +53,38 @@ d/home/brodie/videos
 	anime
 1
 d/home/brodie/videos/anime
-	(Unofficial Batch) [Mezashite] - Aikatsu Stars Season 2 (51-100)
+	..
+0
+d/home/brodie/videos
+	..
+0
+d/home/brodie
+	zaread
+22
+d/home/brodie/zaread
+	..
+0
+d/home/brodie
+	zaread
+22
+d/home/brodie/zaread
+	..
+0
+d/home/brodie
+	videos
+20
+d/home/brodie/videos
+	..
+0
+d/home/brodie
+	videos
+20
+d/home/brodie/videos
+	anime
 1
+d/home/brodie/videos/anime
+	[HorribleSubs] Somali to Mori no Kamisama - 08 [1080p].mkv
+10
 d
 
 # Right window history (oldest to newest):
@@ -70,16 +100,23 @@ D
 
 # Search history (oldest to newest):
 /add
+/rep
 
 # Prompt history (oldest to newest):
+pcell
+pdesktop
+pdocuments
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/brodie/.local/share/vifm/Trash/000_get-pip.py
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/brodie/.local/share/vifm/Trash/000_get-pip.py
+	/home/brodie/zaread/get-pip.py
 
 # State:
 f

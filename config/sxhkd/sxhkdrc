@@ -9,7 +9,7 @@ super + shift + w
 
 # Kill Window
 super + shift + q
-  xdo close && bspunhide
+  xdo close
 
 # Focus on window in direction
 super + {h,j,k,l}
@@ -17,7 +17,7 @@ super + {h,j,k,l}
 
 #	Send window to desktop
 super + shift + {0-9}
-  bspc node -d {0-9} && bspunhide
+  bspc node -d {0-9}
 
 # Send window to desktop and swap to desktop
 super + control + {0-9}
@@ -156,10 +156,13 @@ super + alt + l
   snap run slack
 
 super + alt + {k, o, g, b, e, f, v, s, d}
-  {kdenlive, obs, gimp, $BROWSER, thunderbird, spacefm, virtualbox, spotify, discord}
+  {kdenlive, obs, gimp, $BROWSER, thunderbird, spacefm, virtualbox, spotify, discord-canary}
 
 super + q
   brave https://studio.youtube.com
+
+super + e
+  kill -s USR1 $(pidof deadd-notification-center)
 
 # Tracking Apps
 #super + alt + {a, r, t, p, n, c, j}
