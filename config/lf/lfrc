@@ -126,7 +126,6 @@ map f
 
 # File Openers
 map ee $$EDITOR "$f"
-map es $sudo $EDITOR "$f"
 map u $view "$f"
 
 # Archive Mappings

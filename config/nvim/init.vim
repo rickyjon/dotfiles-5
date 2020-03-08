@@ -301,6 +301,8 @@ nnoremap <C-e> :!crf<Space>
 nnoremap <C-d> :!mkdir<Space>
 nnoremap <C-m> :!mv<Space>%<Space>
 
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
 " Enable disable Goyo
 map <leader>g :Goyo<CR>
 map <leader>G :Goyo!<CR>
