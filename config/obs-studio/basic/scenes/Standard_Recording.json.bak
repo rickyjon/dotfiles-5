@@ -862,7 +862,7 @@
             "settings": {
                 "buffering": false,
                 "color_range": 0,
-                "device_id": "/dev/video2",
+                "device_id": "/dev/video0",
                 "input": 0,
                 "pixelformat": 861030210,
                 "resolution": 125830200
