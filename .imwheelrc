@@ -2,7 +2,7 @@
     None, Up, Button4, 3
     None, Down, Button5, 3
 
-"^brave-browser$"
+"^(brave-browser|Basilisk)$"
     None, Up, Button4, 3
     None, Down, Button5, 3
     Shift_L, Up, Shift_L|Button4, 3
