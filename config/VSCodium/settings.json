@@ -1,4 +1,5 @@
 {
+    "vscode-neovim.neovimPath": "/usr/bin/nvim",
     "window.zoomLevel": 0,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.fontFamily": "Source Code Pro Medium",

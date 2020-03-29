@@ -23,6 +23,14 @@ super + shift + {0-9}
 super + control + {0-9}
   bspc node -d {0-9} && bspunhide && bspc desktop -f {0-9}
 
+# Rotate the tree from the current nodes parent
+super + control + {Right, Left}
+  bspc node @parent -C {forward, backward}
+
+# Flip the tree from the current nodes parent
+super + control + {h,j,k,l}
+  bspc node @parent -F {vertical,horizontal,horizontal,vertical}
+
 # Toggle fullscreen on and off
 super + f
   bspfullscreen
@@ -49,13 +57,14 @@ ctrl + alt + {h,j,k,l}
   #xdo resize {-w -20, -h +20, -h -20, -w +20}
 
 # Contract a window by moving one of its side inward
-ctrl + super + {h,j,k,l}
+ctrl + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
   #xdo resize {-w +20, -h -20, -h +20, -w -20}
 
 # Move a floating window
 ctrl + alt + {Left,Right,Up,Down}
   xdo move {-x -20, -x +20, -y -20, -y +20}
+
 
 #---Tabbing---#
 # Prompt to open new app as a new tab
@@ -91,8 +100,8 @@ super + shift + c
   toggleprogram "compton" "-b"
 
 #---Script Keys---#
-super + {a, x, u, y, n, w, i, g}
-  {mntandroid, multimonitor "eDP-1" "HDMI-1", updatepackages, pyshell, notifytorrents, devenv, importandroid, openterminalin}
+super + {x, u, n, w, i, g, a}
+  {dmonitor "eDP-1" "HDMI-1", updatepackages, notifytorrents, devenv, importandroid, openterminalin, dcalc}
 
 super + {b, c, e}
   {bookmenu -p "Select a bookmark" -b ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim"}
@@ -149,7 +158,7 @@ super + Return
   $TERMINAL
 
 super + {alt, Shift_L} + Return
-  {kitty, stabmux}
+  {st, stabmux}
 
 # Snaps
 super + alt + l
@@ -169,4 +178,5 @@ super + e
 #  bspc rule -a st-256color -o state=floating rectangle=800x500+100+100 sticky=on && $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
 
 super + alt + {a, r, t, h, n, c, j, p}
-  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin, pamix}
+  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin, pulsemixer}
+

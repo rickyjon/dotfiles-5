@@ -5,8 +5,8 @@ bspc rule -r "*"
 nm-applet &
 xrdb ~/.Xresources &
 compton -b &
-nitrogen --set-scaled --head=0 ~/.config/wall.png &
-nitrogen --set-scaled --head=1 ~/.config/wall.png &
+nitrogen --set-scaled --restore --head=0 &
+nitrogen --set-scaled --restore --head=1 &
 killall cleanfullscreen
 cleanfullscreen &
 #killall "launchlemon"

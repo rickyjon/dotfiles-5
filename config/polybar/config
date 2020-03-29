@@ -66,6 +66,10 @@ cursor-scroll = default
 type = internal/xwindow
 label = %title:0:30:...%
 
+format-underline =
+format-background =
+format-padding =
+
 [module/bspwm]
 type = internal/bspwm
 
@@ -84,6 +88,10 @@ label-urgent-padding = 1
 label-empty = %name%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 1
+
+format-underline =
+format-background =
+format-padding =
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -122,6 +130,10 @@ label-urgent = %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
+format-underline =
+format-background =
+format-padding =
+
 ; Separator in between workspaces
 ; label-separator = |
 
@@ -129,9 +141,6 @@ label-urgent-padding = 2
 type = custom/ipc
 hook-0 = sudo pacman -Qu | wc -l
 format-prefix = "📦 "
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 initial = 1
 
 [module/torrents]
@@ -139,36 +148,25 @@ type = custom/ipc
 hook-0 = i3torrents
 hook-1 = echo "Hello World"
 click-left = $TERMINAL -e transmission-remote-cli &
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 initial = 1
 
 [module/memory]
 type = custom/script
 exec = i3memory
 label = "%output%"
+interval = 10
 format-prefix = "🧠 "
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/wifi]
 type = custom/script
 exec = i3wifi
 label = "%output%"
 format-prefix = "📡 "
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/network-speed]
 type = custom/script
 exec = i3speedtest
 label = "%output%"
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/cpu-usage]
 type = custom/script
@@ -176,36 +174,24 @@ exec = polycpu
 label = "%output%"
 interval = 10
 format-prefix = "💻 "
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/cpu-temperature]
 type = custom/script
 exec = polytemp
 label = "%output%"
 interval = 10
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/battery]
 type = custom/script
 exec = polybattery
 label = "%output%"
 interval = 30
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/backlight]
 type = custom/ipc
 hook-0 = light -G | sed 's/\.[0-9]*//'
 format-prefix = "💡 "
-format-underline = #268bd2
 initial = 1
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/weather]
 type = custom/script
@@ -213,18 +199,12 @@ exec = i3weather
 label = "%output%"
 click-left = $TERMINAL -e w3m wttr.in/Adelaide &
 interval = 1800
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/volume]
 type = custom/ipc
 hook-0 = polypulsevolume
 click-left = $TERMINAL -e pamix &
 initial = 1
-format-background = ${colors.background-alt}
-format-underline = #268bd2
-format-padding = 1
 
 [module/time]
 type = custom/script
@@ -232,9 +212,6 @@ exec = date '+%d/%m/%Y %H:%M:%S'
 click-left = $TERMINAL -e calcurse &
 label = "%output%"
 interval = 5
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
 
 [module/eth]
 type = internal/network
@@ -253,6 +230,14 @@ format-disconnected =
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
 [settings]
+format-foreground =
+format-underline = #268bd2
+format-background = ${colors.background-alt}
+format-padding = 1
+format-overline =
+format-spacing =
+format-margin =
+format-offset =
 screenchange-reload = true
 ;compositing-background = xor
 ;compositing-background = screen
