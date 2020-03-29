@@ -1,3 +1,7 @@
+alacritty:~/.config/alacritty/alacritty.yml
+i3block:~/.config/i3blocks/config
+i3conf:~/.config/i3/config
+imwheelrc:~/.imwheelrc
 bookmenu:~/.config/bookmenu/config
 zshrc:/home/brodie/.zshrc
 zshenv:~/.zshenv
