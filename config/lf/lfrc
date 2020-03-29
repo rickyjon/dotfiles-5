@@ -217,16 +217,17 @@ map gsu cd ~/scripts/pulse
 map gdt cd ~/scripts/transmission
 
 map gr. cd ~/repos
-map grr cd ~/repos/reading-list
-map grd cd ~/repos/dotfiles
-map grs cd ~/repos/st
-map grc cd ~/repos/cloud-programming-app
-map gri cd ~/repos/init
 map grb cd ~/repos/bookmenu
-map grk cd ~/repos/kanban-board
-map grP cd ~/repos/PerlProjects
-map grw cd ~/repos/website
 map grf cd ~/repos/cleanfullscreen
+map grm cd ~/repos/dmenu
+map grd cd ~/repos/dotfiles
+map gri cd ~/repos/init
+map grk cd ~/repos/kanban-board
+map grl cd ~/repos/lbryurlconvert
+map grP cd ~/repos/PerlProjects
+map grr cd ~/repos/reading-list
+map grs cd ~/repos/st
+map grw cd ~/repos/website
 
 map gc cd ~/.config
 map gC cd ~/cell
