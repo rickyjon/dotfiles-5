@@ -1,5 +1,5 @@
 #!/bin/sh
-bspc rule -r "*"
+uspc rule -r "*"
 
 ###---Autostart---###
 nm-applet &
@@ -49,3 +49,4 @@ bspc config window_gap 10
 bspc rule -a mpv state=fullscreen
 bspc rule -a Zathura state=tiled
 bspc rule -a Screenkey manage=off
+bspc rule -a guvcview state=floating rectangle=480x270+1440+810 sticky=on layer=above

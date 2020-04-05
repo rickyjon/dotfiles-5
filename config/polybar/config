@@ -27,9 +27,6 @@ offset-x = 0
 offset-y = 0
 radius = 0.0
 
-#background-0 = ${colors.primary}
-#background-1 = ${colors.secondary}
-#background-2 = ${colors.alert}
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -43,8 +40,7 @@ module-margin-right = 1
 font-0 = JetBrainsMonoMedium:pixelsize=10;
 font-1 = HackNerdFont:pixelsize=10;
 font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
-#dpi-x = 96
-#dpi-y = 96
+font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
 
 modules-left = bspwm xwindow
 modules-right = pacman-packages torrents cpu-usage cpu-temperature memory backlight volume battery weather time
@@ -136,6 +132,12 @@ format-padding =
 
 ; Separator in between workspaces
 ; label-separator = |
+
+[module/music]
+type = custom/ipc
+hook-0 = playerctl metadata --format "{{ artist }} - {{ title }}" &
+format-prefix = " "
+initial = 1
 
 [module/pacman-packages]
 type = custom/ipc
