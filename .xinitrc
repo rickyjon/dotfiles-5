@@ -6,5 +6,6 @@ udiskie &
 imwheel &
 xbanish &
 xsetroot -cursor_name left_ptr &
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+xmodmap ~/.Xmodmap &
+spotifyd &
 exec bspwm
