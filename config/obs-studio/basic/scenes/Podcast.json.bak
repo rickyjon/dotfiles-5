@@ -16,7 +16,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
-        "prev_ver": 402653190,
+        "prev_ver": 419430403,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -26,7 +26,8 @@
             "device_id": "default"
         },
         "sync": 0,
-        "volume": 0.8991205096244812
+        "versioned_id": "pulse_input_capture",
+        "volume": 1.0
     },
     "DesktopAudioDevice1": {
         "balance": 0.5,
@@ -45,7 +46,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Desktop Audio",
-        "prev_ver": 402653190,
+        "prev_ver": 419430403,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -55,6 +56,7 @@
             "device_id": "alsa_output.pci-0000_00_1f.3.analog-stereo.monitor"
         },
         "sync": 0,
+        "versioned_id": "pulse_output_capture",
         "volume": 0.6041601300239563
     },
     "current_program_scene": "Solo",
@@ -87,12 +89,14 @@
     "quick_transitions": [
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 1,
             "name": "Cut"
         },
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 2,
             "name": "Fade"
@@ -130,7 +134,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Logo",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -140,6 +144,7 @@
                 "file": "/home/brodie/videos/podcast/Art/Full Logo/Full Logo.png"
             },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -154,7 +159,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Guest",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -166,6 +171,7 @@
                 "swap_redblue": true
             },
             "sync": 0,
+            "versioned_id": "xcomposite_input",
             "volume": 1.0
         },
         {
@@ -190,7 +196,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Solo",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -319,6 +325,7 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -333,7 +340,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Background",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -344,6 +351,7 @@
                 "unload": true
             },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -368,7 +376,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "2-Members",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -497,6 +505,7 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -511,7 +520,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Background2",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -521,6 +530,7 @@
                 "file": "/home/brodie/videos/podcast/Art/Video Background/2 People/Background - 2 People.png"
             },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -545,7 +555,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "3-Members",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -703,6 +713,7 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -717,7 +728,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Background3",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -727,6 +738,7 @@
                 "file": "/home/brodie/pictures/commission/TechOverTea/Video Background/3 People/Background - 3 People.png"
             },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -749,7 +761,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Group",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -849,6 +861,7 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -863,7 +876,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Webcam",
-            "prev_ver": 402653190,
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -877,6 +890,7 @@
                 "resolution": -1
             },
             "sync": 0,
+            "versioned_id": "v4l2_input",
             "volume": 1.0
         }
     ],
