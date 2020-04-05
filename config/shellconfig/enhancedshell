@@ -1,3 +1,4 @@
-#alias ls='ls -hNA --group-directories-first'
-alias ls='lsd -hA --group-dirs first'
+#alias l='lsd -hA --group-dirs first'
+alias ls='exa --icons -a --group-directories-first'
+alias spt='launchspt'
 alias grep='grep --color=auto'
