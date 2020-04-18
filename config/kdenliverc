@@ -1,44 +1,44 @@
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/videos/youtube/asset/Generic/social.png,file:$HOME/videos/youtube/asset/Generic/[FREE]-Youtube-Subscribe-and-Bell-Animation-with-Sound-Effects---Alpha.mov,file:$HOME/videos/youtube/patreon/patreon.png,file:$HOME/videos/youtube/outro/Outro.mp4,file:$HOME/videos/youtube/asset/Generic/videos.png,file:$HOME/videos/youtube/asset/Generic/support.png,file:$HOME/videos/youtube/asset/Generic/like-and-comment.png,file:$HOME/videos/youtube/asset/Generic/window manager.png,file:$HOME/videos/youtube/asset/Generic/pattern.xcf,file:$HOME/videos/youtube/asset/Generic/twitter.png,file:$HOME/videos/youtube/opening/opening.mp4,file:$HOME/videos/youtube/asset/Generic/lbry.png,file:$HOME/videos/youtube/asset/Generic/discord.png
-Recent URLs[$e]=file:$HOME/videos/youtube/asset/Generic/
+Recent Files[$e]=file:$HOME/videos/youtube/asset/Generic/social.png,file:$HOME/videos/youtube/outro/Outro.mp4,file:$HOME/videos/youtube/patreon/patreon.png,file:$HOME/videos/youtube/asset/Generic/[FREE]-Youtube-Subscribe-and-Bell-Animation-with-Sound-Effects---Alpha.mov,file:$HOME/videos/youtube/outro/outro.kdenlive,file:$HOME/videos/podcast/ToUpload/TechOverTeaEp7/names.png,file:$HOME/videos/youtube/asset/Generic/videos.png,file:$HOME/videos/youtube/asset/Generic/support.png,file:$HOME/videos/youtube/asset/Generic/like-and-comment.png,file:$HOME/videos/youtube/asset/Generic/window manager.png,file:$HOME/videos/youtube/asset/Generic/pattern.xcf,file:$HOME/videos/youtube/asset/Generic/twitter.png,file:$HOME/videos/youtube/opening/opening.mp4,file:$HOME/videos/youtube/asset/Generic/lbry.png,file:$HOME/videos/youtube/asset/Generic/discord.png
+Recent URLs[$e]=file:$HOME/videos/youtube/outro/
 detailViewIconSize=0
 iconViewIconSize=43
 listViewIconSize=15
 
 [MainWindow]
 Height 1080=1024
-State=AAAA/wAAAAD9AAAAAQAAAAIAAAOtAAACRfwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAVIAAABGAP////wAAAFYAAAAdAAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAdIAAAB7AAAAewD////6AAAAAAEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAAlMAAAFaAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIAAAAAAP////8AAABZAP///wAAA60AAAFeAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAACD/wBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAc4AAABGAP////wAAAHUAAACAwAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAA90AAAD6AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAABN0AAAKLAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIAAAAAAP////8AAADtAP///wAAB2gAAAGUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=941
+Width 1920=1896
 
 [MainWindow][Toolbar timelineToolBar]
 ToolButtonStyle=IconOnly
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/videos/youtube/asset/Generic/,$HOME/videos/youtube/patreon/,$HOME/videos/youtube/outro/
-KdenliveProjectsFolder[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp6,$HOME/videos/podcast/ToUpload/TechOverTeaEp6-Soundcheck,$HOME/videos/youtube/ToUpload/trash-cli
+KdenliveClipFolder[$e]=$HOME/videos/youtube/outro/,$HOME/videos/youtube/patreon/,$HOME/videos/youtube/asset/Generic/
+KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/archnews,$HOME/videos/youtube/ToUpload/computer-hardware,$HOME/videos/youtube/ToUpload/computer
 
 [Recent Files]
-File1[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp5/TechOverTeaEp5.kdenlive
-File10[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp6/TechOverTeaEp6.kdenlive
-File2[$e]=$HOME/videos/podcast/ToUpload/TechOverTea5-SoundCheck/TechOverTea5-SoundCheck.kdenlive
-File3[$e]=$HOME/videos/youtube/ToUpload/ncspot/ncspot.kdenlive
-File4[$e]=$HOME/videos/youtube/ToUpload/alacritty/alacritty.kdenlive
-File5[$e]=$HOME/videos/youtube/ToUpload/luke/luke.kdenlive
-File6[$e]=$HOME/videos/youtube/ToUpload/zoom/zoom.kdenlive
-File7[$e]=$HOME/videos/youtube/ToUpload/exa/exa.kdenlive
-File8[$e]=$HOME/videos/youtube/ToUpload/trash-cli/trash-cli.kdenlive
-File9[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp6-Soundcheck/SoundCheckEp6.kdenlive
-Name1[$e]=TechOverTeaEp5.kdenlive
-Name10[$e]=TechOverTeaEp6.kdenlive
-Name2[$e]=TechOverTea5-SoundCheck.kdenlive
-Name3[$e]=ncspot.kdenlive
-Name4[$e]=alacritty.kdenlive
-Name5[$e]=luke.kdenlive
-Name6[$e]=zoom.kdenlive
-Name7[$e]=exa.kdenlive
-Name8[$e]=trash-cli.kdenlive
-Name9[$e]=SoundCheckEp6.kdenlive
+File1[$e]=$HOME/videos/podcast/ToUpload/ProblemsWithFps/ProblemsWithFPS.kdenlive
+File10[$e]=$HOME/videos/youtube/ToUpload/archnews/archnews.kdenlive
+File2[$e]=$HOME/videos/youtube/ToUpload/xclip/xclip.kdenlive
+File3[$e]=$HOME/videos/youtube/ToUpload/cron/cron.kdenlive
+File4[$e]=$HOME/videos/youtube/ToUpload/font-install/font-install.kdenlive
+File5[$e]=$HOME/videos/youtube/ToUpload/spotify-tui/spotify-tui.kdenlive
+File6[$e]=$HOME/videos/youtube/ToUpload/transmission/transmission.kdenlive
+File7[$e]=$HOME/videos/youtube/ToUpload/git-gutter/git-gutter.kdenlive
+File8[$e]=$HOME/videos/youtube/ToUpload/computer/computer.kdenlive
+File9[$e]=$HOME/videos/youtube/ToUpload/computer-hardware/computer-hardware.kdenlive
+Name1[$e]=ProblemsWithFPS.kdenlive
+Name10[$e]=archnews.kdenlive
+Name2[$e]=xclip.kdenlive
+Name3[$e]=cron.kdenlive
+Name4[$e]=font-install.kdenlive
+Name5[$e]=spotify-tui.kdenlive
+Name6[$e]=transmission.kdenlive
+Name7[$e]=git-gutter.kdenlive
+Name8[$e]=computer.kdenlive
+Name9[$e]=computer-hardware.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -78,7 +78,7 @@ rec601=false
 ColorScheme=Breeze High Contrast
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAADBgAAAAIAAAACAAAAZAAAAAEAAAA4AAAApAAAAAMBAQABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAACkAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAD8=
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAADBgAAAAIAAAACAAAAZAAAAAEAAAA4AAABzAAAAAMBAQABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAAHMAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAD8=
 
 [capture]
 decklink_capturedevice=4294967295

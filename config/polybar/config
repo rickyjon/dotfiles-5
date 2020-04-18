@@ -1,25 +1,46 @@
 [colors]
 background = ${xrdb:background}
-background-wm = #444
-background-alt = #2d2d2d
+background-wm = ${xrdb:color8}
+background-alt = ${xrdb:color0}
 foreground = ${xrdb:foreground}
-foreground-alt = #555
-primary = #3c71ea
-secondary = ${xrdb:color3}
-alert = #ed0b0b
+foreground-alt = ${xrdb:color7}
+primary = ${xrdb:color4}
+alert = ${xrdb:color1}
+
+[settings]
+format-foreground =
+format-underline = #268bd2
+format-background = ${colors.background-alt}
+format-padding = 1
+format-overline =
+format-spacing =
+format-margin = 0
+format-offset =
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = true
+;throttle-output = 5
+;throttle-output-for = 10
+;throttle-input-for = 30
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
 
 [bar/bar]
 monitor = ${env:MONITOR:eDP-1}
 monitor-fallback =
 monitor-strict = false
 monitor-exact = true
-#override-redirect = true
+override-redirect = false
 wm-restack = bspwm
 enable-ipc = true
 fixed-center = false
 bottom = false
 separator =
-#dim-value = 1.0
 
 width = 100%
 height = 32
@@ -31,7 +52,6 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 3
-line-color = #f00
 
 padding = 0
 module-margin-left = 0
@@ -92,6 +112,81 @@ format-padding =
 ; Separator in between workspaces
 ; label-separator = |
 
+[module/music]
+type = custom/ipc
+hook-0 = playerctl metadata --format "{{ artist }} - {{ title }}" &
+format-prefix = " "
+initial = 1
+
+[module/pacman-packages]
+type = custom/ipc
+hook-0 = sudo pacman -Qu | wc -l
+format-prefix = "📦 "
+initial = 1
+
+[module/torrents]
+type = custom/ipc
+hook-0 = i3torrents
+click-left = $TERMINAL -e transmission-remote-cli &
+initial = 1
+
+[module/memory]
+type = custom/script
+exec = i3memory
+label = "%output%"
+click-left = $TERMINAL -e htop &
+interval = 10
+format-prefix = "🧠 "
+
+[module/cpu-usage]
+type = custom/script
+exec = polycpu
+label = "%output%"
+click-left = $TERMINAL -e htop &
+interval = 10
+format-prefix = "💻 "
+
+[module/cpu-temperature]
+type = custom/script
+exec = polytemp
+label = "%output%"
+format-prefix="🔥 "
+interval = 10
+
+[module/battery]
+type = custom/script
+exec = polybattery
+label = "%output%"
+interval = 30
+
+[module/backlight]
+type = custom/ipc
+hook-0 = light -G | sed 's/\.[0-9]*//'
+format-prefix = "💡 "
+initial = 1
+
+[module/weather]
+type = custom/script
+exec = i3weather
+label = "%output%"
+format-prefix="☁️ "
+click-left = $TERMINAL -e w3m wttr.in/Adelaide &
+interval = 1800
+
+[module/volume]
+type = custom/ipc
+hook-0 = polypulsevolume
+click-left = $TERMINAL -e pulsemixer &
+initial = 1
+
+[module/time]
+type = custom/script
+exec = date '+%d/%m/%Y %H:%M:%S'
+click-left = $TERMINAL -e calcurse &
+label = "%output%"
+interval = 5
+
+# Deprecated
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
@@ -133,32 +228,6 @@ format-padding =
 ; Separator in between workspaces
 ; label-separator = |
 
-[module/music]
-type = custom/ipc
-hook-0 = playerctl metadata --format "{{ artist }} - {{ title }}" &
-format-prefix = " "
-initial = 1
-
-[module/pacman-packages]
-type = custom/ipc
-hook-0 = sudo pacman -Qu | wc -l
-format-prefix = "📦 "
-initial = 1
-
-[module/torrents]
-type = custom/ipc
-hook-0 = i3torrents
-hook-1 = echo "Hello World"
-click-left = $TERMINAL -e transmission-remote-cli &
-initial = 1
-
-[module/memory]
-type = custom/script
-exec = i3memory
-label = "%output%"
-interval = 10
-format-prefix = "🧠 "
-
 [module/wifi]
 type = custom/script
 exec = i3wifi
@@ -169,51 +238,6 @@ format-prefix = "📡 "
 type = custom/script
 exec = i3speedtest
 label = "%output%"
-
-[module/cpu-usage]
-type = custom/script
-exec = polycpu
-label = "%output%"
-interval = 10
-format-prefix = "💻 "
-
-[module/cpu-temperature]
-type = custom/script
-exec = polytemp
-label = "%output%"
-interval = 10
-
-[module/battery]
-type = custom/script
-exec = polybattery
-label = "%output%"
-interval = 30
-
-[module/backlight]
-type = custom/ipc
-hook-0 = light -G | sed 's/\.[0-9]*//'
-format-prefix = "💡 "
-initial = 1
-
-[module/weather]
-type = custom/script
-exec = i3weather
-label = "%output%"
-click-left = $TERMINAL -e w3m wttr.in/Adelaide &
-interval = 1800
-
-[module/volume]
-type = custom/ipc
-hook-0 = polypulsevolume
-click-left = $TERMINAL -e pamix &
-initial = 1
-
-[module/time]
-type = custom/script
-exec = date '+%d/%m/%Y %H:%M:%S'
-click-left = $TERMINAL -e calcurse &
-label = "%output%"
-interval = 5
 
 [module/eth]
 type = internal/network
@@ -230,28 +254,5 @@ format-disconnected =
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
-
-[settings]
-format-foreground =
-format-underline = #268bd2
-format-background = ${colors.background-alt}
-format-padding = 1
-format-overline =
-format-spacing =
-format-margin =
-format-offset =
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-pseudo-transparency = true
-#throttle-output = 5
-#throttle-output-for = 10
-#throttle-input-for = 30
-
-[global/wm]
-margin-top = 0
-margin-bottom = 0
 
 ; vim:ft=dosini

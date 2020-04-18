@@ -68,18 +68,18 @@ ctrl + alt + {Left,Right,Up,Down}
 
 #---Tabbing---#
 # Prompt to open new app as a new tab
-super + t; d
-    tabdmenu
+#super + t; d
+#    tabdmenu
 
 # Add focused window to a tabbed instance in given direction
-super + t; {h,j,k,l}
-    tabc add {west,south,north,east} "$(bspc query -N -n focused)"
+# super + t; {h,j,k,l}
+#     tabc add {west,south,north,east} "$(bspc query -N -n focused)"
 
 # Remove one tab from tabbed
-super + t; r
-    tabbed=$(bspc query -N -n focused); \
-    child=$(tabc list $tabbed | head -n1); \
-    tabc remove $child
+# super + t; r
+#     tabbed=$(bspc query -N -n focused); \
+#     child=$(tabc list $tabbed | head -n1); \
+#     tabc remove $child
 
 #---System Control---#
 # Restart hotkey damon
@@ -97,10 +97,10 @@ super + shift + e
   betterlockscreen -l
 
 super + shift + c
-  toggleprogram "compton" "-b"
+  toggleprogram "picom" "--experimental-backends"
 
 #---Script Keys---#
-super + {x, u, n, w, i, g, a}
+super + {x, u, t, w, i, g, a}
   {dmonitor "eDP-1" "HDMI-1", updatepackages, notifytorrents, devenv, importandroid, openterminalin, dcalc}
 
 super + {b, c, e}

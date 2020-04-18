@@ -1,10 +1,10 @@
 #!/bin/sh
-uspc rule -r "*"
+bspc rule -r "*"
 
 ###---Autostart---###
 nm-applet &
 xrdb ~/.Xresources &
-compton -b &
+picom -b &
 nitrogen --set-scaled --restore --head=0 &
 nitrogen --set-scaled --restore --head=1 &
 killall cleanfullscreen
@@ -15,7 +15,6 @@ launchpolybar &
 
 ###---MONITORS---###
 bspc monitor eDP-1 -d 1 2 3 4 5 6 7
-bspc monitor HDMI-1 -d 8 9 0
 
 ###---Global Settings---###
 bspc config automatic_scheme alternate
