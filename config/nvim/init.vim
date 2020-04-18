@@ -8,20 +8,20 @@ set clipboard+=unnamedplus
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
+autocmd FileType tex,latex,markdown setlocal spell spelllang=en_au
+
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
-autocmd FileType tex,latex,markdown setlocal spell spelllang=en_au
-
 " ------Standard Bindings------
 " Basic file system commands
-nnoremap <C-t> :!touch<Space>
-nnoremap <C-e> :!crf<Space>
-nnoremap <C-d> :!mkdir<Space>
-nnoremap <C-m> :!mv<Space>%<Space>
+nnoremap <A-n> :!touch<Space>
+nnoremap <A-e> :!crf<Space>
+nnoremap <A-d> :!mkdir<Space>
+nnoremap <A-m> :!mv<Space>%<Space>
 
 nnoremap gl $
 nnoremap gh 0
@@ -49,10 +49,10 @@ map <leader>G :w! \| !comp <c-r>%<CR><CR>
 map <leader>o :!opout <c-r>%<CR><CR>
 
 " Shortcutting split navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <A-h> <C-w>h
+map <A-j> <C-w>j
+map <A-k> <C-w>k
+map <A-l> <C-w>l
 
 " Shortcut split opening
 nnoremap <leader>h :split<Space>
@@ -66,7 +66,7 @@ nnoremap <leader>q :wq<CR>
 nnoremap <leader>w :w<CR>
 
 " Save file as sudo when no sudo permissions
-cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+cmap w!! w !sudo tee > /dev/null %
 
 " -----Code Generation-----
 " Guide navigation
@@ -187,11 +187,10 @@ if !exists('g:vscode')
   Plug 'vim-pandoc/vim-pandoc-syntax'
   Plug 'unblevable/quick-scope'
   Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+  Plug 'voldikss/vim-floaterm'
+  Plug 'airblade/vim-gitgutter'
 
   call plug#end()
-  "set cursorline
-  "set cursorcolumn
-  "highlight CursorLine ctermbg=Yellow cterm=bold guibg=#191919
 
   " Basic settings
   set mouse=a
@@ -199,13 +198,21 @@ if !exists('g:vscode')
   set ignorecase
   set smartcase
   set encoding=utf-8
+  set number relativenumber
+  set termguicolors
+  colorscheme codedark
+
+  " Tab Settings"
   set expandtab
   set shiftwidth=2
   set softtabstop=2
   set tabstop=2
-  set number relativenumber
-  set termguicolors
-  colorscheme codedark
+
+  " Cursor line
+  set cursorline
+  set cursorcolumn
+  highlight CursorLine ctermbg=Yellow cterm=bold guibg=#2b2b2b
+  highlight CursorColumn ctermbg=Yellow cterm=bold guibg=#2b2b2b
 
   " Enable disable Goyo
   map <leader>g :Goyo<CR>
@@ -216,8 +223,23 @@ if !exists('g:vscode')
   " Fix splitting
   set splitbelow splitright
 
+  " Float Term
+  nnoremap <A-t> :FloatermNew<CR>
+  nnoremap <A-r> :FloatermNew lf<CR>
+
+  " Git Gutter
+  highlight GitGutterAdd guifg=#009900 ctermfg=Green
+  highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
+  highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
+  nmap ) <Plug>(GitGutterNextHunk)
+  nmap ( <Plug>(GitGutterPrevHunk)
+  let g:gitgutter_enabled = 1
+  let g:gitgutter_map_keys = 0
+  let g:gitgutter_highlight_linenrs = 1
+
   " Vim-airline
   let g:airline#extensions#wordcount#enabled = 1
+  let g:airline#extensions#hunks#non_zero_only = 1
   let g:airline_theme = 'codedark'
 
   " Vim Hexokinase
@@ -258,7 +280,7 @@ if !exists('g:vscode')
     let g:path=expand('%:p')
     :q!
     execute 'belowright vnew' g:path
-    :normal <C-l>
+    :normal <C-w>l
   endfunction
 
   function! OpenBelow()
@@ -266,14 +288,15 @@ if !exists('g:vscode')
     let g:path=expand('%:p')
     :q!
     execute 'belowright new' g:path
-    :normal <C-l>
+    :normal <C-w>l
   endfunction
 
 
   function! NetrwMappings()
       " Hack fix to make ctrl-l work properly
+      noremap <buffer> <A-l> <C-w>l
       noremap <buffer> <C-l> <C-w>l
-      noremap <silent> <C-f> :call ToggleNetrw()<CR>
+      noremap <silent> <A-f> :call ToggleNetrw()<CR>
       noremap <buffer> V :call OpenToRight()<cr>
       noremap <buffer> H :call OpenBelow()<cr>
   endfunction
@@ -300,13 +323,22 @@ if !exists('g:vscode')
       endif
   endfunction
 
+  " Check before opening buffer on any file
+  function! NetrwOnBufferOpen()
+    if exists('b:noNetrw')
+        return
+    endif
+    call ToggleNetrw()
+  endfun
+
   " Close Netrw if it's the only buffer open
   autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
 
   " Make netrw act like a project Draw
   augroup ProjectDrawer
     autocmd!
-    autocmd VimEnter * :call ToggleNetrw()
+    autocmd VimEnter ~/.config/joplin/tmp/*,/tmp/calcurse*,~/.calcurse/notes/*,*/.git/COMMIT_EDITMSG let b:noNetrw=1
+    autocmd VimEnter * :call NetrwOnBufferOpen()
   augroup END
 
   let g:NetrwIsOpen=0
@@ -359,7 +391,7 @@ if !exists('g:vscode')
     \ 'coc-prettier',
     \ 'coc-json',
     \ 'coc-angular',
-    \ 'coc-texlab',
+    \ 'coc-vimtex',
     \ 'coc-omnisharp'
     \ ]
 
