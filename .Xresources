@@ -12,11 +12,11 @@ URxvt.keysym.C-0:resize-font:reset
 *.cursorColor:  #d8dee9
 
 ! black
-*.color0:       #313539
-*.color8:       #676f78
+*.color0:       #2d2d2d
+*.color8:       #444444
 
 ! red
-*.color1:       #b02626
+*.color1:       #ed0b0b
 *.color9:       #b55454
 
 ! green
@@ -28,7 +28,7 @@ URxvt.keysym.C-0:resize-font:reset
 *.color11:      #faf380
 
 ! blue
-*.color4:       #314ad0
+*.color4:       #3c71ea
 *.color12:      #707fd0
 
 ! magenta
@@ -40,5 +40,5 @@ URxvt.keysym.C-0:resize-font:reset
 *.color14:      #8adaf1
 
 ! white
-*.color7:       #acadb1
+*.color7:       #555555
 *.color15:      #e0e3e7
