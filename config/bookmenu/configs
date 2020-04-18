@@ -45,6 +45,6 @@ transmissionrss:~/.config/transmission-rss/config.yml
 twmn:~/.config/twmn
 vifmrc:~/.config/vifm/vifmrc
 vifmrc:~/.config/vifm/colors/Default.vifm
-compton:~/.config/compton.conf
+picom:~/.config/picom.conf
 starship:~/.config/starship.toml
 userdirs:~/.config/user-dirs.dirs
