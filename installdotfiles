@@ -7,7 +7,7 @@ ln -sf $path/.bashrc $HOME/.bashrc
 ln -sf $path/.gitconfig $HOME/.gitconfig
 ln -sf $path/.imwheelrc $HOME/.imwheelrc
 ln -sf $path/.profile $HOME/.profile
-ln -sf $path/.vimrc $HOME/.vimrc
+ln -sf $path/config/nvim/init.vim $HOME/.vimrc
 ln -sf $path/.Xresources $HOME/.Xresources
 ln -sf $path/.xinitrc $HOME/.xinitrc
 ln -sf $path/.Xmodmap $HOME/.Xmodmap
@@ -19,7 +19,8 @@ ln -sf $path/.zshrc $HOME/.zshrc
 # Config directory
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
-[ ! -d $HOME/.config/GIMP ] && mkdir $HOME/.config/GIMP
+[ ! -d $HOME/.config/GIMP ] && mkdir -p $HOME/.config/GIMP/2.10
+[ ! -d $HOME/.config/GIMP/2.10 ] && mkdir $HOME/.config/GIMP/2.10
 ln -sf $path/config/GIMP/filters $HOME/.config/GIMP/2.10/filters
 ln -sf $path/config/GIMP/patterns $HOME/.config/GIMP/2.10/patterns
 
@@ -35,10 +36,16 @@ ln -sf $path/config/obs-studio/basic $HOME/.config/obs-studio/basic
 [ ! -d $HOME/.config/transmission-daemon ] && mkdir $HOME/.config/transmission-daemon
 ln -sf $path/config/transmission-daemon/settings.json $HOME/.config/transmission-daemon/settings.json
 
-[ ! -d $HOME/.config/VSCodium ] && mkdir $HOME/.config/VSCodium
+[ ! -d $HOME/.config/VSCodium ] && mkdir -p $HOME/.config/VSCodium/User
 [ ! -d $HOME/.config/VSCodium/User ] && mkdir $HOME/.config/VSCodium/User
 ln -sf $path/config/VSCodium/User/settings.json $HOME/.config/VSCodium/User/keybindings.json
 ln -sf $path/config/VSCodium/settings.json $HOME/.config/VSCodium/User/settings.json
+
+[ -d $HOME/.config/alacritty ] && rm -r $HOME/.config/alacritty
+ln -sf $path/config/alacritty $HOME/.config/alacritty
+
+[ -d $HOME/.config/bookmenu ] && rm -r $HOME/.config/bookmenu
+ln -sf $path/config/blender $HOME/.config/blender
 
 [ -d $HOME/.config/bookmenu ] && rm -r $HOME/.config/bookmenu
 ln -sf $path/config/bookmenu $HOME/.config/bookmenu
@@ -54,6 +61,12 @@ ln -sf $path/config/btops $HOME/.config/btops
 
 [ -d $HOME/.config/cfiles ] && rm -r $HOME/.config/cfiles
 ln -sf $path/config/cfiles $HOME/.config/cfiles
+
+[ -d $HOME/.config/deadd ] && rm -r $HOME/.config/deadd
+ln -sf $path/config/deadd $HOME/.config/deadd
+
+[ -d $HOME/.config/Dharkael ] && rm -r $HOME/.config/Dharkael
+ln -sf $path/config/Dharkael $HOME/.config/Dharkael
 
 [ -d $HOME/.config/dunst ] && rm -r $HOME/.config/dunst
 ln -sf $path/config/dunst $HOME/.config/dunst
@@ -106,6 +119,9 @@ ln -sf $path/config/polybar $HOME/.config/polybar
 [ -d $HOME/.config/powerline-shell ] && rm -r $HOME/.config/powerline-shell
 ln -sf $path/config/powerline-shell $HOME/.config/powerline-shell
 
+[ -d $HOME/.config/ranger ] && rm -r $HOME/.config/ranger
+ln -sf $path/config/ranger $HOME/.config/ranger
+
 [ -d $HOME/.config/search ] && rm -r $HOME/.config/search
 ln -sf $path/config/search $HOME/.config/search
 
@@ -147,7 +163,7 @@ ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.dirs
 ln -sf $path/config/wall.png $HOME/.config/wall.png
 
 # Local directory
-[ ! -d $HOME/.local ] && mkdir $HOME/.local
+[ ! -d $HOME/.local ] && mkdir -p $HOME/.local/share
 [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
 [ -d $HOME/.local/share/applications ] && rm -r $HOME/.local/share/applications
-ln -sf $path/local/share/applications $HOME/.local/share/applications
+ln -sf $path/.local/share/applications $HOME/.local/share/applications
