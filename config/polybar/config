@@ -31,7 +31,7 @@ margin-top = 0
 margin-bottom = 0
 
 [bar/bar]
-monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:HDMI-A-0}
 monitor-fallback =
 monitor-strict = false
 monitor-exact = true
@@ -63,7 +63,7 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
 
 modules-left = bspwm xwindow
-modules-right = pacman-packages torrents cpu-usage cpu-temperature memory backlight volume battery weather time
+modules-right = pacman-packages torrents cpu-usage cpu-temperature memory volume weather time
 
 tray-position = right
 tray-padding = 1

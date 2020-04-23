@@ -38,7 +38,7 @@ ln -sf $path/config/transmission-daemon/settings.json $HOME/.config/transmission
 
 [ ! -d $HOME/.config/VSCodium ] && mkdir -p $HOME/.config/VSCodium/User
 [ ! -d $HOME/.config/VSCodium/User ] && mkdir $HOME/.config/VSCodium/User
-ln -sf $path/config/VSCodium/User/settings.json $HOME/.config/VSCodium/User/keybindings.json
+ln -sf $path/config/VSCodium/keybindings.json $HOME/.config/VSCodium/User/keybindings.json
 ln -sf $path/config/VSCodium/settings.json $HOME/.config/VSCodium/User/settings.json
 
 [ -d $HOME/.config/alacritty ] && rm -r $HOME/.config/alacritty
@@ -94,6 +94,9 @@ ln -sf $path/config/kitty $HOME/.config/kitty
 
 [ -d $HOME/.config/lf ] && rm -r $HOME/.config/lf
 ln -sf $path/config/lf $HOME/.config/lf
+
+[ -d $HOME/.config/mpv ] && rm -r $HOME/.config/mpv
+ln -sf $path/config/mpv $HOME/.config/mpv
 
 [ -d $HOME/.config/neofetch ] && rm -r $HOME/.config/neofetch
 ln -sf $path/config/neofetch $HOME/.config/neofetch
@@ -167,3 +170,6 @@ ln -sf $path/config/wall.png $HOME/.config/wall.png
 [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
 [ -d $HOME/.local/share/applications ] && rm -r $HOME/.local/share/applications
 ln -sf $path/.local/share/applications $HOME/.local/share/applications
+
+[ -d $HOME/.local/share/fonts ] && rm -r $HOME/.local/share/fonts
+ln -sf $path/.local/share/fonts $HOME/.local/share/fonts

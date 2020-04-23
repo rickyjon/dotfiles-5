@@ -96,7 +96,7 @@ bindkey -s "^d" "dlfile\n"
 
 # Source configs
 for f in ~/.config/shellconfig/*; do source "$f"; done
-source /home/brodie/.config/broot/launcher/bash/br
+#source /home/brodie/.config/broot/launcher/bash/br
 
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

@@ -1,4 +1,4 @@
-let mapleader=" "
+let mapleader=";"
 
 " Use system clipboard
 set clipboard+=unnamedplus
@@ -203,7 +203,6 @@ if !exists('g:vscode')
   colorscheme codedark
 
   " Tab Settings"
-  set expandtab
   set shiftwidth=2
   set softtabstop=2
   set tabstop=2

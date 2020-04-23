@@ -127,11 +127,11 @@ F7
 #  alsavolctrl All mute
 
 # Pulse Controls
-super + {Up, Down}
-  pulsevolctrl "output-vol" "alsa_output.pci-0000_00_1f.3.analog-stereo" {+2%, -2%}
+super + {F3, F2}
+  pulsevolctrl "output-vol" "alsa_output.pci-0000_0b_00.4.analog-stereo" {+2%, -2%}
 
-super + F8
-  pulsevolctrl "output-mute" "alsa_output.pci-0000_00_1f.3.analog-stereo"
+super + F4
+  pulsevolctrl "output-mute" "alsa_output.pci-0000_0b_00.4.analog-stereo"
 
 # Webcam
 alt + shift + 1
@@ -146,13 +146,13 @@ alt + shift + 5
   controlcam fullscreen
 
 # Media Controls
-super + period
+super + F7
   playerctl next
 
-super + comma
+super + F6
   playerctl previous
 
-super + p
+super + F8
   playerctl play-pause
 
 super + slash
@@ -190,7 +190,7 @@ super + alt + l
   snap run slack
 
 super + alt + {k, o, g, b, e, f, v, s, d}
-  {kdenlive, obs, gimp, $BROWSER, thunderbird, spacefm, virtualbox, spotify, discord-canary}
+  {kdenlive, obs, gimp, $BROWSER, thunderbird, pcmanfm, virtualbox, spotify, discord-canary}
 
 super + q
   brave https://studio.youtube.com

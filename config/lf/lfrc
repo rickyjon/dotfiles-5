@@ -1,5 +1,5 @@
 # Basic Settings
-set preview false
+set preview true
 set previewer ~/scripts/lf/preview
 #set previewer pistol
 set hidden true
