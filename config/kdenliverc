@@ -7,7 +7,7 @@ listViewIconSize=15
 
 [MainWindow]
 Height 1080=1024
-State=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAACD/wBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAAegD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAfkAAABGAP////wAAAH/AAABuQAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAA74AAAEFAAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAABMkAAAKfAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIAAAAAAP////8AAABZAP///wAAB2gAAAGUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAABbvwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAOAAAABGAP////wAAADmAAAAoQAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAY0AAAEjAAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAArYAAASyAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIAAAAAAP////8AAABZAP///wAAB2gAAAI1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1896
 
@@ -16,29 +16,29 @@ ToolButtonStyle=IconOnly
 
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/videos/youtube/asset/Generic/,$HOME/videos/youtube/outro/,$HOME/videos/youtube/patreon/
-KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/spotifyd,$HOME/videos/podcast/ToUpload/TechOveTeaEp8-Soundcheck,$HOME/videos/podcast/ToUpload/TechOverTeaEp8
+KdenliveProjectsFolder[$e]=$HOME/videos/podcast/ToUpload/DiscussingTheBadThing,$HOME/videos/podcast/ToUpload/HowDoesYoutubeWork,$HOME/videos/podcast/ToUpload/PuttingInTheEffort
 
 [Recent Files]
-File1[$e]=$HOME/videos/youtube/ToUpload/font-install/font-install.kdenlive
-File10[$e]=$HOME/videos/youtube/ToUpload/spotifyd/spotifyd.kdenlive
-File2[$e]=$HOME/videos/youtube/ToUpload/transmission/transmission.kdenlive
-File3[$e]=$HOME/videos/youtube/ToUpload/git-gutter/git-gutter.kdenlive
-File4[$e]=$HOME/videos/youtube/ToUpload/computer/computer.kdenlive
-File5[$e]=$HOME/videos/youtube/ToUpload/computer-hardware/computer-hardware.kdenlive
-File6[$e]=$HOME/videos/youtube/ToUpload/archnews/archnews.kdenlive
-File7[$e]=$HOME/videos/youtube/ToUpload/st-ligature/st-ligature.kdenlive
-File8[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp8/TechOverTeaEp8.kdenlive
-File9[$e]=$HOME/videos/podcast/ToUpload/TechOveTeaEp8-Soundcheck/TechOverTeaEp8-Soundcheck.kdenlive
-Name1[$e]=font-install.kdenlive
-Name10[$e]=spotifyd.kdenlive
-Name2[$e]=transmission.kdenlive
-Name3[$e]=git-gutter.kdenlive
-Name4[$e]=computer.kdenlive
-Name5[$e]=computer-hardware.kdenlive
-Name6[$e]=archnews.kdenlive
-Name7[$e]=st-ligature.kdenlive
-Name8[$e]=TechOverTeaEp8.kdenlive
-Name9[$e]=TechOverTeaEp8-Soundcheck.kdenlive
+File1[$e]=$HOME/videos/youtube/ToUpload/computer-hardware/computer-hardware.kdenlive
+File10[$e]=$HOME/videos/podcast/ToUpload/DiscussingTheBadThing/DiscussingTheBadThing.kdenlive
+File2[$e]=$HOME/videos/youtube/ToUpload/archnews/archnews.kdenlive
+File3[$e]=$HOME/videos/youtube/ToUpload/st-ligature/st-ligature.kdenlive
+File4[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp8/TechOverTeaEp8.kdenlive
+File5[$e]=$HOME/videos/podcast/ToUpload/TechOveTeaEp8-Soundcheck/TechOverTeaEp8-Soundcheck.kdenlive
+File6[$e]=$HOME/videos/youtube/ToUpload/spotifyd/spotifyd.kdenlive
+File7[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp9/TechOverTeaEp9.kdenlive
+File8[$e]=$HOME/videos/podcast/ToUpload/PuttingInTheEffort/PuttingInTheEffort.kdenlive
+File9[$e]=$HOME/videos/podcast/ToUpload/HowDoesYoutubeWork/HowDoesYouTubeWork.kdenlive
+Name1[$e]=computer-hardware.kdenlive
+Name10[$e]=DiscussingTheBadThing.kdenlive
+Name2[$e]=archnews.kdenlive
+Name3[$e]=st-ligature.kdenlive
+Name4[$e]=TechOverTeaEp8.kdenlive
+Name5[$e]=TechOverTeaEp8-Soundcheck.kdenlive
+Name6[$e]=spotifyd.kdenlive
+Name7[$e]=TechOverTeaEp9.kdenlive
+Name8[$e]=PuttingInTheEffort.kdenlive
+Name9[$e]=HowDoesYouTubeWork.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -78,7 +78,7 @@ rec601=false
 ColorScheme=Breeze High Contrast
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAADBgAAAAIAAAACAAAAZAAAAAEAAAA4AAAA9gAAAAMBAQABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAAD2AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAD8=
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAADBgAAAAIAAAACAAAAZAAAAAEAAAA4AAAAbAAAAAMBAQABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABsAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAD8=
 
 [capture]
 decklink_capturedevice=4294967295
