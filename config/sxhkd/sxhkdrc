@@ -101,7 +101,7 @@ super + shift + c
 
 #---Script Keys---#
 super + {x, u, t, w, i, g, a}
-  {dmonitor "eDP-1" "HDMI-1", updatepackages, notifytorrents, devenv, importandroid, openterminalin, dcalc}
+  {dmonitor "DisplayPort-0" "HDMI-A-0", updatepackages, notifytorrents, devenv, importandroid, openterminalin, dcalc}
 
 super + {b, c, e}
   {bookmenu -p "Select a bookmark" -b ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim"}
@@ -134,16 +134,16 @@ super + F4
   pulsevolctrl "output-mute" "alsa_output.pci-0000_0b_00.4.analog-stereo"
 
 # Webcam
+alt + shift + n
+	camindicator new
 alt + shift + 1
-  controlcam 0 0
+  camindicator 0 0
 alt + shift + 2
-  controlcam 1440 0
+  camindicator 1676 0
 alt + shift + 3
-  controlcam 0 810
+  camindicator 0 941
 alt + shift + 4
-  controlcam 1440 810
-alt + shift + 5
-  controlcam fullscreen
+  camindicator 1676 941
 
 # Media Controls
 super + F7
@@ -203,5 +203,5 @@ super + e
 #  bspc rule -a st-256color -o state=floating rectangle=800x500+100+100 sticky=on && $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
 
 super + alt + {a, r, t, h, n, c, j, p}
-  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin, pulsemixer}
+  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, nvim ~/vimwiki/index.wiki, pulsemixer}
 

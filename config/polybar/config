@@ -31,7 +31,7 @@ margin-top = 0
 margin-bottom = 0
 
 [bar/bar]
-monitor = ${env:MONITOR:HDMI-A-0}
+monitor = ${env:MONITOR:DisplayPort-0}
 monitor-fallback =
 monitor-strict = false
 monitor-exact = true

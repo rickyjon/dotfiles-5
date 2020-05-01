@@ -189,6 +189,7 @@ if !exists('g:vscode')
   Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
   Plug 'voldikss/vim-floaterm'
   Plug 'airblade/vim-gitgutter'
+	Plug 'vimwiki/vimwiki'
 
   call plug#end()
 
@@ -210,8 +211,6 @@ if !exists('g:vscode')
   " Cursor line
   set cursorline
   set cursorcolumn
-  highlight CursorLine ctermbg=Yellow cterm=bold guibg=#2b2b2b
-  highlight CursorColumn ctermbg=Yellow cterm=bold guibg=#2b2b2b
 
   " Enable disable Goyo
   map <leader>g :Goyo<CR>
@@ -336,7 +335,8 @@ if !exists('g:vscode')
   " Make netrw act like a project Draw
   augroup ProjectDrawer
     autocmd!
-    autocmd VimEnter ~/.config/joplin/tmp/*,/tmp/calcurse*,~/.calcurse/notes/*,*/.git/COMMIT_EDITMSG let b:noNetrw=1
+		" Don't open Netrw
+    autocmd VimEnter ~/.config/joplin/tmp/*,/tmp/calcurse*,~/.calcurse/notes/*,~/vimwiki/*,*/.git/COMMIT_EDITMSG let b:noNetrw=1
     autocmd VimEnter * :call NetrwOnBufferOpen()
   augroup END
 
