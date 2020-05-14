@@ -63,7 +63,7 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
 
 modules-left = bspwm xwindow
-modules-right = pacman-packages torrents cpu-usage cpu-temperature memory volume weather time
+modules-right = crypto torrents pacman-packages subs cpu-usage cpu-temperature memory volume weather time
 
 tray-position = right
 tray-padding = 1
@@ -112,23 +112,33 @@ format-padding =
 ; Separator in between workspaces
 ; label-separator = |
 
-[module/music]
-type = custom/ipc
-hook-0 = playerctl metadata --format "{{ artist }} - {{ title }}" &
-format-prefix = " "
-initial = 1
-
 [module/pacman-packages]
 type = custom/ipc
 hook-0 = sudo pacman -Qu | wc -l
 format-prefix = "📦 "
+click-left = updatepackages
 initial = 1
 
+[module/crypto]
+type = custom/script
+exec = echo 💰
+interval = 0
+click-left = $BROWSER https://coinmarketcap.com/ &
+click-right = notifycrypto
+
+[module/subs]
+type = custom/script
+exec = polysubs
+interval = 300
+click-left = $BROWSER https://studio.youtube.com &
+click-right = chromium https://studio.youtube.com &
+
 [module/torrents]
-type = custom/ipc
-hook-0 = i3torrents
+type = custom/script
+exec = echo 📥
 click-left = $TERMINAL -e transmission-remote-cli &
-initial = 1
+click-right = notifytorrents
+interval = 0
 
 [module/memory]
 type = custom/script
@@ -148,7 +158,7 @@ format-prefix = "💻 "
 
 [module/cpu-temperature]
 type = custom/script
-exec = polytemp
+exec = polytempamd
 label = "%output%"
 format-prefix="🔥 "
 interval = 10
@@ -169,7 +179,6 @@ initial = 1
 type = custom/script
 exec = i3weather
 label = "%output%"
-format-prefix="☁️ "
 click-left = $TERMINAL -e w3m wttr.in/Adelaide &
 interval = 1800
 
@@ -186,48 +195,6 @@ click-left = $TERMINAL -e calcurse &
 label = "%output%"
 interval = 5
 
-# Deprecated
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
-
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
-
-label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
-
-; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
-
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-padding = 2
-
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
-
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-
-format-underline =
-format-background =
-format-padding =
-
-; Separator in between workspaces
-; label-separator = |
-
 [module/wifi]
 type = custom/script
 exec = i3wifi
@@ -238,21 +205,5 @@ format-prefix = "📡 "
 type = custom/script
 exec = i3speedtest
 label = "%output%"
-
-[module/eth]
-type = internal/network
-interface = net0
-interval = 3.0
-
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 ; vim:ft=dosini
