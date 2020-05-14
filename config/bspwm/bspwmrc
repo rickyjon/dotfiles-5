@@ -4,7 +4,7 @@ bspc rule -r "*"
 ###---Autostart---###
 nm-applet &
 xrdb ~/.Xresources &
-picom -b &
+picom -b --experimental-backends &
 nitrogen --set-scaled --head=0 ~/.config/wall.png &
 nitrogen --set-scaled --head=1 ~/.config/wall.png &
 killall cleanfullscreen

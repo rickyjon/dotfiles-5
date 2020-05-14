@@ -1,4 +1,4 @@
-let mapleader=";"
+let mapleader=" "
 
 " Use system clipboard
 set clipboard+=unnamedplus
@@ -58,10 +58,10 @@ map <A-l> <C-w>l
 nnoremap <leader>h :split<Space>
 nnoremap <leader>v :vsplit<Space>
 
-" Alias replace all to S
-nnoremap S :%s//gI<Left><Left><Left>
+" Alias replace all to
+nnoremap <C-s> :%s//gI<Left><Left><Left>
 
-" Alias write and quit to Q
+" Alias write  nd quit to Q
 nnoremap <leader>q :wq<CR>
 nnoremap <leader>w :w<CR>
 
@@ -85,45 +85,6 @@ autocmd FileType sh inoremap ,ei elif<Space>[<Space>];<Space>then<CR><++><CR><Es
 autocmd FileType sh inoremap ,sw case<Space>""<Space>in<CR><++>)<Space><++><Space>;;<CR><++><CR>esac<CR><CR><++><Esc>?"<CR>i
 autocmd FileType sh inoremap ,ca )<Space><++><Space>;;<CR><++><Esc>?)<CR>i
 
-" html
-autocmd FileType html noremap <leader>d i<!DOCTYPE html><CR><html><CR><head><CR><meta charset="UTF-8"><CR><title><++></title><CR></head><CR><body><CR><++><CR></body><CR></html>
-autocmd FileType html inoremap ,1 <h1></h1><CR><CR><++><Esc>?</h1<CR>i
-autocmd FileType html inoremap ,2 <h2></h2><CR><CR><++><Esc>?</h2<CR>i
-autocmd FileType html inoremap ,3 <h3></h3><CR><CR><++><Esc>?</h3<CR>i
-autocmd FileType html inoremap ,4 <h4></h4><CR><CR><++><Esc>?</h4<CR>i
-autocmd FileType html inoremap ,5 <h5></h5><CR><CR><++><Esc>?</h4<CR>i
-autocmd FileType html inoremap ,6 <h6></h6><CR><CR><++><Esc>?</h4<CR>i
-autocmd FileType html inoremap ,d <div><CR></div><CR><CR><++><Esc>?</div<CR><S-o>
-autocmd FileType html inoremap ,ar <article><CR></article><CR><CR><++><Esc>?</arti<CR><S-o>
-autocmd FileType html inoremap ,as <aside><CR></aside><CR><CR><++><Esc>?</asid<CR><S-o>
-autocmd FileType html inoremap ,fic <figcaption><CR></figcaption><CR><CR><++><Esc>?</figcap<CR><S-o>
-autocmd FileType html inoremap ,fi <figure><CR></figure><CR><CR><++><Esc>?</figure<CR><S-o>
-autocmd FileType html inoremap ,he <header><CR></header><CR><CR><++><Esc>?</header<CR><S-o>
-autocmd FileType html inoremap ,f <footer><CR></footer><CR><CR><++><Esc>?</footer<CR><S-o>
-autocmd FileType html inoremap ,fo <form action=""><CR><++><CR></form><CR><CR><Esc>?"<CR>i
-autocmd FileType html inoremap ,in <input type="" name="<++>" placeholder="<++>"/><CR><++><Esc>?""<CR>li
-autocmd FileType html inoremap ,te <textarea rows="" col="<++>" placeholder="<++>"/><++></textarea><CR><++><Esc>?s=""<CR>llli
-autocmd FileType html inoremap ,bu <button type=""><++></button><CR><++><Esc>?"<CR>i
-autocmd FileType html inoremap ,la <label for=""><++></label><CR><++><Esc>?"<CR>i
-autocmd FileType html inoremap ,ma <main><CR></main><CR><CR><++><Esc>?</main<CR><S-o>
-autocmd FileType html inoremap ,mr <mark><CR></mark><CR><CR><++><Esc>?</mark<CR><S-o>
-autocmd FileType html inoremap ,n <nav><CR></nav><CR><CR><++><Esc>?</nav<CR><S-o>
-autocmd FileType html inoremap ,se <section><CR></section><CR><CR><++><Esc>?</section<CR><S-o>
-autocmd FileType html inoremap ,su <summary><CR><summary><CR><CR><++><Esc>?</summary?<CR><S-o>
-autocmd FileType html inoremap ,p <p><CR></p><CR><CR><++><Esc>?</p><CR><S-o>
-autocmd FileType html inoremap ,b <b></b><Space><++><Esc>?</b><CR>i
-autocmd FileType html inoremap ,a <a href=""><++></a><Space><++><Esc>?"<CR>i
-autocmd FileType html inoremap ,br <CR></br><CR>
-autocmd FileType html inoremap ,em <em><em><Space><++><Esc>?</p><CR>i
-autocmd FileType html inoremap ,im <img src="" alt="<++>"><CR><CR><++><Esc>?""<CR>li
-autocmd FileType html inoremap ,ol <ol><CR><li></li><CR><++><CR></ol><CR><CR><++><Esc>?</li><CR>i
-autocmd FileType html inoremap ,ul <ul><CR><li></li><CR><++><CR></ul><CR><CR><++><Esc>?</li><CR>i
-autocmd FileType html inoremap ,li <li></li><CR><++><Esc>?</li><CR>i
-autocmd FileType html inoremap ,ta <table><CR><thead><CR><tr><CR><th></th><CR><++><CR></tr><CR></thead><CR><tbody><CR><tr><CR><td><++></td><CR><++><CR></tr><CR></tbody><CR><tfoot><CR><tr><CR><td><++></td><CR><++><CR></tfoot><CR></table><Esc>?</th><CR>i
-autocmd FileType html inoremap ,th <th></th><CR><++><Esc>?</th><CR>i
-autocmd FileType html inoremap ,td <td></td><CR><++><Esc>?</td><CR>i
-autocmd FileType html inoremap ,tr <tr><CR></tr><CR><CR><++><Esc>?</tr><CR>i
-
 " markdown
 autocmd FileType markdown noremap <leader>r i---<CR>title:<Space><++><CR>author:<Space>"Brodie Robertson"<CR>geometry:<CR>-<Space>top=30mm<CR>-<Space>left=20mm<CR>-<Space>right=20mm<CR>-<Space>bottom=30mm<CR>header-includes:<Space>\|<CR><Tab>\usepackage{float}<CR>\let\origfigure\figure<CR>\let\endorigfigure\endfigure<CR>\renewenvironment{figure}[1][2]<Space>{<CR><Tab>\expandafter\origfigure\expandafter[H]<CR><BS>}<Space>{<CR><Tab>\endorigfigure<CR><BS>}<CR><BS>---<CR><CR>
 autocmd FileType markdown inoremap ,i ![](<++>){#fig:<++>}<Space><CR><CR><++><Esc>kkF]i
@@ -136,30 +97,6 @@ autocmd FileType markdown inoremap ,5 #####<Space><CR><CR><++><Esc>2k<S-a>
 autocmd FileType markdown inoremap ,u +<Space><CR><++><Esc>1k<S-a>
 autocmd FileType markdown inoremap ,o 1.<Space><CR><++><Esc>1k<S-a>
 autocmd FileType markdown inoremap ,f +@fig:
-
-" latex
-autocmd FileType tex,latex noremap <leader>d :w<CR>:!texify<Space>-cp<Space>%<CR>
-autocmd FileType tex,latex inoremap ,c \{<++>}<CR><++><Esc>?{<CR>i
-autocmd FileType tex,latex inoremap ,dc \documentclass{}<CR><CR><++><Esc>?}<CR>i
-autocmd FileType tex,latex inoremap ,up \usepackage{}<CR><CR><++><Esc>?}<CR>i
-autocmd FileType tex,latex inoremap ,bd \begin{document}<CR><CR><CR><CR>\end{document}<Esc>kki
-autocmd FileType tex,latex inoremap ,be \begin{}<CR><CR><CR><CR>\end{<++>}<Esc>?n{<CR>lli
-autocmd FileType tex,latex inoremap ,ti \title{}<CR><CR><++><Esc>?}<CR>i
-autocmd FileType tex,latex inoremap ,a \author{}<CR><CR><++><Esc>?}<CR>i
-autocmd FileType tex,latex inoremap ,mt \maketitle<CR><CR>
-autocmd FileType tex,latex inoremap ,s \section{}<CR><CR><++><Esc>?}<CR>i
-autocmd FileType tex,latex inoremap ,ss \subsection{}<CR><CR><++><Esc>?}<CR>i
-autocmd FileType tex,latex inoremap ,sss \subsubsection{}<CR><CR><++><Esc>?}<CR>i
-autocmd FileType tex,latex inoremap ,rc \renewcommand{}{<++>}<CR><CR><++><Esc>?}{<CR>i
-autocmd FileType tex,latex inoremap ,tf \titleformat{}{<++>}{<++>}{<++>}{<++>}<CR><CR><++><Esc>?{}<CR>li
-autocmd FileType tex,latex inoremap ,lt {\LaTeX}<Space>
-autocmd FileType tex,latex inoremap ,b \bfseries
-autocmd FileType tex,latex inoremap ,t \tiny
-autocmd FileType tex,latex inoremap ,sc \scriptsize
-autocmd FileType tex,latex inoremap ,fn \footnotesize
-autocmd FileType tex,latex inoremap ,sm \small
-autocmd FileType tex,latex inoremap ,l \large
-autocmd FileType tex,latex inoremap ,h \huge
 
 if !exists('g:vscode')
   call plug#begin('~/local/share/nvim/plugged')
@@ -185,11 +122,16 @@ if !exists('g:vscode')
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'vim-pandoc/vim-pandoc-syntax'
-  Plug 'unblevable/quick-scope'
   Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+	" Motions
+  Plug 'unblevable/quick-scope'
+	Plug 'justinmk/vim-sneak'
+	" Misc
   Plug 'voldikss/vim-floaterm'
   Plug 'airblade/vim-gitgutter'
 	Plug 'vimwiki/vimwiki'
+	Plug 'tpope/vim-repeat'
+	Plug 'rhysd/git-messenger.vim'
 
   call plug#end()
 
@@ -208,18 +150,22 @@ if !exists('g:vscode')
   set softtabstop=2
   set tabstop=2
 
-  " Cursor line
-  set cursorline
-  set cursorcolumn
-
-  " Enable disable Goyo
-  map <leader>g :Goyo<CR>
-
   " Autocompletion
   set wildmode=longest,list,full
 
   " Fix splitting
   set splitbelow splitright
+
+  " Cursor line
+  set cursorline
+  set cursorcolumn
+
+	" Git Messenger
+	noremap <C-g> :GitMessenger<CR>
+	let g:git_messenger_no_default_mappings = v:true
+
+  " Goyo
+  noremap <leader>g :Goyo<CR>
 
   " Float Term
   nnoremap <A-t> :FloatermNew<CR>
@@ -342,8 +288,6 @@ if !exists('g:vscode')
 
   let g:NetrwIsOpen=0
 
-  " Vim Commentary
-
   " ------Vim Auto Closetag------
   " filenames like *.xml, *.html, *.xhtml, ...
   " These are the file extensions where this plugin is enabled.
@@ -365,7 +309,6 @@ if !exists('g:vscode')
   " This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
   let g:closetag_emptyTags_caseSensitive = 1
 
-  " dict
   " Disables auto-close if not in a "valid" region (based on filetype)
   let g:closetag_regions = {
       \ 'typescript.tsx': 'jsxRegion,tsxRegion',
@@ -390,8 +333,7 @@ if !exists('g:vscode')
     \ 'coc-prettier',
     \ 'coc-json',
     \ 'coc-angular',
-    \ 'coc-vimtex',
-    \ 'coc-omnisharp'
+    \ 'coc-vimtex'
     \ ]
 
   " From Coc Readme

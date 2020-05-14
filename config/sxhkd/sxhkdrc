@@ -100,8 +100,8 @@ super + shift + c
   toggleprogram "picom" "--experimental-backends"
 
 #---Script Keys---#
-super + {x, u, t, w, i, g, a}
-  {dmonitor "DisplayPort-0" "HDMI-A-0", updatepackages, notifytorrents, devenv, importandroid, openterminalin, dcalc}
+super + {x, u, t, w, i, g, a, p, m}
+  {dmonitor "DisplayPort-0" "HDMI-A-0", updatepackages, notifytorrents, devenv, importandroid, openterminalin, dcalc, cpcolor, notifycrypto}
 
 super + {b, c, e}
   {bookmenu -p "Select a bookmark" -b ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim"}
@@ -123,7 +123,7 @@ F7
 #super + {Up, Down}
 #  alsavolctrl Master {2%+, 2%-}
 #
-#super + m
+#super + F4
 #  alsavolctrl All mute
 
 # Pulse Controls
@@ -132,18 +132,6 @@ super + {F3, F2}
 
 super + F4
   pulsevolctrl "output-mute" "alsa_output.pci-0000_0b_00.4.analog-stereo"
-
-# Webcam
-alt + shift + n
-	camindicator new
-alt + shift + 1
-  camindicator 0 0
-alt + shift + 2
-  camindicator 1676 0
-alt + shift + 3
-  camindicator 0 941
-alt + shift + 4
-  camindicator 1676 941
 
 # Media Controls
 super + F7

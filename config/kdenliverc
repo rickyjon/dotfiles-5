@@ -1,13 +1,13 @@
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/videos/youtube/asset/Generic/social.png,file:$HOME/videos/youtube/patreon/patreon.png,file:$HOME/videos/youtube/outro/Outro.mp4,file:$HOME/videos/youtube/asset/Generic/[FREE]-Youtube-Subscribe-and-Bell-Animation-with-Sound-Effects---Alpha.mov,file:$HOME/videos/podcast/Art/Video Background/2 People/Background - 2 People.png,file:$HOME/videos/youtube/outro/outro.kdenlive,file:$HOME/videos/youtube/asset/Generic/videos.png,file:$HOME/videos/youtube/asset/Generic/support.png,file:$HOME/videos/youtube/asset/Generic/like-and-comment.png,file:$HOME/videos/youtube/asset/Generic/window manager.png,file:$HOME/videos/youtube/asset/Generic/pattern.xcf,file:$HOME/videos/youtube/asset/Generic/twitter.png,file:$HOME/videos/youtube/asset/Generic/lbry.png,file:$HOME/videos/youtube/asset/Generic/discord.png
-Recent URLs[$e]=file:$HOME/videos/youtube/patreon/
+Recent Files[$e]=file:$HOME/videos/youtube/asset/Generic,file:$HOME/videos/youtube/asset/Generic/[FREE]-Youtube-Subscribe-and-Bell-Animation-with-Sound-Effects---Alpha.mov,file:$HOME/videos/youtube/outro/Outro.mp4,file:$HOME/videos/youtube/patreon/patreon.png,file:$HOME/videos/youtube/patreon/patreon2.png,file:$HOME/videos/podcast/Art/Video Background/2 People/Background - 2 People.png,file:$HOME/videos/youtube/outro/outro.kdenlive,file:$HOME/videos/youtube/asset/Generic/videos.png,file:$HOME/videos/youtube/asset/Generic/support.png,file:$HOME/videos/youtube/asset/Generic/like-and-comment.png,file:$HOME/videos/youtube/asset/Generic/window manager.png,file:$HOME/videos/youtube/asset/Generic/pattern.xcf,file:$HOME/videos/youtube/asset/Generic/twitter.png,file:$HOME/videos/youtube/asset/Generic/lbry.png,file:$HOME/videos/youtube/asset/Generic/discord.png
+Recent URLs[$e]=file:$HOME/videos/youtube/asset/Generic/
 detailViewIconSize=0
 iconViewIconSize=43
 listViewIconSize=15
 
 [MainWindow]
 Height 1080=1024
-State=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAAB9fwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAY0AAABGAP////wAAAGTAAABDgAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAqcAAAD7AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAA6gAAAPAAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIAAAAAAP////8AAABWAP///wAAB2gAAAGuAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAACCvwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAUgAAABGAP////wAAAFOAAABoQAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAvUAAAD6AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAA/UAAANzAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIAAAAAAP////8AAABWAP///wAAB2gAAAGZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1896
 
@@ -15,30 +15,30 @@ Width 1920=1896
 ToolButtonStyle=IconOnly
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/videos/youtube/patreon/,$HOME/videos/youtube/outro/,$HOME/videos/youtube/asset/Generic/
-KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/vimwiki-syntax,$HOME/videos/youtube/ToUpload/edge,$HOME/videos/youtube/ToUpload/wifi-uefi
+KdenliveClipFolder[$e]=$HOME/videos/youtube/asset/Generic/,$HOME/videos/youtube/outro/,$HOME/videos/youtube/patreon/
+KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/git-messenger,$HOME/videos/podcast/ToUpload/TechOverTeaEp12/,$HOME/videos/youtube/ToUpload/aur-concepts
 
 [Recent Files]
-File1[$e]=$HOME/videos/youtube/ToUpload/dash/dash.kdenlive
-File10[$e]=$HOME/videos/youtube/ToUpload/vimwiki-syntax/vimwiki-syntax.kdenlive
-File2[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp10/TechOverTeaEp10.kdenlive
-File3[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp10-Soundcheck/TechOverTeaEp10-Soundcheck.kdenlive
-File4[$e]=$HOME/videos/youtube/ToUpload/vimwiki/vimwiki
-File5[$e]=$HOME/videos/podcast/ToUpload/ICTProjectIsAMess/ICTProjectIsAMess.kdenlive
-File6[$e]=$HOME/videos/podcast/ToUpload/AppleIsntAwful/AppleIsntAwful.kdenlive
-File7[$e]=$HOME/videos/podcast/ToUpload/SellMeOnReddit/SellMeOnReddit.kdenlive
-File8[$e]=$HOME/videos/youtube/ToUpload/wifi-uefi/wifi-uefi.kdenlive
-File9[$e]=$HOME/videos/youtube/ToUpload/edge/edge.kdenlive
-Name1[$e]=dash.kdenlive
-Name10[$e]=vimwiki-syntax.kdenlive
-Name2[$e]=TechOverTeaEp10.kdenlive
-Name3[$e]=TechOverTeaEp10-Soundcheck.kdenlive
-Name4[$e]=vimwiki
-Name5[$e]=ICTProjectIsAMess.kdenlive
-Name6[$e]=AppleIsntAwful.kdenlive
-Name7[$e]=SellMeOnReddit.kdenlive
-Name8[$e]=wifi-uefi.kdenlive
-Name9[$e]=edge.kdenlive
+File1[$e]=$HOME/videos/podcast/ToUpload/VRDevelopment/VRDevelopment.kdenlive
+File10[$e]=$HOME/videos/youtube/ToUpload/git-messenger/git-messenger.kdenlive
+File2[$e]=$HOME/videos/youtube/ToUpload/sneak-vim/sneak-vim.kdenlive
+File3[$e]=$HOME/videos/youtube/ToUpload/fff/fff.kdenlive
+File4[$e]=$HOME/videos/youtube/ToUpload/text-formatter/text-formatter.kdenlive
+File5[$e]=$HOME/videos/youtube/ToUpload/kmon/kmon.kdenlive
+File6[$e]=$HOME/videos/youtube/ToUpload/LBRY-Scammers/LBRY-Scammers.kdenlive
+File7[$e]=$HOME/videos/youtube/ToUpload/vimv/vimv.kdenlive
+File8[$e]=$HOME/videos/youtube/ToUpload/aur-concepts/aur-concepts.kdenlive
+File9[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp12/TechOverTeaEp12.kdenlive
+Name1[$e]=VRDevelopment.kdenlive
+Name10[$e]=git-messenger.kdenlive
+Name2[$e]=sneak-vim.kdenlive
+Name3[$e]=fff.kdenlive
+Name4[$e]=text-formatter.kdenlive
+Name5[$e]=kmon.kdenlive
+Name6[$e]=LBRY-Scammers.kdenlive
+Name7[$e]=vimv.kdenlive
+Name8[$e]=aur-concepts.kdenlive
+Name9[$e]=TechOverTeaEp12.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -78,7 +78,7 @@ rec601=false
 ColorScheme=Breeze High Contrast
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAEhAAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAADAAAAABAAAAAAAAA+gAAAAAMA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAcBAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAFKAAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAFkAAAABAAAAAAAAA+gAAAAAMA==
 
 [capture]
 decklink_capturedevice=4294967295
