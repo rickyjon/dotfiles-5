@@ -69,12 +69,13 @@ local settings = {
   visible_item_count = 10,     --how many menu items to show per screen
 
   --font size scales by window, if false requires larger font and padding sizes
-  scale_by_window = true,
+  scale_by_window = false,
   --paddings from top left corner
   text_padding_x = 10,
   text_padding_y = 30,
   --ass style overrides inside curly brackets, \keyvalue is one field, extra \ for escape in lua
   --example {\\fnUbuntu\\fs10\\b0\\bord1} equals: font=Ubuntu, size=10, bold=no, border=1
+	--
   --read http://docs.aegisub.org/3.2/ASS_Tags/ for reference of tags
   --undeclared tags will use default osd settings
   --these styles will be used for the whole navigator
@@ -207,7 +208,7 @@ function childdir()
       if info and info.is_dir then
         changepath(newdir)
       else
-        
+
         if issubtitle(item) then
           loadsubs(utils.join_path(path, item))
         else
@@ -228,7 +229,7 @@ function childdir()
     else
       if issubtitle(item) then
         loadsubs(utils.join_path(path, item))
-      else 
+      else
         mp.commandv("loadfile", utils.join_path(path, item), "append-play")
         mp.osd_message("Appended file to playlist: "..item)
       end
