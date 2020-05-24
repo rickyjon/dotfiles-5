@@ -30,6 +30,10 @@ nnoremap gj L
 nnoremap gt gg
 nnoremap gb G
 
+" Fix indenting visual block
+vmap < <gv
+vmap > >gv
+
 " Enable and disable auto comment
 map <leader>c :setlocal formatoptions-=cro<CR>
 map <leader>C :setlocal formatoptions=cro<CR>
@@ -124,7 +128,6 @@ if !exists('g:vscode')
   Plug 'vim-pandoc/vim-pandoc-syntax'
   Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 	" Motions
-  Plug 'unblevable/quick-scope'
 	Plug 'justinmk/vim-sneak'
 	" Misc
   Plug 'voldikss/vim-floaterm'
@@ -203,12 +206,6 @@ if !exists('g:vscode')
 
   " Reenable hexokinase on enter
   autocmd VimEnter * HexokinaseTurnOn
-
-  " Vim Quickscope
-  " Trigger a highlight in the appropriate direction when pressing these keys:
-  let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-  highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
-  highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
 
   " ctrlp
   let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']

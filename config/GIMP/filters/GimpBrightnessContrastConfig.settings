@@ -1,44 +1,44 @@
 # settings
 
-(GimpBrightnessContrastConfig "2020-05-13 10:43:40"
-    (time 1589332420)
+(GimpBrightnessContrastConfig "2020-05-23 21:36:25"
+    (time 1590235585)
     (brightness 0.07874015748031496)
-    (contrast 0.11811023622047244))
-(GimpBrightnessContrastConfig "2020-05-12 18:45:47"
-    (time 1589274947)
-    (brightness 0.015748031496062992)
-    (contrast 0.047244094488188976))
-(GimpBrightnessContrastConfig "2020-05-12 18:21:04"
-    (time 1589273464)
-    (brightness 0.086614173228346455)
-    (contrast 0.11811023622047244))
-(GimpBrightnessContrastConfig "2020-05-12 18:17:29"
-    (time 1589273249)
-    (brightness 0.07874015748031496)
-    (contrast 0.13385826771653545))
-(GimpBrightnessContrastConfig "2020-05-12 18:06:24"
-    (time 1589272584)
-    (brightness 0.062992125984251968)
     (contrast 0.14173228346456693))
-(GimpBrightnessContrastConfig "2020-05-11 23:16:15"
-    (time 1589204775)
-    (brightness 0.03937007874015748)
-    (contrast 0.10236220472440945))
-(GimpBrightnessContrastConfig "2020-05-11 23:02:12"
-    (time 1589203932)
+(GimpBrightnessContrastConfig "2020-05-23 21:27:45"
+    (time 1590235065)
+    (brightness 0.055118110236220472)
+    (contrast 0.11023622047244094))
+(GimpBrightnessContrastConfig "2020-05-23 21:18:08"
+    (time 1590234488)
     (brightness 0.07874015748031496)
     (contrast 0.10236220472440945))
-(GimpBrightnessContrastConfig "2020-05-11 22:49:21"
-    (time 1589203161)
+(GimpBrightnessContrastConfig "2020-05-23 20:56:17"
+    (time 1590233177)
+    (brightness 0.031496062992125984)
+    (contrast 0.086614173228346455))
+(GimpBrightnessContrastConfig "2020-05-22 22:50:35"
+    (time 1590153635)
     (brightness 0.070866141732283464)
-    (contrast 0.11811023622047244))
-(GimpBrightnessContrastConfig "2020-05-10 23:07:48"
-    (time 1589117868)
-    (brightness 0.10236220472440945)
-    (contrast 0.17322834645669291))
-(GimpBrightnessContrastConfig "2020-05-07 22:45:21"
-    (time 1588857321)
+    (contrast 0.12598425196850394))
+(GimpBrightnessContrastConfig "2020-05-21 23:01:03"
+    (time 1590067863)
+    (brightness 0.031496062992125984)
+    (contrast 0.11023622047244094))
+(GimpBrightnessContrastConfig "2020-05-20 18:50:45"
+    (time 1589966445)
     (brightness 0.062992125984251968)
-    (contrast 0.13385826771653545))
+    (contrast 0.094488188976377951))
+(GimpBrightnessContrastConfig "2020-05-20 11:57:59"
+    (time 1589941679)
+    (brightness 0.070866141732283464)
+    (contrast 0.11023622047244094))
+(GimpBrightnessContrastConfig "2020-05-19 23:09:14"
+    (time 1589895554)
+    (brightness 0.094488188976377951)
+    (contrast 0.14960629921259844))
+(GimpBrightnessContrastConfig "2020-05-19 22:54:04"
+    (time 1589894644)
+    (brightness 0.055118110236220472)
+    (contrast 0.14173228346456693))
 
 # end of settings

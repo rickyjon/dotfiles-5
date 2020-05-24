@@ -27,7 +27,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_input_capture",
-        "volume": 0.79427981376647949
+        "volume": 0.72123515605926514
     },
     "DesktopAudioDevice1": {
         "balance": 0.5,
@@ -57,7 +57,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
-        "volume": 0.6041601300239563
+        "volume": 0.55069053173065186
     },
     "current_program_scene": "Main",
     "current_scene": "Main",
@@ -259,22 +259,22 @@
                         "bounds_align": 0,
                         "bounds_type": 0,
                         "crop_bottom": 276,
-                        "crop_left": 8,
-                        "crop_right": 964,
+                        "crop_left": 12,
+                        "crop_right": 967,
                         "crop_top": 274,
                         "group_item_backup": false,
                         "id": 2,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 136.0,
-                            "y": 44.0
+                            "x": 134.0,
+                            "y": 43.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.72573840618133545,
-                            "y": 0.72659176588058472
+                            "x": 0.73007440567016602,
+                            "y": 0.73018866777420044
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -317,22 +317,22 @@
                         "bounds_align": 0,
                         "bounds_type": 0,
                         "crop_bottom": 273,
-                        "crop_left": 964,
+                        "crop_left": 967,
                         "crop_right": 9,
-                        "crop_top": 275,
+                        "crop_top": 277,
                         "group_item_backup": false,
                         "id": 6,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 138.0,
-                            "y": 538.0
+                            "x": 135.0,
+                            "y": 537.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.72573840618133545,
-                            "y": 0.72659176588058472
+                            "x": 0.73093217611312866,
+                            "y": 0.7298850417137146
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -439,9 +439,9 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 272,
+                        "crop_bottom": 275,
                         "crop_left": 967,
-                        "crop_right": 9,
+                        "crop_right": 12,
                         "crop_top": 274,
                         "group_item_backup": false,
                         "id": 10,
@@ -454,8 +454,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.93008476495742798,
-                            "y": 0.93071162700653076
+                            "x": 0.93213146924972534,
+                            "y": 0.93220341205596924
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -470,8 +470,8 @@
                         "bounds_type": 0,
                         "crop_bottom": 274,
                         "crop_left": 14,
-                        "crop_right": 966,
-                        "crop_top": 274,
+                        "crop_right": 969,
+                        "crop_top": 276,
                         "group_item_backup": false,
                         "id": 12,
                         "locked": false,
@@ -483,8 +483,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.93637329339981079,
-                            "y": 0.93584907054901123
+                            "x": 0.9391675591468811,
+                            "y": 0.93962264060974121
                         },
                         "scale_filter": "disable",
                         "visible": true
