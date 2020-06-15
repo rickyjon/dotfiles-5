@@ -18,17 +18,10 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " ------Standard Bindings------
 " Basic file system commands
-nnoremap <A-n> :!touch<Space>
+nnoremap <A-o> :!touch<Space>
 nnoremap <A-e> :!crf<Space>
 nnoremap <A-d> :!mkdir<Space>
 nnoremap <A-m> :!mv<Space>%<Space>
-
-nnoremap gl $
-nnoremap gh 0
-nnoremap gk H
-nnoremap gj L
-nnoremap gt gg
-nnoremap gb G
 
 " Fix indenting visual block
 vmap < <gv
@@ -58,12 +51,12 @@ map <A-j> <C-w>j
 map <A-k> <C-w>k
 map <A-l> <C-w>l
 
-" Shortcut split opening
-nnoremap <leader>h :split<Space>
-nnoremap <leader>v :vsplit<Space>
+" Tab shortcuts
+nnoremap <A-p> :tabp<CR>
+nnoremap <A-n> :tabn<CR>
 
 " Alias replace all to
-nnoremap <C-s> :%s//gI<Left><Left><Left>
+nnoremap <A-s> :%s//gI<Left><Left><Left>
 
 " Alias write  nd quit to Q
 nnoremap <leader>q :wq<CR>
@@ -125,16 +118,17 @@ if !exists('g:vscode')
   Plug 'yuezk/vim-js'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'HerringtonDarkholme/yats.vim'
+	Plug 'rust-lang/rust.vim'
   Plug 'vim-pandoc/vim-pandoc-syntax'
-  Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 	" Motions
 	Plug 'justinmk/vim-sneak'
 	" Misc
+  Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
   Plug 'voldikss/vim-floaterm'
   Plug 'airblade/vim-gitgutter'
 	Plug 'vimwiki/vimwiki'
 	Plug 'tpope/vim-repeat'
-	Plug 'rhysd/git-messenger.vim'
+	Plug 'dhruvasagar/vim-table-mode'
 
   call plug#end()
 
@@ -162,6 +156,9 @@ if !exists('g:vscode')
   " Cursor line
   set cursorline
   set cursorcolumn
+
+	" Table mode
+	let g:table_mode_delete_row_map = "<leader>tdr"
 
 	" Git Messenger
 	noremap <C-g> :GitMessenger<CR>
@@ -208,6 +205,7 @@ if !exists('g:vscode')
   autocmd VimEnter * HexokinaseTurnOn
 
   " ctrlp
+	nnoremap <A-z> :CtrlP<CR>
   let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
   " Netrw
@@ -232,6 +230,14 @@ if !exists('g:vscode')
     :normal <C-w>l
   endfunction
 
+  function! OpenTab()
+    :normal v
+    let g:path=expand('%:p')
+    :q!
+    execute 'tabedit' g:path
+    :normal <C-w>l
+  endfunction
+
 
   function! NetrwMappings()
       " Hack fix to make ctrl-l work properly
@@ -240,6 +246,7 @@ if !exists('g:vscode')
       noremap <silent> <A-f> :call ToggleNetrw()<CR>
       noremap <buffer> V :call OpenToRight()<cr>
       noremap <buffer> H :call OpenBelow()<cr>
+      noremap <buffer> T :call OpenTab()<cr>
   endfunction
 
   augroup netrw_mappings
@@ -288,19 +295,19 @@ if !exists('g:vscode')
   " ------Vim Auto Closetag------
   " filenames like *.xml, *.html, *.xhtml, ...
   " These are the file extensions where this plugin is enabled.
-  let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js'
+  let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.js,*.tsx'
 
   " filenames like *.xml, *.xhtml, ...
   " This will make the list of non-closing tags self-closing in the specified files.
-  let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js'
+  let g:closetag_xhtml_filenames = '*.xml,*.xhtml,*.jsx,*.js,*.tsx'
 
   " filetypes like xml, html, xhtml, ...
   " These are the file types where this plugin is enabled.
-  let g:closetag_filetypes = 'html,xhtml,phtml,js'
+  let g:closetag_filetypes = 'html,xhtml,jsx,js,tsx'
 
   " filetypes like xml, xhtml, ...
   " This will make the list of non-closing tags self-closing in the specified files.
-  let g:closetag_xhtml_filetypes = 'xhtml,jsx,js'
+  let g:closetag_xhtml_filetypes = 'xml,xhtml,jsx,js,tsx'
 
   " integer value [0|1]
   " This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)

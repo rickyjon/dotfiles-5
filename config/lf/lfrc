@@ -45,7 +45,7 @@ cmd sudomkfile ${{
   sudo $EDITOR $ans
 }}
 
-cmd setwallpaper %cp "$f" ~/.config/wall.png && nitrogen --set-scaled "$f"
+cmd setwallpaper %cp "$f" ~/.config/wall.png && xwallpaper --zoom "$f"
 
 cmd fzf_jump ${{
   res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"

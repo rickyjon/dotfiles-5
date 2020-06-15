@@ -28,8 +28,8 @@ URxvt.keysym.C-0:resize-font:reset
 *.color11:      #faf380
 
 ! blue
-*.color4:       #3c71ea
-*.color12:      #707fd0
+*.color4:       #268bd2
+*.color12:      #68a7d4
 
 ! magenta
 *.color5:       #b30ad0

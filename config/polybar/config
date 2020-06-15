@@ -9,22 +9,13 @@ alert = ${xrdb:color1}
 
 [settings]
 format-foreground =
-format-underline = #268bd2
+format-underline = ${colors.primary}
 format-background = ${colors.background-alt}
 format-padding = 1
 format-overline =
-format-spacing =
 format-margin = 0
 format-offset =
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = true
-;throttle-output = 5
-;throttle-output-for = 10
-;throttle-input-for = 30
 
 [global/wm]
 margin-top = 0
@@ -48,12 +39,13 @@ offset-x = 0
 offset-y = 0
 radius = 0.0
 
+underline-size = 3
+overline-size = 0
+
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
 
-padding = 0
 module-margin-left = 0
 module-margin-right = 1
 
@@ -74,6 +66,13 @@ tray-scale = 1.0
 
 cursor-click = pointer
 cursor-scroll = default
+
+[module/subs]
+type = custom/script
+exec = polysubs
+interval = 300
+click-left = $BROWSER https://studio.youtube.com &
+click-right = chromium https://studio.youtube.com &
 
 [module/xwindow]
 type = internal/xwindow
@@ -106,12 +105,11 @@ label-empty-padding = 1
 format-underline =
 format-background =
 format-padding =
-
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
 ; Separator in between workspaces
-; label-separator = |
+label-separator = |
 
 [module/pacman-packages]
 type = custom/ipc
@@ -126,13 +124,6 @@ exec = echo 💰
 interval = 0
 click-left = $BROWSER https://coinmarketcap.com/ &
 click-right = notifycrypto
-
-[module/subs]
-type = custom/script
-exec = polysubs
-interval = 300
-click-left = $BROWSER https://studio.youtube.com &
-click-right = chromium https://studio.youtube.com &
 
 [module/torrents]
 type = custom/script
@@ -164,18 +155,6 @@ label = "%output%"
 format-prefix="🔥 "
 interval = 10
 
-[module/battery]
-type = custom/script
-exec = polybattery
-label = "%output%"
-interval = 30
-
-[module/backlight]
-type = custom/ipc
-hook-0 = light -G | sed 's/\.[0-9]*//'
-format-prefix = "💡 "
-initial = 1
-
 [module/weather]
 type = custom/script
 exec = i3weather
@@ -199,15 +178,22 @@ click-left = $TERMINAL -e calcurse &
 label = "%output%"
 interval = 5
 
-[module/wifi]
-type = custom/script
-exec = i3wifi
-label = "%output%"
-format-prefix = "📡 "
+; [module/wifi]
+; type = custom/script
+; exec = i3wifi
+; label = "%output%"
+; format-prefix = "📡 "
 
-[module/network-speed]
-type = custom/script
-exec = i3speedtest
-label = "%output%"
+; [module/battery]
+; type = custom/script
+; exec = polybattery
+; label = "%output%"
+; interval = 30
+
+; [module/backlight]
+; type = custom/ipc
+; hook-0 = light -G | sed 's/\.[0-9]*//'
+; format-prefix = "💡 "
+; initial = 1
 
 ; vim:ft=dosini

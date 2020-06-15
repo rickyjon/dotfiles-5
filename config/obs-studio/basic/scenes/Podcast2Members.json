@@ -23,11 +23,11 @@
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "default"
+            "device_id": "alsa_input.usb-Blue_Microphones_Yeti_Stereo_Microphone_797_2018_12_02_00943-00.analog-stereo"
         },
         "sync": 0,
         "versioned_id": "pulse_input_capture",
-        "volume": 0.72123515605926514
+        "volume": 1.0
     },
     "DesktopAudioDevice1": {
         "balance": 0.5,
@@ -53,11 +53,11 @@
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "alsa_output.pci-0000_0b_00.4.analog-stereo.monitor"
+            "device_id": "default"
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
-        "volume": 0.55069053173065186
+        "volume": 0.51951867341995239
     },
     "current_program_scene": "Main",
     "current_scene": "Main",
@@ -135,7 +135,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "capture_window": "20971521\r\nNew Tab - Brave\r\nbrave-browser"
+                "capture_window": "14680273\r\nCozhan - YouTube - Brave\r\nbrave-browser"
             },
             "sync": 0,
             "versioned_id": "xcomposite_input",
@@ -258,17 +258,17 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 276,
+                        "crop_bottom": 262,
                         "crop_left": 12,
                         "crop_right": 967,
-                        "crop_top": 274,
+                        "crop_top": 292,
                         "group_item_backup": false,
                         "id": 2,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 134.0,
-                            "y": 43.0
+                            "x": 137.0,
+                            "y": 539.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -297,7 +297,7 @@
                         "name": "Browser2",
                         "pos": {
                             "x": 967.0,
-                            "y": 45.0
+                            "y": 44.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -316,17 +316,17 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 273,
+                        "crop_bottom": 262,
                         "crop_left": 967,
                         "crop_right": 9,
-                        "crop_top": 277,
+                        "crop_top": 288,
                         "group_item_backup": false,
                         "id": 6,
                         "locked": false,
                         "name": "Me",
                         "pos": {
                             "x": 135.0,
-                            "y": 537.0
+                            "y": 43.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -439,23 +439,23 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 275,
+                        "crop_bottom": 264,
                         "crop_left": 967,
-                        "crop_right": 12,
-                        "crop_top": 274,
+                        "crop_right": 29,
+                        "crop_top": 289,
                         "group_item_backup": false,
                         "id": 10,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 987.0,
-                            "y": 398.0
+                            "x": 60.0,
+                            "y": 397.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.93213146924972534,
-                            "y": 0.93220341205596924
+                            "x": 0.94805192947387695,
+                            "y": 0.94876658916473389
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -468,23 +468,23 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 274,
-                        "crop_left": 14,
+                        "crop_bottom": 263,
+                        "crop_left": 17,
                         "crop_right": 969,
-                        "crop_top": 276,
+                        "crop_top": 288,
                         "group_item_backup": false,
                         "id": 12,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 57.0,
+                            "x": 986.0,
                             "y": 398.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.9391675591468811,
-                            "y": 0.93962264060974121
+                            "x": 0.94004285335540771,
+                            "y": 0.93950849771499634
                         },
                         "scale_filter": "disable",
                         "visible": true

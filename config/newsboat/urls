@@ -1,8 +1,14 @@
-https://www.reddit.com/r/archlinux/new.rss
-https://www.reddit.com/r/linux/new.rss
-https://www.reddit.com/r/bspwm/new.rss
-https://www.reddit.com/r/ManjaroLinux/new.rss
-https://www.reddit.com/r/Ubuntu/new.rss
-https://www.reddit.com/r/commandline/new.rss
-https://www.reddit.com/r/unixporn/new.rss
-https://news.ycombinator.com/rss
+
+"query:Linux Reddit:tags # \"content\" or title =~ \"\\[OC\\]\"" meta
+"query:Unread:unread = \"yes\"" meta
+
+https://www.reddit.com/r/archlinux/new.rss reddit content
+https://www.reddit.com/r/linux/new.rss reddit content
+https://www.reddit.com/r/bspwm/new.rss reddit content
+https://www.reddit.com/r/ManjaroLinux/new.rss reddit content
+https://www.reddit.com/r/Ubuntu/new.rss reddit content
+https://www.reddit.com/r/commandline/new.rss reddit content
+https://www.reddit.com/r/voidlinux/new.rss reddit content
+https://www.reddit.com/r/Gentoo/new.rss reddit content
+https://www.reddit.com/r/unixporn/new.rss reddit
+https://news.ycombinator.com/rss news
