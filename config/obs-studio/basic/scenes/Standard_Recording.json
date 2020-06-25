@@ -15,7 +15,7 @@
         "mixers": 255,
         "monitoring_type": 0,
         "muted": false,
-        "name": "Mic/Aux",
+        "name": "Microphone",
         "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
@@ -134,9 +134,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "alt": true,
-                        "key": "OBS_KEY_6",
-                        "shift": true
+                        "key": "OBS_KEY_NUM5"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
@@ -157,37 +155,8 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 9,
+                "id_counter": 10,
                 "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "Microphone",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -216,6 +185,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 10,
+                        "locked": false,
+                        "name": "Microphone",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -230,53 +228,9 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_M",
-                        "shift": true
-                    }
-                ],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": [
-                    {
-                        "alt": true,
-                        "key": "OBS_KEY_M",
-                        "shift": true
-                    }
-                ]
-            },
-            "id": "alsa_input_capture",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Microphone",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "front:CARD=Microphone,DEV=0"
-            },
-            "sync": 0,
-            "versioned_id": "alsa_input_capture",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "alt": true,
-                        "key": "OBS_KEY_3",
-                        "shift": true
+                        "key": "OBS_KEY_NUM1"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
@@ -299,7 +253,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 9,
+                "id_counter": 10,
                 "items": [
                     {
                         "align": 5,
@@ -317,35 +271,6 @@
                         "id": 2,
                         "locked": false,
                         "name": "Screen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 6,
-                        "locked": false,
-                        "name": "Microphone",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -387,6 +312,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 10,
+                        "locked": false,
+                        "name": "Microphone",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -403,9 +357,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "alt": true,
-                        "key": "OBS_KEY_4",
-                        "shift": true
+                        "key": "OBS_KEY_NUM3"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
@@ -428,7 +380,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 13,
+                "id_counter": 14,
                 "items": [
                     {
                         "align": 5,
@@ -446,35 +398,6 @@
                         "id": 2,
                         "locked": false,
                         "name": "Screen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 6,
-                        "locked": false,
-                        "name": "Microphone",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -516,6 +439,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 14,
+                        "locked": false,
+                        "name": "Microphone",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -532,9 +484,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "alt": true,
-                        "key": "OBS_KEY_1",
-                        "shift": true
+                        "key": "OBS_KEY_NUM7"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
@@ -557,7 +507,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 9,
+                "id_counter": 10,
                 "items": [
                     {
                         "align": 5,
@@ -601,9 +551,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 6,
+                        "id": 9,
                         "locked": false,
-                        "name": "Microphone",
+                        "name": "Webcam",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -611,8 +561,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.2161458283662796,
+                            "y": 0.21574074029922485
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -630,9 +580,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 9,
+                        "id": 10,
                         "locked": false,
-                        "name": "Webcam",
+                        "name": "Microphone",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -640,8 +590,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.2161458283662796,
-                            "y": 0.21574074029922485
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -711,9 +661,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "alt": true,
-                        "key": "OBS_KEY_2",
-                        "shift": true
+                        "key": "OBS_KEY_NUM9"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
@@ -736,7 +684,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 13,
                 "items": [
                     {
                         "align": 5,
@@ -780,18 +728,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 10,
+                        "id": 12,
                         "locked": false,
-                        "name": "Microphone",
+                        "name": "Webcam",
                         "pos": {
-                            "x": 0.0,
+                            "x": 1505.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.2161458283662796,
+                            "y": 0.21574074029922485
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -809,18 +757,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 12,
+                        "id": 13,
                         "locked": false,
-                        "name": "Webcam",
+                        "name": "Microphone",
                         "pos": {
-                            "x": 1505.0,
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.2161458283662796,
-                            "y": 0.21574074029922485
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true

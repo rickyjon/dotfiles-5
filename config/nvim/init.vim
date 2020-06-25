@@ -129,6 +129,7 @@ if !exists('g:vscode')
 	Plug 'vimwiki/vimwiki'
 	Plug 'tpope/vim-repeat'
 	Plug 'dhruvasagar/vim-table-mode'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
   call plug#end()
 

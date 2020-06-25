@@ -12,7 +12,7 @@ set ignorecase true
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$f";;
-        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+        video/*|image/*/application/pdf) xdg-open "$f";;
         *) xdg-open "$f" ;;
     esac
 }}

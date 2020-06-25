@@ -12,7 +12,7 @@
             "libobs.unmute": []
         },
         "id": "pulse_input_capture",
-        "mixers": 255,
+        "mixers": 194,
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
@@ -27,7 +27,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_input_capture",
-        "volume": 1.0
+        "volume": 0.99952208995819092
     },
     "DesktopAudioDevice1": {
         "balance": 0.5,
@@ -42,7 +42,7 @@
             "libobs.unmute": []
         },
         "id": "pulse_output_capture",
-        "mixers": 255,
+        "mixers": 193,
         "monitoring_type": 0,
         "muted": false,
         "name": "Desktop Audio",
@@ -57,10 +57,10 @@
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
-        "volume": 0.51951867341995239
+        "volume": 0.8306306004524231
     },
-    "current_program_scene": "Main",
-    "current_scene": "Main",
+    "current_program_scene": "VideoView",
+    "current_scene": "VideoView",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -123,6 +123,36 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
+            "id": "v4l2_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Webcam",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "Exposure, Auto": 5557561106012987725,
+                "Power Line Frequency": 7234307546238118212,
+                "device_id": "/dev/video0",
+                "input": 0,
+                "pixelformat": 861030210,
+                "resolution": 125830200
+            },
+            "sync": 0,
+            "versioned_id": "v4l2_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
@@ -148,13 +178,19 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
+                "OBSBasic.SelectScene": [
+                    {
+                        "key": "OBS_KEY_NUM1"
+                    }
+                ],
                 "libobs.hide_scene_item.Background2": [],
                 "libobs.hide_scene_item.Desktop Audio": [],
                 "libobs.hide_scene_item.Me": [],
+                "libobs.hide_scene_item.Mic/Aux": [],
                 "libobs.show_scene_item.Background2": [],
                 "libobs.show_scene_item.Desktop Audio": [],
-                "libobs.show_scene_item.Me": []
+                "libobs.show_scene_item.Me": [],
+                "libobs.show_scene_item.Mic/Aux": []
             },
             "id": "scene",
             "mixers": 0,
@@ -169,7 +205,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 16,
                 "items": [
                     {
                         "align": 5,
@@ -285,6 +321,35 @@
                             "y": 0.93950849771499634
                         },
                         "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 16,
+                        "locked": false,
+                        "name": "Mic/Aux",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
@@ -300,13 +365,23 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
+                "OBSBasic.SelectScene": [
+                    {
+                        "key": "OBS_KEY_NUM2"
+                    }
+                ],
                 "libobs.hide_scene_item.BackgroundVideo2": [],
                 "libobs.hide_scene_item.Browser2": [],
+                "libobs.hide_scene_item.Desktop Audio": [],
                 "libobs.hide_scene_item.Me": [],
+                "libobs.hide_scene_item.Mic/Aux": [],
+                "libobs.hide_scene_item.Webcam": [],
                 "libobs.show_scene_item.BackgroundVideo2": [],
                 "libobs.show_scene_item.Browser2": [],
-                "libobs.show_scene_item.Me": []
+                "libobs.show_scene_item.Desktop Audio": [],
+                "libobs.show_scene_item.Me": [],
+                "libobs.show_scene_item.Mic/Aux": [],
+                "libobs.show_scene_item.Webcam": []
             },
             "id": "scene",
             "mixers": 0,
@@ -321,7 +396,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 11,
                 "items": [
                     {
                         "align": 5,
@@ -435,6 +510,93 @@
                         "scale": {
                             "x": 0.73093217611312866,
                             "y": 0.7298850417137146
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 7,
+                        "locked": false,
+                        "name": "Webcam",
+                        "pos": {
+                            "x": 136.0,
+                            "y": 43.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.35833331942558289,
+                            "y": 0.35834896564483643
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 9,
+                        "locked": false,
+                        "name": "Desktop Audio",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 11,
+                        "locked": false,
+                        "name": "Mic/Aux",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true

@@ -10,38 +10,38 @@ Main_1=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAACSfwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkA
 
 [MainWindow]
 Height 1080=1024
-State=AAAA/wAAAAD9AAAAAQAAAAIAAAOtAAACSfwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAEYAAABGAP////wAAABMAAAAkgAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAOQAAAB7AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAAWUAAAFAAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIAAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAGzQAAAJsAAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIBAAACqwAAAQIAAAECAP///wAAA60AAAFaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAAB3/wBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAOIAAABGAP////wAAADoAAAB9gAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAuQAAAB7AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAA2UAAAICAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIAAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAGzQAAAJsAAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIBAAAFbQAAAfsAAAECAP///wAAB2gAAAHEAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=941
+Width 1920=1896
 
 [MainWindow][Toolbar timelineToolBar]
 ToolButtonStyle=IconOnly
 
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/videos/youtube/outro/,$HOME/videos/youtube/patreon/,$HOME/videos/youtube/asset/Generic/
-KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/zsh,$HOME/videos/youtube/ToUpload/cordless,$HOME/videos/youtube/ToUpload/tuir
+KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/ghi,$HOME/videos/youtube/ToUpload/alias-rules,$HOME/videos/youtube/ToUpload/nativefier
 
 [Recent Files]
-File1[$e]=$HOME/videos/youtube/ToUpload/zsh-fish/zsh-fish.kdenlive
-File10[$e]=$HOME/videos/youtube/ToUpload/zsh/zsh-alias.kdenlive
-File2[$e]=$HOME/videos/youtube/ToUpload/dead-cpu/dead-cpu.kdenlive
-File3[$e]=$HOME/videos/youtube/ToUpload/truecolor/truecolor.kdenlive
-File4[$e]=$HOME/videos/youtube/ToUpload/polybar-update/polybar-update.kdenlive
-File5[$e]=$HOME/videos/podcast/ToUpload/LBCToTheMoon/LBCToTheMoon.kdenlive
-File6[$e]=$HOME/videos/podcast/ToUpload/LBRYCommentModeration/LBRYCommentModeration.kdenlive
-File7[$e]=$HOME/videos/podcast/ToUpload/HexSoundsScammy/HexSoundsScammy.kdenlive
-File8[$e]=$HOME/videos/youtube/ToUpload/tuir/tuir.kdenlive
-File9[$e]=$HOME/videos/youtube/ToUpload/cordless/cordless.kdenlive
-Name1[$e]=zsh-fish.kdenlive
-Name10[$e]=zsh-alias.kdenlive
-Name2[$e]=dead-cpu.kdenlive
-Name3[$e]=truecolor.kdenlive
-Name4[$e]=polybar-update.kdenlive
-Name5[$e]=LBCToTheMoon.kdenlive
-Name6[$e]=LBRYCommentModeration.kdenlive
-Name7[$e]=HexSoundsScammy.kdenlive
-Name8[$e]=tuir.kdenlive
-Name9[$e]=cordless.kdenlive
+File1[$e]=$HOME/videos/youtube/ToUpload/sensors/sensors.kdenlive
+File10[$e]=$HOME/videos/youtube/ToUpload/ghi/ghi.kdenlive
+File2[$e]=$HOME/videos/podcast/ToUpload/That'sNotAMarsBar/That'sNotAMarsBar.kdenlive
+File3[$e]=$HOME/videos/podcast/ToUpload/AWellNeededHaircut/AWellNeededHaircut.kdenlive
+File4[$e]=$HOME/videos/podcast/ToUpload/CareerAfterUni/CareerAfterUni.kdenlive
+File5[$e]=$HOME/videos/youtube/ToUpload/tldr/ tldr.kdenlive
+File6[$e]=$HOME/videos/youtube/ToUpload/tilingwm/tilingwm.kdenlive
+File7[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp18/TechOverTeaEp18.kdenlive
+File8[$e]=$HOME/videos/youtube/ToUpload/nativefier/nativefier.kdenlive
+File9[$e]=$HOME/videos/youtube/ToUpload/alias-rules/alias-rules.kdenlive
+Name1[$e]=sensors.kdenlive
+Name10[$e]=ghi.kdenlive
+Name2[$e]=That'sNotAMarsBar.kdenlive
+Name3[$e]=AWellNeededHaircut.kdenlive
+Name4[$e]=CareerAfterUni.kdenlive
+Name5[$e]=\stldr.kdenlive
+Name6[$e]=tilingwm.kdenlive
+Name7[$e]=TechOverTeaEp18.kdenlive
+Name8[$e]=nativefier.kdenlive
+Name9[$e]=alias-rules.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -81,7 +81,7 @@ rec601=false
 ColorScheme=Breeze High Contrast
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAcBAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAE3AAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAEYAAAABAAAAAAAAA+gAAAAAMA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAEhAAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAADAAAAABAAAAAAAAA+gAAAAAMA==
 
 [capture]
 decklink_capturedevice=4294967295

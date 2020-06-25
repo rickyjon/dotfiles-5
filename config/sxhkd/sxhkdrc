@@ -9,7 +9,7 @@ super + shift + w
 
 # Kill Window
 super + shift + q
-  xdo close
+  crystal --close
 
 # Focus on window in direction
 super + {h,j,k,l}
@@ -17,7 +17,7 @@ super + {h,j,k,l}
 
 #	Send window to desktop
 super + shift + {0-9}
-  bspc node -d {0-9}
+  crystal --send {0-9}
 
 # Send window to desktop and swap to desktop
 super + control + {0-9}
@@ -33,7 +33,7 @@ super + control + {h,j,k,l}
 
 # Toggle fullscreen on and off
 super + f
-  bspfullscreen
+  crystal --fullscreen
 
 # Toggle floating on and off
 super + o
@@ -45,11 +45,11 @@ super + shift + {h,j,k,l}
 
 # Focus on desktop
 super + {0-9}
-	bspc desktop -f {0-9}
+	crystal --focus {0-9}
 
 # Cycle through desktops
 super + alt + {Left, Right}
-  bspc desktop -f {prev, next}
+  crystal --focus {prev, next}
 
 # Expand a window by moving one of its side outward
 ctrl + alt + {h,j,k,l}
