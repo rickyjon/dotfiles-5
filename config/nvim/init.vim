@@ -1,5 +1,4 @@
 let mapleader=" "
-
 " Use system clipboard
 set clipboard+=unnamedplus
 
@@ -106,7 +105,7 @@ if !exists('g:vscode')
   " Code Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " Fuzzy find files
-  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'junegunn/fzf.vim'
   " This objectively makes vim better
   Plug 'terryma/vim-multiple-cursors'
   " Working with tags
@@ -129,10 +128,10 @@ if !exists('g:vscode')
 	Plug 'vimwiki/vimwiki'
 	Plug 'tpope/vim-repeat'
 	Plug 'dhruvasagar/vim-table-mode'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+	Plug 'mattn/emmet-vim'
 
   call plug#end()
-
+	let g:user_emmet_leader_key='<A-c>'
   " Basic settings
   set mouse=a
   syntax on
@@ -172,6 +171,12 @@ if !exists('g:vscode')
   nnoremap <A-t> :FloatermNew<CR>
   nnoremap <A-r> :FloatermNew lf<CR>
 
+	"let g:floaterm_wintype    = 'normal'
+	let g:floaterm_keymap_new    = '<F9>'
+	let g:floaterm_keymap_prev   = '<F10>'
+	let g:floaterm_keymap_next   = '<F11>'
+	let g:floaterm_keymap_toggle = '<F12>'
+
   " Git Gutter
   highlight GitGutterAdd guifg=#009900 ctermfg=Green
   highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
@@ -205,9 +210,15 @@ if !exists('g:vscode')
   " Reenable hexokinase on enter
   autocmd VimEnter * HexokinaseTurnOn
 
-  " ctrlp
-	nnoremap <A-z> :CtrlP<CR>
-  let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+  " vim fzf
+	nnoremap <A-g> :GFiles<CR>
+	nnoremap <A-z> :Files<CR>
+	let g:fzf_preview_window = 'right:60%'
+
+	command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, {'options': ['--preview', 'preview {}']}, <bang>0)
+	command! -bang -nargs=? -complete=dir GFiles
+    \ call fzf#vim#gitfiles(<q-args>, {'options': ['--preview', 'preview {}']}, <bang>0)
 
   " Netrw
   let g:netrw_banner = 0

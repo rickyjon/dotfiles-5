@@ -1,11 +1,15 @@
 typeset -U PATH path
-path=("$HOME/scripts" "$HOME/scripts/alsa" "$HOME/scripts/lf" "$HOME/scripts/i3" "$HOME/scripts/pulse"
+path=("$HOME/scripts" "$HOME/scripts/alsa" "$HOME/scripts/dragon" "$HOME/scripts/lf" "$HOME/scripts/i3" "$HOME/scripts/pulse"
 	"$HOME/scripts/polybar" "$HOME/scripts/bspwm" "$HOME/scripts/lemonbar" "$HOME/scripts/transmission"
 	"$HOME/bin/tweetdeck-linux-x64" "$(ruby -e 'puts Gem.user_dir')/bin" "$HOME/go/bin" "$HOME/.cargo/bin"
 	"$HOME/.npm-global" "$path[@]")
 export PATH
 
-export WINIT_HIDPI_FACTOR=1.0
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_SCALE_FACTOR=1
+export QT_SCREEN_SCALE_FACTORS="1;1;1"
+export GDK_SCALE=1
+export GDK_DPI_SCALE=1
 export EDITOR="nvim"
 export READER="zathura"
 export VISUAL="nvim"

@@ -1,7 +1,6 @@
+set previewer ~/.config/lf/preview
 # Basic Settings
 set preview true
-set previewer ~/scripts/lf/preview
-#set previewer pistol
 set hidden true
 set color256 true
 set drawbox true
@@ -74,6 +73,8 @@ cmd open_config  ${{
 }}
 
 cmd dragon %dragon-drag-and-drop -a -x $fx
+cmd dragon-stay %dragon-drag-and-drop -a $fx
+cmd dragon-individual %dragon-drag-and-drop $fx
 cmd cpdragon %cpdragon
 cmd mvdragon %mvdragon
 cmd dlfile %dlfile
@@ -134,6 +135,16 @@ map c
 map e
 map f
 
+# Not really image preview
+map - $~/.config/lf/draw_img "$f"
+
+cmd video_preview ${{
+    CACHE=$(mktemp /tmp/thumb_cache.XXXXX)
+    ffmpegthumbnailer -i "$f" -o $CACHE -s 0
+    ~/.config/lf/draw_img $CACHE && rm $CACHE
+}}
+map + :video_preview
+
 # File Openers
 map ee $$EDITOR "$f"
 map u $view "$f"
@@ -155,6 +166,8 @@ map f broot_jump
 
 # Dragon Mapping
 map dr dragon
+map ds dragon-stay
+map di dragon-individual
 map dm mvdragon
 map dc cpdragon
 map dl dlfile

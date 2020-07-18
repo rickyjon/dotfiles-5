@@ -1,3 +1,4 @@
+Xft.dpi: 96
 URxvt.font: xft:JetBrains Mono Medium:size=11
 URxvt.boldFont: xft:DejaVu Sans Mono:size=11
 URxvt.scrollBar: false

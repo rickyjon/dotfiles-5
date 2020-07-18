@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "Video",
-    "current_scene": "Video",
+    "current_program_scene": "Main",
+    "current_scene": "Main",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -120,15 +120,17 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
+                "OBSBasic.SelectScene": [
+                    {
+                        "key": "OBS_KEY_NUM1"
+                    }
+                ],
                 "libobs.hide_scene_item.Background": [],
                 "libobs.hide_scene_item.DesktopAudio": [],
-                "libobs.hide_scene_item.Logo": [],
                 "libobs.hide_scene_item.Me": [],
                 "libobs.hide_scene_item.Microphone": [],
                 "libobs.show_scene_item.Background": [],
                 "libobs.show_scene_item.DesktopAudio": [],
-                "libobs.show_scene_item.Logo": [],
                 "libobs.show_scene_item.Me": [],
                 "libobs.show_scene_item.Microphone": []
             },
@@ -160,18 +162,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 6,
+                        "id": 1,
                         "locked": false,
-                        "name": "Background",
+                        "name": "Me",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 231.0,
+                            "y": 215.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.76145833730697632,
+                            "y": 0.76111114025115967
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -189,18 +191,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 6,
                         "locked": false,
-                        "name": "Me",
+                        "name": "Background",
                         "pos": {
-                            "x": 237.0,
-                            "y": 219.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.75468748807907104,
-                            "y": 0.75462961196899414
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -262,35 +264,6 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": false,
-                        "name": "Logo",
-                        "pos": {
-                            "x": 1336.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.18437500298023224,
-                            "y": 0.18425926566123962
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
                     }
                 ]
             },
@@ -305,7 +278,11 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
+                "OBSBasic.SelectScene": [
+                    {
+                        "key": "OBS_KEY_NUM2"
+                    }
+                ],
                 "libobs.hide_scene_item.DesktopAudio": [],
                 "libobs.hide_scene_item.Me": [],
                 "libobs.hide_scene_item.Microphone": [],
@@ -545,6 +522,86 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "noise_suppress_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Noise Suppression",
+                    "prev_ver": 419430408,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "suppress_level": -30
+                    },
+                    "sync": 0,
+                    "versioned_id": "noise_suppress_filter",
+                    "volume": 1.0
+                },
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "noise_gate_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Noise Gate",
+                    "prev_ver": 419430408,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "attack_time": 25,
+                        "close_threshold": -70.0,
+                        "open_threshold": -40.0
+                    },
+                    "sync": 0,
+                    "versioned_id": "noise_gate_filter",
+                    "volume": 1.0
+                },
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "compressor_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Compressor",
+                    "prev_ver": 419430408,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "output_gain": 4.0,
+                        "ratio": 4.0
+                    },
+                    "sync": 0,
+                    "versioned_id": "compressor_filter",
+                    "volume": 1.0
+                }
+            ],
             "flags": 0,
             "hotkeys": {
                 "libobs.mute": [],
@@ -568,7 +625,7 @@
             },
             "sync": 0,
             "versioned_id": "pulse_input_capture",
-            "volume": 1.0
+            "volume": 0.79579788446426392
         },
         {
             "balance": 0.5,
@@ -619,32 +676,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/home/brodie/videos/podcast/Art/Video Background/1 Person/Background - 1 Person (w-o Logo).png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Logo",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/home/brodie/videos/podcast/Art/Full Logo/Full Logo.png"
+                "file": "/home/brodie/videos/podcast/Art/Video Background/1 Person/Background - 1 Person.png"
             },
             "sync": 0,
             "versioned_id": "image_source",

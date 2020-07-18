@@ -1,10 +1,30 @@
 # settings
 
+(GimpGegl-gegl-dropshadow-config "2020-07-13 20:16:23"
+    (time 1594637183)
+    (x 20)
+    (y 20)
+    (radius 7.0899999999999999)
+    (grow-shape circle)
+    (grow-radius 7)
+    (color (color-rgba 0.12861736334405149 0.12861736334405149 0.12861736334405149 1))
+    (opacity 0.78800000000000003))
+(GimpGegl-gegl-dropshadow-config "2020-07-08 17:35:49"
+    (time 1594195549)
+    (x 20)
+    (y 20)
+    (radius 7.0899999999999999)
+    (grow-shape circle)
+    (grow-radius 7)
+    (color (color-rgba 0 0 0 1))
+    (opacity 0.78800000000000003))
 (GimpGegl-gegl-dropshadow-config "2020-06-04 18:24:46"
     (time 1591260886)
     (x 1.0600000000000001)
     (y 1.0600000000000001)
     (radius 19.52)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 1 1 1 1))
     (opacity 2))
 (GimpGegl-gegl-dropshadow-config "2019-12-03 12:17:56"
@@ -12,6 +32,8 @@
     (x 3.3330000000000002)
     (y 3.3330000000000002)
     (radius 3.0099999999999998)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 0 0.50196078431372548 1 1))
     (opacity 1.2909999999999999))
 (GimpGegl-gegl-dropshadow-config "2019-12-03 11:07:06"
@@ -19,6 +41,8 @@
     (x 1.7949999999999999)
     (y 1.7949999999999999)
     (radius 1.49)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 0 0 0.57647058823529407 1))
     (opacity 1.3660000000000001))
 (GimpGegl-gegl-dropshadow-config "2019-12-03 11:04:25"
@@ -26,6 +50,8 @@
     (x 1.7949999999999999)
     (y 1.7949999999999999)
     (radius 1.95)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 0 0 0.57647058823529407 1))
     (opacity 1.3660000000000001))
 (GimpGegl-gegl-dropshadow-config "2019-09-26 15:12:06"
@@ -33,6 +59,8 @@
     (x 7.1790000000000003)
     (y 7.1790000000000003)
     (radius 0)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 1 1 1 1))
     (opacity 2))
 (GimpGegl-gegl-dropshadow-config "2019-09-18 15:41:13"
@@ -40,6 +68,8 @@
     (x 5.1280000000000001)
     (y 5.1280000000000001)
     (radius 3)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 1 1 1 1))
     (opacity 0.47099999999999997))
 (GimpGegl-gegl-dropshadow-config "2019-09-18 10:29:03"
@@ -47,6 +77,8 @@
     (x 4.1529999999999996)
     (y 4.1529999999999996)
     (radius 3)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 1 1 1 1))
     (opacity 0.47099999999999997))
 (GimpGegl-gegl-dropshadow-config "2019-09-18 10:27:43"
@@ -54,6 +86,8 @@
     (x 4.6150000000000002)
     (y 4.6150000000000002)
     (radius 2)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 1 1 1 1))
     (opacity 0.35999999999999999))
 (GimpGegl-gegl-dropshadow-config "Borderline"
@@ -61,6 +95,8 @@
     (x 7.1790000000000003)
     (y 7.1790000000000003)
     (radius 0)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 1 1 1 1))
     (opacity 2))
 (GimpGegl-gegl-dropshadow-config "Text Shadow"
@@ -68,6 +104,8 @@
     (x 5.1280000000000001)
     (y 5.1280000000000001)
     (radius 3)
+    (grow-shape circle)
+    (grow-radius 0)
     (color (color-rgba 1 1 1 1))
     (opacity 0.47099999999999997))
 
