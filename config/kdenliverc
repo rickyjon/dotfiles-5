@@ -9,41 +9,41 @@ listViewIconSize=15
 Main_1=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAACSfwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAAegD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAPEAAABGAP////wAAAD3AAAB2gAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAtcAAAFWAAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAABDMAAAItAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIAAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAGzQAAAJsAAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIBAAAGZgAAAQIAAAECAP///wAAB2gAAAFaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
 
 [MainWindow]
-Height 1080=1024
+Height 1080=1080
 Height 270=256
-State=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAACOPwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAAegD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAANMAAABGAP////wAAADZAAABEQAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAfAAAAB7AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAAnEAAALiAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIAAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAGzQAAAJsAAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIBAAAFWQAAAg8AAAECAP///wAAB2gAAAFrAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAOtAAABcfwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAAegD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAEYAAABGAP////wAAABMAAAAigAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAANwAAAB9AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAAAV8AAAFGAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIAAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAGzQAAAJsAAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIBAAACqwAAAQIAAAECAP///wAAA60AAAIyAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1896
+Width 1920=941
 Width 480=474
 
 [MainWindow][Toolbar timelineToolBar]
 ToolButtonStyle=IconOnly
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/videos/youtube/asset/Generic/,$HOME/videos/youtube/outro/,$HOME/videos/youtube/patreon/
-KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/floaterm,$HOME/videos/youtube/ToUpload/fractional-scaling,$HOME/videos/podcast/ToUpload/Wall-Ball
+KdenliveClipFolder[$e]=$HOME/videos/youtube/asset/Generic/,$HOME/videos/youtube/patreon/,$HOME/videos/youtube/outro/
+KdenliveProjectsFolder[$e]=$HOME/videos/podcast/ToUpload/JoeRoganOnVideoGames,$HOME/videos/podcast/ToUpload/RecievingDonationsIsWeird,$HOME/videos/podcast/ToUpload/StoryfireIsAlreadyDead
 
 [Recent Files]
-File1[$e]=$HOME/videos/youtube/ToUpload/xob/xob.kdenlive
-File10[$e]=$HOME/videos/youtube/ToUpload/floaterm/floaterm.kdenlive
-File2[$e]=$HOME/videos/youtube/ToUpload/eliminate-gui/eliminate-gui.kdenlive
-File3[$e]=$HOME/videos/youtube/ToUpload/oneshot/oneshot
-File4[$e]=$HOME/videos/youtube/ToUpload/lemonbar/lemonbar.kdenlive
-File5[$e]=$HOME/videos/podcast/ToUpload/TyTheTasmanianTiger/TyTheTasmanianTiger.kdenlive
-File6[$e]=$HOME/videos/podcast/ToUpload/NewIntroSong/NewIntroSong.kdenlive
-File7[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp21-Soundcheck/TechOverTeaEp21-Soundcheck.kdenlive
-File8[$e]=$HOME/videos/podcast/ToUpload/Wall-Ball/Wall-ball.kdenlive
-File9[$e]=$HOME/videos/youtube/ToUpload/fractional-scaling/fractional-scaling.kdenlive
-Name1[$e]=xob.kdenlive
-Name10[$e]=floaterm.kdenlive
-Name2[$e]=eliminate-gui.kdenlive
-Name3[$e]=oneshot
-Name4[$e]=lemonbar.kdenlive
-Name5[$e]=TyTheTasmanianTiger.kdenlive
-Name6[$e]=NewIntroSong.kdenlive
-Name7[$e]=TechOverTeaEp21-Soundcheck.kdenlive
-Name8[$e]=Wall-ball.kdenlive
-Name9[$e]=fractional-scaling.kdenlive
+File1[$e]=$HOME/videos/youtube/ToUpload/easymotion/easymotion.kdenlive
+File10[$e]=$HOME/videos/podcast/ToUpload/JoeRoganOnVideoGames/joerogan-instagram.kdenlive
+File2[$e]=$HOME/videos/youtube/ToUpload/readability-cli/readability-cli.kdenlive
+File3[$e]=$HOME/videos/podcast/ToUpload/JoeRoganOnVideoGames/joerogan.kdenlive
+File4[$e]=$HOME/videos/podcast/ToUpload/RecievingDonationsIsWeird/donations.kdenlive
+File5[$e]=$HOME/videos/podcast/ToUpload/StoryfireIsAlreadyDead/storyfire.kdenlive
+File6[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp24-Soundcheck/soundcheck.kdenlive
+File7[$e]=$HOME/videos/podcast/ToUpload/TechOverTeaEp24/TechOverTeaEp24.kdenlive
+File8[$e]=$HOME/videos/podcast/ToUpload/StoryfireIsAlreadyDead/storyfire-instagram.kdenlive
+File9[$e]=$HOME/videos/podcast/ToUpload/RecievingDonationsIsWeird/donations-instagram.kdenlive
+Name1[$e]=easymotion.kdenlive
+Name10[$e]=joerogan-instagram.kdenlive
+Name2[$e]=readability-cli.kdenlive
+Name3[$e]=joerogan.kdenlive
+Name4[$e]=donations.kdenlive
+Name5[$e]=storyfire.kdenlive
+Name6[$e]=soundcheck.kdenlive
+Name7[$e]=TechOverTeaEp24.kdenlive
+Name8[$e]=storyfire-instagram.kdenlive
+Name9[$e]=donations-instagram.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -84,7 +84,7 @@ ColorScheme=Breeze High Contrast
 
 [bin]
 bin_zoom=3
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAE1AAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAEQAAAABAAAAAAAAA+gAAAAAMA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAEsAAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAADsAAAABAAAAAAAAA+gAAAAAMA==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -128,12 +128,12 @@ trackheight=65
 [unmanaged]
 automatictransitions=false
 default_profile=atsc_1080p_30
-defaultrescaleheight=540
-defaultrescalewidth=960
+defaultrescaleheight=960
+defaultrescalewidth=540
 favorite_effects=volume,lift_gamma_gain,qtblend,fade_from_black,frei0r.saturat0r,frei0r.coloradj_RGB,frei0r.scale0tilt,autotrack_rectangle
 force_breeze=true
 monitor_audio=false
-producerslist=pango,pixbuf,blipflash,count,pgm,qimage,qtext,kdenlivetitle,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,slowmotion,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,vorbis,xml,xml-string,xml-nogl,decklink,avformat,avformat-novalidate,framebuffer
+producerslist=blipflash,count,pgm,qimage,qtext,kdenlivetitle,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,slowmotion,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,vorbis,xml,xml-string,xml-nogl,decklink,pango,pixbuf,avformat,avformat-novalidate,framebuffer
 project_fps=30
 use_dark_breeze=true
 widgetstyle=Fusion

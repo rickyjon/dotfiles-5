@@ -166,14 +166,14 @@
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 231.0,
-                            "y": 215.0
+                            "x": 234.0,
+                            "y": 217.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.76145833730697632,
-                            "y": 0.76111114025115967
+                            "x": 0.75729167461395264,
+                            "y": 0.75740742683410645
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -511,7 +511,8 @@
                 "Power Line Frequency": 7234307546238118212,
                 "device_id": "/dev/video0",
                 "input": 0,
-                "pixelformat": 861030210
+                "pixelformat": 861030210,
+                "resolution": 125830200
             },
             "sync": 0,
             "versioned_id": "v4l2_input",
@@ -594,7 +595,7 @@
                     "push-to-talk": false,
                     "push-to-talk-delay": 0,
                     "settings": {
-                        "output_gain": 4.0,
+                        "output_gain": 0.0,
                         "ratio": 4.0
                     },
                     "sync": 0,
@@ -625,7 +626,7 @@
             },
             "sync": 0,
             "versioned_id": "pulse_input_capture",
-            "volume": 0.79579788446426392
+            "volume": 0.79073679447174072
         },
         {
             "balance": 0.5,

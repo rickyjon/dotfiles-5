@@ -13,6 +13,7 @@ env:
   TERM: alacritty
 
 window:
+  dynamic_title: true
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -211,7 +212,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '#ffffff'
@@ -229,7 +230,6 @@ selection:
   save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
 
 cursor:
   style: Underline
@@ -431,7 +431,7 @@ key_bindings:
   - { key: P,        mods: Control,       action: Paste            }
   - { key: Insert,   mods: Shift,         action: Paste            }
   - { key: Slash,    mods: Control,       chars: "gc"              }
- #- { key: T,        mods: Control,       command: "alacritty"     }
+    #- { key: T,        mods: Control,       command: "alacritty"     }
   - { key: Y,        mods: Control,       action: Copy             }
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }

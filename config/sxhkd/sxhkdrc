@@ -156,16 +156,25 @@ super + {Right, Left}
 
 # Screenshots
 Print
-  screenshot full
+	flameshot full -p ~/pictures/screenshots
 
-shift + Print
-  screenshot select
+Print + shift
+	flameshot gui
 
-control + Print
-  screenshot fulltime
+Print + control
+	flameshot screen -p ~/pictures/screenshots
 
-super + Print
-  screenshot selecttime
+# Print
+#   screenshot full
+
+# shift + Print
+#   screenshot select
+
+# control + Print
+#   screenshot fulltime
+
+# super + Print
+#   screenshot selecttime
 
 #---Application Launchers---#
 super + d

@@ -76,9 +76,9 @@
                 "push-to-talk-delay": 0,
                 "settings": {
                     "attack_time": 6,
-                    "output_gain": 4.0,
+                    "output_gain": 0.0,
                     "ratio": 4.0,
-                    "release_time": 500,
+                    "release_time": 502,
                     "threshold": -18.0
                 },
                 "sync": 0,
@@ -141,8 +141,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 0.80186736583709717
     },
-    "current_program_scene": "Bottom Right",
-    "current_scene": "Bottom Right",
+    "current_program_scene": "Full Cam",
+    "current_scene": "Full Cam",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -212,94 +212,23 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "clut_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Apply LUT",
-                    "prev_ver": 419430408,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "clut_amount": 0.5,
-                        "image_path": "/home/brodie/videos/Gaming Careers LUTs/LUTs/GamingCareers_Barrera.png"
-                    },
-                    "sync": 0,
-                    "versioned_id": "clut_filter",
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {},
-            "id": "v4l2_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Webcam",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "Brightness": 120,
-                "Exposure (Absolute)": 260,
-                "Exposure, Auto": 5557561106012987725,
-                "Exposure, Auto Priority": false,
-                "Focus (absolute)": 36,
-                "Focus, Auto": false,
-                "Gain": 0,
-                "Power Line Frequency": 525196079157,
-                "White Balance Temperature": 5022,
-                "White Balance Temperature, Auto": false,
-                "buffering": false,
-                "color_range": 2,
-                "device_id": "/dev/video0",
-                "framerate": 65566,
-                "input": 0,
-                "pixelformat": 861030210,
-                "resolution": 125830200
-            },
-            "sync": 0,
-            "versioned_id": "v4l2_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "key": "OBS_KEY_NUM9"
+                        "key": "OBS_KEY_NUM5"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
-                "libobs.hide_scene_item.Screen": [],
                 "libobs.hide_scene_item.Webcam": [],
                 "libobs.show_scene_item.Microphone": [],
-                "libobs.show_scene_item.Screen": [],
                 "libobs.show_scene_item.Webcam": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Top Right",
+            "name": "Full Cam",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -308,7 +237,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 13,
+                "id_counter": 11,
                 "items": [
                     {
                         "align": 5,
@@ -323,9 +252,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
+                        "id": 9,
                         "locked": false,
-                        "name": "Screen",
+                        "name": "Webcam",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -352,36 +281,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 12,
-                        "locked": false,
-                        "name": "Webcam",
-                        "pos": {
-                            "x": 1505.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.2161458283662796,
-                            "y": 0.21574074029922485
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 13,
+                        "id": 10,
                         "locked": false,
                         "name": "Microphone",
                         "pos": {
@@ -408,61 +308,11 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "clut_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Apply LUT",
-                    "prev_ver": 419430408,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "clut_amount": 1.0
-                    },
-                    "sync": 0,
-                    "versioned_id": "clut_filter",
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {},
-            "id": "xshm_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Screen",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
-            "sync": 0,
-            "versioned_id": "xshm_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "key": "OBS_KEY_NUM7"
+                        "key": "OBS_KEY_NUM1"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
@@ -476,7 +326,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Top Left",
+            "name": "Bottom Left",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -529,12 +379,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 9,
+                        "id": 8,
                         "locked": false,
                         "name": "Webcam",
                         "pos": {
                             "x": 0.0,
-                            "y": 0.0
+                            "y": 847.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -716,7 +566,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "key": "OBS_KEY_NUM1"
+                        "key": "OBS_KEY_NUM7"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
@@ -730,7 +580,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Bottom Left",
+            "name": "Top Left",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -783,12 +633,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 8,
+                        "id": 9,
                         "locked": false,
                         "name": "Webcam",
                         "pos": {
                             "x": 0.0,
-                            "y": 847.0
+                            "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -839,23 +689,75 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "clut_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Apply LUT",
+                    "prev_ver": 419430408,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "clut_amount": 1.0
+                    },
+                    "sync": 0,
+                    "versioned_id": "clut_filter",
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "xshm_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Screen",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "versioned_id": "xshm_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
-                        "key": "OBS_KEY_NUM5"
+                        "key": "OBS_KEY_NUM9"
                     }
                 ],
                 "libobs.hide_scene_item.Microphone": [],
+                "libobs.hide_scene_item.Screen": [],
                 "libobs.hide_scene_item.Webcam": [],
                 "libobs.show_scene_item.Microphone": [],
+                "libobs.show_scene_item.Screen": [],
                 "libobs.show_scene_item.Webcam": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Full Cam",
+            "name": "Top Right",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -864,7 +766,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 11,
+                "id_counter": 13,
                 "items": [
                     {
                         "align": 5,
@@ -879,9 +781,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 9,
+                        "id": 3,
                         "locked": false,
-                        "name": "Webcam",
+                        "name": "Screen",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -908,7 +810,36 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 10,
+                        "id": 12,
+                        "locked": false,
+                        "name": "Webcam",
+                        "pos": {
+                            "x": 1505.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.2161458283662796,
+                            "y": 0.21574074029922485
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 13,
                         "locked": false,
                         "name": "Microphone",
                         "pos": {
@@ -928,6 +859,75 @@
             },
             "sync": 0,
             "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "clut_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Apply LUT",
+                    "prev_ver": 419430408,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "clut_amount": 0.5,
+                        "image_path": "/home/brodie/videos/Gaming Careers LUTs/LUTs/GamingCareers_Barrera.png"
+                    },
+                    "sync": 0,
+                    "versioned_id": "clut_filter",
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "v4l2_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Webcam",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "Brightness": 120,
+                "Exposure (Absolute)": 260,
+                "Exposure, Auto": 5557561106012987725,
+                "Exposure, Auto Priority": false,
+                "Focus (absolute)": 36,
+                "Focus, Auto": false,
+                "Gain": 0,
+                "Power Line Frequency": 525196079157,
+                "White Balance Temperature": 5022,
+                "White Balance Temperature, Auto": false,
+                "buffering": false,
+                "color_range": 2,
+                "device_id": "/dev/video0",
+                "framerate": 65566,
+                "input": 0,
+                "pixelformat": 861030210,
+                "resolution": 125830200
+            },
+            "sync": 0,
+            "versioned_id": "v4l2_input",
             "volume": 1.0
         }
     ],

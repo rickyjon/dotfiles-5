@@ -122,7 +122,7 @@ initial = 1
 type = custom/script
 exec = echo 💰
 interval = 0
-click-left = $BROWSER https://coinmarketcap.com/ &
+click-left = $TERMINAL -e cointop &
 click-right = notifycrypto
 
 [module/torrents]

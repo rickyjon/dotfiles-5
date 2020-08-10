@@ -27,3 +27,7 @@ source /home/brodie/.config/broot/launcher/bash/br
 
 # Starship Prompt
 eval "$(starship init bash)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+

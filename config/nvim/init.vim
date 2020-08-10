@@ -1,4 +1,5 @@
 let mapleader=" "
+
 " Use system clipboard
 set clipboard+=unnamedplus
 
@@ -21,6 +22,9 @@ nnoremap <A-o> :!touch<Space>
 nnoremap <A-e> :!crf<Space>
 nnoremap <A-d> :!mkdir<Space>
 nnoremap <A-m> :!mv<Space>%<Space>
+
+" Fix Y behaviour
+nmap Y y$
 
 " Fix indenting visual block
 vmap < <gv
@@ -57,7 +61,7 @@ nnoremap <A-n> :tabn<CR>
 " Alias replace all to
 nnoremap <A-s> :%s//gI<Left><Left><Left>
 
-" Alias write  nd quit to Q
+" Alias write and quit to Q
 nnoremap <leader>q :wq<CR>
 nnoremap <leader>w :w<CR>
 
@@ -100,38 +104,34 @@ if !exists('g:vscode')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'tomasiser/vim-code-dark'
-  " Center text
-  Plug 'junegunn/goyo.vim'
   " Code Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  " Fuzzy find files
-  Plug 'junegunn/fzf.vim'
-  " This objectively makes vim better
-  Plug 'terryma/vim-multiple-cursors'
-  " Working with tags
+  " Tags
   Plug 'alvan/vim-closetag'
   Plug 'tpope/vim-surround'
+	Plug 'mattn/emmet-vim'
   " Commenting
   Plug 'tpope/vim-commentary'
   " Syntax highlighting
+  Plug 'HerringtonDarkholme/yats.vim'
   Plug 'yuezk/vim-js'
   Plug 'maxmellon/vim-jsx-pretty'
-  Plug 'HerringtonDarkholme/yats.vim'
 	Plug 'rust-lang/rust.vim'
-  Plug 'vim-pandoc/vim-pandoc-syntax'
 	" Motions
-	Plug 'justinmk/vim-sneak'
-	" Misc
-  Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-  Plug 'voldikss/vim-floaterm'
+	Plug 'easymotion/vim-easymotion'
+	" Git
   Plug 'airblade/vim-gitgutter'
+	Plug 'tpope/vim-fugitive'
+	" Misc
+  Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/goyo.vim'
+  Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 	Plug 'vimwiki/vimwiki'
 	Plug 'tpope/vim-repeat'
 	Plug 'dhruvasagar/vim-table-mode'
-	Plug 'mattn/emmet-vim'
 
   call plug#end()
-	let g:user_emmet_leader_key='<A-c>'
+
   " Basic settings
   set mouse=a
   syntax on
@@ -142,7 +142,7 @@ if !exists('g:vscode')
   set termguicolors
   colorscheme codedark
 
-  " Tab Settings"
+  " Tab Settings
   set shiftwidth=2
   set softtabstop=2
   set tabstop=2
@@ -157,25 +157,21 @@ if !exists('g:vscode')
   set cursorline
   set cursorcolumn
 
+	" Easy Motion
+	map <leader><leader>. <Plug>(easymotion-repeat)
+	map <leader><leader>f <Plug>(easymotion-overwin-f)
+	map <leader><leader>j <Plug>(easymotion-overwin-line)
+	map <leader><leader>k <Plug>(easymotion-overwin-line)
+	map <leader><leader>w <Plug>(easymotion-overwin-w)
+
+	" Emmet
+	let g:user_emmet_leader_key='<A-c>'
+
 	" Table mode
 	let g:table_mode_delete_row_map = "<leader>tdr"
 
-	" Git Messenger
-	noremap <C-g> :GitMessenger<CR>
-	let g:git_messenger_no_default_mappings = v:true
-
   " Goyo
   noremap <leader>g :Goyo<CR>
-
-  " Float Term
-  nnoremap <A-t> :FloatermNew<CR>
-  nnoremap <A-r> :FloatermNew lf<CR>
-
-	"let g:floaterm_wintype    = 'normal'
-	let g:floaterm_keymap_new    = '<F9>'
-	let g:floaterm_keymap_prev   = '<F10>'
-	let g:floaterm_keymap_next   = '<F11>'
-	let g:floaterm_keymap_toggle = '<F12>'
 
   " Git Gutter
   highlight GitGutterAdd guifg=#009900 ctermfg=Green
@@ -229,7 +225,7 @@ if !exists('g:vscode')
   function! OpenToRight()
     :normal v
     let g:path=expand('%:p')
-    :q!
+    execute 'q!'
     execute 'belowright vnew' g:path
     :normal <C-w>l
   endfunction
@@ -237,7 +233,7 @@ if !exists('g:vscode')
   function! OpenBelow()
     :normal v
     let g:path=expand('%:p')
-    :q!
+    execute 'q!'
     execute 'belowright new' g:path
     :normal <C-w>l
   endfunction
@@ -245,11 +241,10 @@ if !exists('g:vscode')
   function! OpenTab()
     :normal v
     let g:path=expand('%:p')
-    :q!
+    execute 'q!'
     execute 'tabedit' g:path
     :normal <C-w>l
   endfunction
-
 
   function! NetrwMappings()
       " Hack fix to make ctrl-l work properly
@@ -337,16 +332,17 @@ if !exists('g:vscode')
   " Add > at current position without closing the current tag, default is ''
   let g:closetag_close_shortcut = '<leader>>'
 
+
   " ------COC SETTINGS------
   " prettier command for coc
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
   let g:coc_global_extensions = [
     \ 'coc-snippets',
     \ 'coc-pairs',
+    \ 'coc-prettier',
     \ 'coc-tsserver',
     \ 'coc-html',
     \ 'coc-css',
-    \ 'coc-prettier',
     \ 'coc-json',
     \ 'coc-angular',
     \ 'coc-vimtex'
@@ -396,9 +392,6 @@ if !exists('g:vscode')
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
-
-  " Use D to show documentation in preview window
-  nnoremap <silent> D :call <SID>show_documentation()<CR>
 
   function! s:show_documentation()
     if (index(['vim','help'], &filetype) >= 0)
