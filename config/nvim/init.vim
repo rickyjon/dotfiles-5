@@ -157,6 +157,9 @@ if !exists('g:vscode')
   set cursorline
   set cursorcolumn
 
+	" Vim Wiki
+	let g:vimwiki_list = [{'auto_diary_index': 1}]
+
 	" Easy Motion
 	map <leader><leader>. <Plug>(easymotion-repeat)
 	map <leader><leader>f <Plug>(easymotion-overwin-f)
