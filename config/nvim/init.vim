@@ -129,6 +129,7 @@ if !exists('g:vscode')
 	Plug 'vimwiki/vimwiki'
 	Plug 'tpope/vim-repeat'
 	Plug 'dhruvasagar/vim-table-mode'
+	Plug 'itchyny/calendar.vim'
 
   call plug#end()
 
@@ -159,6 +160,14 @@ if !exists('g:vscode')
 
 	" Vim Wiki
 	let g:vimwiki_list = [{'auto_diary_index': 1}]
+
+
+let g:vimwiki_diary_months = {
+      \ 1: 'Январь', 2: 'Февраль', 3: 'Март',
+      \ 4: 'Апрель', 5: 'Май', 6: 'Июнь',
+      \ 7: 'Июль', 8: 'Август', 9: 'Сентябрь',
+      \ 10: 'Октябрь', 11: 'Ноябрь', 12: 'Декабрь'
+      \ }
 
 	" Easy Motion
 	map <leader><leader>. <Plug>(easymotion-repeat)
