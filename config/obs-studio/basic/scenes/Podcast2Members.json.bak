@@ -293,23 +293,23 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 263,
-                        "crop_left": 17,
-                        "crop_right": 973,
+                        "crop_bottom": 262,
+                        "crop_left": 12,
+                        "crop_right": 967,
                         "crop_top": 292,
                         "group_item_backup": false,
-                        "id": 12,
+                        "id": 2,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 59.0,
-                            "y": 402.0
+                            "x": 130.0,
+                            "y": 42.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.94408601522445679,
-                            "y": 0.94476193189620972
+                            "x": 0.74282675981521606,
+                            "y": 0.74334603548049927
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -327,9 +327,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 3,
                         "locked": false,
-                        "name": "Background2",
+                        "name": "BackgroundVideo2",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -356,7 +356,36 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 4,
+                        "locked": false,
+                        "name": "Browser2",
+                        "pos": {
+                            "x": 967.0,
+                            "y": 44.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.96599364280700684,
+                            "y": 0.9658203125
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 9,
                         "locked": false,
                         "name": "Desktop Audio",
                         "pos": {
