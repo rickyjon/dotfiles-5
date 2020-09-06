@@ -91,7 +91,7 @@
             "libobs.unmute": []
         },
         "id": "pulse_input_capture",
-        "mixers": 195,
+        "mixers": 193,
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
@@ -121,7 +121,7 @@
             "libobs.unmute": []
         },
         "id": "pulse_output_capture",
-        "mixers": 195,
+        "mixers": 194,
         "monitoring_type": 0,
         "muted": false,
         "name": "Desktop Audio",
@@ -136,7 +136,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
-        "volume": 0.84772348403930664
+        "volume": 0.81298309564590454
     },
     "current_program_scene": "Main",
     "current_scene": "Main",
@@ -273,8 +273,8 @@
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 979.0,
-                            "y": 399.0
+                            "x": 975.0,
+                            "y": 402.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -293,23 +293,23 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 262,
-                        "crop_left": 12,
-                        "crop_right": 967,
+                        "crop_bottom": 263,
+                        "crop_left": 17,
+                        "crop_right": 973,
                         "crop_top": 292,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 12,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 130.0,
-                            "y": 42.0
+                            "x": 59.0,
+                            "y": 401.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.74282675981521606,
-                            "y": 0.74334603548049927
+                            "x": 0.94408601522445679,
+                            "y": 0.94476193189620972
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -327,9 +327,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
+                        "id": 1,
                         "locked": false,
-                        "name": "BackgroundVideo2",
+                        "name": "Background2",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -356,36 +356,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 4,
-                        "locked": false,
-                        "name": "Browser2",
-                        "pos": {
-                            "x": 967.0,
-                            "y": 44.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.96599364280700684,
-                            "y": 0.9658203125
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
+                        "id": 2,
                         "locked": false,
                         "name": "Desktop Audio",
                         "pos": {
@@ -491,8 +462,8 @@
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 128.0,
-                            "y": 531.0
+                            "x": 129.0,
+                            "y": 534.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -520,7 +491,7 @@
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 130.0,
+                            "x": 129.0,
                             "y": 42.0
                         },
                         "private_settings": {},

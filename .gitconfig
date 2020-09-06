@@ -7,3 +7,5 @@
 	user = BrodieRobertson
 [ghi]
 	token = 89c76745e61e258c8a5d76338be34557ffed2404
+[hub]
+	protocol = https

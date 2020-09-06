@@ -1,5 +1,10 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
+export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
+export HISTFILE="$XDG_DATA_HOME"/bash/history
+
 export PATH="$PATH:/home/brodie/scripts:$(ruby -e 'puts Gem.user_dir')/bin:$HOME/.cargo/bin"
 export EDITOR="nvim"
 export READER="zathura"

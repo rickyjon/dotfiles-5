@@ -6,11 +6,12 @@ nm-applet &
 xrdb ~/.Xresources &
 picom -b --experimental-backends &
 xwallpaper --zoom ~/.config/wall.png &
+flameshot &
 #killall "launchlemon"
 #launchlemon &
 launchpolybar &
 killall bspswallow
-pidof bspswallow || bspswallow &
+pidof bspswallow | bspswallow &
 
 ###---MONITORS---###
 bspc monitor DisplayPort-0 -d 1 2 3 4 5 6 7

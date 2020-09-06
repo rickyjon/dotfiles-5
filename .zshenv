@@ -1,16 +1,28 @@
 typeset -U PATH path
-path=("$HOME/scripts" "$HOME/scripts/alsa" "$HOME/scripts/dragon" "$HOME/scripts/lf" "$HOME/scripts/i3" "$HOME/scripts/pulse"
-	"$HOME/scripts/polybar" "$HOME/scripts/bspwm" "$HOME/scripts/lemonbar" "$HOME/scripts/transmission"
-	"$HOME/bin/tweetdeck-linux-x64" "$(ruby -e 'puts Gem.user_dir')/bin" "$HOME/go/bin" "$HOME/.cargo/bin"
-	"$HOME/.npm-global/bin" "$path[@]")
-export PATH
 
+# Fixing Paths
+export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
+export ANDROID_SDK_HOME="$XDG_CONFIG_HOME"/android
+export ANDROID_AVD_HOME="$XDG_DATA_HOME"/android/
+export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME"/android/
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
+export ADB_VENDOR_KEY="$XDG_CONFIG_HOME"/android
+export GEM_PATH="$XDG_DATA_HOME/ruby/gems"
+export GEM_SPEC_CACHE="$XDG_DATA_HOME/ruby/specs"
+export GEM_HOME="$XDG_DATA_HOME/ruby/gems"
 export NPM_CONFIG_PREFIX=~/.npm-global
+
+# Scaling
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export QT_SCALE_FACTOR=1
 export QT_SCREEN_SCALE_FACTORS="1;1;1"
 export GDK_SCALE=1
 export GDK_DPI_SCALE=1
+
+# Default Apps
 export EDITOR="nvim"
 export READER="zathura"
 export VISUAL="nvim"
@@ -22,6 +34,12 @@ export COLORTERM="truecolor"
 export OPENER="xdg-open"
 export PAGER="less"
 export WM="bspwm"
+
+path=("$HOME/scripts" "$HOME/scripts/alsa" "$HOME/scripts/dragon" "$HOME/scripts/lf" "$HOME/scripts/i3" "$HOME/scripts/pulse"
+	"$HOME/scripts/polybar" "$HOME/scripts/bspwm" "$HOME/scripts/lemonbar" "$HOME/scripts/transmission"
+	"$HOME/bin/tweetdeck-linux-x64" "$XDG_DATA_HOME/gems/bin" "$HOME/go/bin" "$HOME/.cargo/bin"
+	"$HOME/.npm-global/bin" "$path[@]")
+export PATH
 
 export LF_ICONS="\
 di=:\

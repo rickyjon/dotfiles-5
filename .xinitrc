@@ -5,6 +5,6 @@ sxhkd &
 udiskie &
 xbanish &
 xsetroot -cursor_name left_ptr &
-xmodmap ~/.Xmodmap &
-spotifyd &
+xrdb -load ~/.config/X11/xresources &
+xmodmap ~/.config/X11/xmodmap &
 exec bspwm
