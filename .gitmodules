@@ -52,6 +52,24 @@
 [submodule "config/nvim/pack/plugins/start/vim-surround"]
 	path = config/nvim/pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "config/nvim/pack/plugins/start/vim-table-mode"]
-	path = config/nvim/pack/plugins/start/vim-table-mode
+[submodule "config/nvim/pack/colors/start/vim-airline-themes"]
+	path = config/nvim/pack/colors/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "config/nvim/pack/colors/start/vim-code-dark"]
+	path = config/nvim/pack/colors/start/vim-code-dark
+	url = https://github.com/tomasiser/vim-code-dark.git
+[submodule "config/nvim/pack/syntax/start/rust.vim"]
+	path = config/nvim/pack/syntax/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "config/nvim/pack/syntax/start/vim-js"]
+	path = config/nvim/pack/syntax/start/vim-js
+	url = https://github.com/yuezk/vim-js.git
+[submodule "config/nvim/pack/syntax/start/vim-jsx-pretty"]
+	path = config/nvim/pack/syntax/start/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule "config/nvim/pack/syntax/start/vim-table-mode"]
+	path = config/nvim/pack/syntax/start/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
+[submodule "config/nvim/pack/syntax/start/yats.vim"]
+	path = config/nvim/pack/syntax/start/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim.git
