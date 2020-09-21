@@ -9,8 +9,11 @@ let g:coc_global_extensions = [
 	\ 'coc-css',
 	\ 'coc-json',
 	\ 'coc-angular',
+	\ 'coc-explorer',
 	\ 'coc-vimtex'
 	\ ]
+
+noremap <silent> <A-f> :CocCommand explorer<CR>
 
 " From Coc Readme
 set updatetime=300

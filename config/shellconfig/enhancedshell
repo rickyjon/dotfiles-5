@@ -2,3 +2,4 @@
 alias ls='exa --icons -a --group-directories-first'
 alias spt='launchspt'
 alias grep='grep --color=auto'
+alias vim='vim -u "$XDG_CONFIG_HOME/vim/vimrc"'

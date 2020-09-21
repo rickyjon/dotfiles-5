@@ -1,6 +1,6 @@
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/videos/youtube/outro/Outro.mp4,file:$HOME/videos/youtube/patreon/patreon.png,file:$HOME/videos/youtube/asset/Generic/[FREE]-Youtube-Subscribe-and-Bell-Animation-with-Sound-Effects---Alpha.mov,file:$HOME/videos/youtube/asset/Generic/and-xor.png,file:$HOME/videos/podcast/Art/Video Background/2 People/Background - 2 People.png,file:$HOME/videos/youtube/outro/outro.kdenlive,file:$HOME/videos/youtube/asset/Generic/videos.png,file:$HOME/videos/youtube/asset/Generic/support.png,file:$HOME/videos/youtube/asset/Generic/like-and-comment.png,file:$HOME/videos/youtube/asset/Generic/window manager.png,file:$HOME/videos/youtube/asset/Generic/pattern.xcf,file:$HOME/videos/youtube/asset/Generic/twitter.png,file:$HOME/videos/youtube/asset/Generic/lbry.png,file:$HOME/videos/youtube/asset/Generic/discord.png
-Recent URLs[$e]=file:$HOME/videos/youtube/patreon/
+Recent Files[$e]=file:$HOME/videos/youtube/outro/Outro.mp4,file:$HOME/videos/youtube/asset/Generic/[FREE]-Youtube-Subscribe-and-Bell-Animation-with-Sound-Effects---Alpha.mov,file:$HOME/videos/youtube/patreon/patreon.png,file:$HOME/videos/youtube/asset/Generic/and-xor.png,file:$HOME/videos/podcast/Art/Video Background/2 People/Background - 2 People.png,file:$HOME/videos/youtube/outro/outro.kdenlive,file:$HOME/videos/youtube/asset/Generic/videos.png,file:$HOME/videos/youtube/asset/Generic/support.png,file:$HOME/videos/youtube/asset/Generic/like-and-comment.png,file:$HOME/videos/youtube/asset/Generic/window manager.png,file:$HOME/videos/youtube/asset/Generic/pattern.xcf,file:$HOME/videos/youtube/asset/Generic/twitter.png,file:$HOME/videos/youtube/asset/Generic/lbry.png,file:$HOME/videos/youtube/asset/Generic/discord.png
+Recent URLs[$e]=file:$HOME/videos/youtube/asset/Generic/,file:$HOME/videos/youtube/patreon/,file:$HOME/videos/youtube/outro/,file:$HOME/videos/youtube/asset/,file:$HOME/,file:$HOME/videos/youtube/asset/OS/
 detailViewIconSize=0
 iconViewIconSize=43
 listViewIconSize=15
@@ -9,41 +9,49 @@ listViewIconSize=15
 Main_1=AAAA/wAAAAD9AAAAAQAAAAIAAAdoAAACSfwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAAegD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAZwD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAPEAAABGAP////wAAAD3AAAB2gAAAEQA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEQA/////AAAAtcAAAFWAAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAABDMAAAItAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIAAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABHAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAGzQAAAJsAAACbAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACWAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABMQD////7AAAACgBtAGkAeABlAHIBAAAGZgAAAQIAAAECAP///wAAB2gAAAFaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIF/////wAAAAAAAAAA
 
 [MainWindow]
+DisplayPort-0 HDMI-A-0 Height 1080=1024
+DisplayPort-0 HDMI-A-0 Width 1920=1896
+DisplayPort-0 HDMI-A-0 XPosition=12
+DisplayPort-0 HDMI-A-0 YPosition=44
+DisplayPort-0 Height 1080=1024
+DisplayPort-0 Width 1920=941
+DisplayPort-0 XPosition=12
+DisplayPort-0 YPosition=44
 Height 1080=1024
 Height 270=256
-State=AAAA/wAAAAD9AAAAAgAAAAEAAAEbAAABavwCAAAAAfsAAAAKAG0AaQB4AGUAcgEAAAJ6AAABagAAALgA////AAAAAgAAB2gAAAJP/AEAAAAJ+wAAABQAcwBjAHIAZQBlAG4AZwByAGEAYgAAAAAA/////wAAAEcA////+wAAABoAYQB1AGQAaQBvAHMAcABlAGMAdAByAHUAbQAAAAAA/////wAAAGcA/////AAAAAAAAAH/AAAAewD////6AAAAAAEAAAAF+wAAABYAcAByAG8AagBlAGMAdABfAGIAaQBuAQAAAAD/////AAAARgD////7AAAAHgB0AHIAYQBuAHMAaQB0AGkAbwBuAF8AbABpAHMAdAEAAAAA/////wAAAAAA////+wAAABYAZQBmAGYAZQBjAHQAXwBsAGkAcwB0AQAAAAD/////AAAAAAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwEAAAAA/////wAAAEQA////+wAAABgAdQBuAGQAbwBfAGgAaQBzAHQAbwByAHkBAAAAAP////8AAABGAP////wAAAIFAAACsAAAAUAA////+gAAAAACAAAAA/sAAAAYAGMAbABpAHAAXwBtAG8AbgBpAHQAbwByAQAAAEQAAAHNAAAAxwD///77AAAAGABlAGYAZgBlAGMAdABfAHMAdABhAGMAawEAAAAA/////wAAAFwA///++wAAAA4AbABpAGIAcgBhAHIAeQEAAAAA/////wAAAIQA///+/AAABLsAAAKtAAABQAD////6AAAAAAIAAAAC+wAAAB4AcAByAG8AagBlAGMAdABfAG0AbwBuAGkAdABvAHIBAAAAvwAAASwAAADHAP///vsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AQAAAAD/////AAAAdgD///77AAAAFgB2AGUAYwB0AG8AcgBzAGMAbwBwAGUAAAAAAP////8AAAEcAP////sAAAAQAHcAYQB2AGUAZgBvAHIAbQAAAAAA/////wAAAJsA////+wAAABQAcgBnAGIAXwBwAGEAcgBhAGQAZQAAAAAA/////wAAAJYA////+wAAABIAaABpAHMAdABvAGcAcgBhAG0AAAAAAP////8AAAE0AP///wAABkcAAAFqAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAgAAAAEAAAFkAAABZvwCAAAAAfsAAAAKAG0AaQB4AGUAcgEAAAJ+AAABZgAAALgA////AAAAAgAAA60AAAJT/AEAAAAJ+wAAABQAcwBjAHIAZQBlAG4AZwByAGEAYgAAAAAA/////wAAAEcA////+wAAABoAYQB1AGQAaQBvAHMAcABlAGMAdAByAHUAbQAAAAAA/////wAAAGcA/////AAAAAAAAAD9AAAAewD////6AAAAAAEAAAAF+wAAABYAcAByAG8AagBlAGMAdABfAGIAaQBuAQAAAAD/////AAAARgD////7AAAAHgB0AHIAYQBuAHMAaQB0AGkAbwBuAF8AbABpAHMAdAEAAAAA/////wAAAAAA////+wAAABYAZQBmAGYAZQBjAHQAXwBsAGkAcwB0AQAAAAD/////AAAAAAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwEAAAAA/////wAAAEQA////+wAAABgAdQBuAGQAbwBfAGgAaQBzAHQAbwByAHkBAAAAAP////8AAABGAP////wAAAEDAAABUgAAAUAA////+gAAAAECAAAAA/sAAAAYAGMAbABpAHAAXwBtAG8AbgBpAHQAbwByAQAAAEQAAAHNAAAAxwD///77AAAAGABlAGYAZgBlAGMAdABfAHMAdABhAGMAawEAAAAA/////wAAAFwA///++wAAAA4AbABpAGIAcgBhAHIAeQEAAAAA/////wAAAIQA///+/AAAAlsAAAFSAAABQAD////6AAAAAAIAAAAC+wAAAB4AcAByAG8AagBlAGMAdABfAG0AbwBuAGkAdABvAHIBAAAAvwAAASwAAADHAP///vsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AQAAAAD/////AAAAdgD///77AAAAFgB2AGUAYwB0AG8AcgBzAGMAbwBwAGUAAAAAAP////8AAAEcAP////sAAAAQAHcAYQB2AGUAZgBvAHIAbQAAAAAA/////wAAAJsA////+wAAABQAcgBnAGIAXwBwAGEAcgBhAGQAZQAAAAAA/////wAAAJYA////+wAAABIAaABpAHMAdABvAGcAcgBhAG0AAAAAAP////8AAAE0AP///wAAAkMAAAFmAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1896
+Width 1920=941
 Width 480=474
 
 [MainWindow][Toolbar timelineToolBar]
 ToolButtonStyle=IconOnly
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/videos/youtube/patreon/,$HOME/videos/youtube/outro/,$HOME/videos/youtube/asset/Generic/
-KdenliveProjectsFolder[$e]=$HOME/videos/podcast/ToUpload/VtubersDominateYouTube,$HOME/videos/podcast/ToUpload/JoshsExperienceWithUni,$HOME/videos/podcast/ToUpload/TheWalrusOperator
+KdenliveClipFolder[$e]=$HOME/videos/youtube/asset/Generic/,$HOME/videos/youtube/patreon/,$HOME/videos/youtube/outro/
+KdenliveProjectsFolder[$e]=$HOME/videos/podcast/ToUpload/RebuildingFacebook,$HOME/videos/podcast/ToUpload/NeglectingLBRY,$HOME/videos/podcast/ToUpload/LBRY-Baseline
 
 [Recent Files]
-File1[$e]=$HOME/videos/youtube/ToUpload/alacritty-update/alacritty-update.kdenlive
-File10[$e]=$HOME/videos/podcast/ToUpload/VtubersDominateYouTube/VtubersDominateYouTube.kdenlive
-File2[$e]=$HOME/videos/youtube/ToUpload/vim-modularization/vim-modularization.kdenlive
-File3[$e]=$HOME/videos/youtube/ToUpload/tdrop/tdrop.kdenlive
-File4[$e]=$HOME/videos/youtube/ToUpload/feedbaack/feedback.kdenlive
-File5[$e]=$HOME/videos/youtube/ToUpload/gtkcord/gtkcord.kdenlive
-File6[$e]=$HOME/videos/youtube/ToUpload/scrcpy/scrcpy.kdenlive
-File7[$e]=$HOME/videos/youtube/ToUpload/systemd/systemd.kdenlive
-File8[$e]=$HOME/videos/podcast/ToUpload/TheWalrusOperator/TheWalrusOperator.kdenlive
-File9[$e]=$HOME/videos/podcast/ToUpload/JoshsExperienceWithUni/JoshsExperienceWithUni.kdenlive
-Name1[$e]=alacritty-update.kdenlive
-Name10[$e]=VtubersDominateYouTube.kdenlive
-Name2[$e]=vim-modularization.kdenlive
-Name3[$e]=tdrop.kdenlive
-Name4[$e]=feedback.kdenlive
-Name5[$e]=gtkcord.kdenlive
-Name6[$e]=scrcpy.kdenlive
-Name7[$e]=systemd.kdenlive
-Name8[$e]=TheWalrusOperator.kdenlive
-Name9[$e]=JoshsExperienceWithUni.kdenlive
+File1[$e]=$HOME/videos/youtube/ToUpload/bandwhich/bandwhich.kdenlive
+File10[$e]=$HOME/videos/podcast/ToUpload/RebuildingFacebook/RebuildingFacebook.kdenlive
+File2[$e]=$HOME/videos/youtube/ToUpload/goneovim/goneovim.kdenlive
+File3[$e]=$HOME/videos/youtube/ToUpload/abduco/abduco.kdenlive
+File4[$e]=$HOME/videos/youtube/ToUpload/vim-native-plugins/vim-native-plugins.kdenlive
+File5[$e]=$HOME/videos/youtube/ToUpload/vifm/vifm.kdenlive
+File6[$e]=$HOME/videos/youtube/ToUpload/Posix-Compliance/posix-compliance.kdenlive
+File7[$e]=$HOME/videos/youtube/ToUpload/mpd/mpd.kdenlive
+File8[$e]=$HOME/videos/podcast/ToUpload/LBRY-Baseline/LbryBaseline.kdenlive
+File9[$e]=$HOME/videos/podcast/ToUpload/NeglectingLBRY/NeglectingLBRY.kdenlive
+Name1[$e]=bandwhich.kdenlive
+Name10[$e]=RebuildingFacebook.kdenlive
+Name2[$e]=goneovim.kdenlive
+Name3[$e]=abduco.kdenlive
+Name4[$e]=vim-native-plugins.kdenlive
+Name5[$e]=vifm.kdenlive
+Name6[$e]=posix-compliance.kdenlive
+Name7[$e]=mpd.kdenlive
+Name8[$e]=LbryBaseline.kdenlive
+Name9[$e]=NeglectingLBRY.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -85,7 +93,7 @@ ColorScheme=Breeze High Contrast
 
 [bin]
 bin_zoom=3
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAEhAAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAADAAAAABAAAAAAAAA+gAAAAAMA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAIGAAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAARUAAAABAAAAAAAAA+gAAAAAMA==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -123,6 +131,7 @@ dialogSize=1024,700
 shuttlebuttons=button0=monitor_pause
 
 [timeline]
+displayallchannels=true
 headerwidth=200
 trackheight=65
 
@@ -140,4 +149,4 @@ use_dark_breeze=true
 widgetstyle=Fusion
 
 [version]
-version=20.08.0
+version=20.08.1

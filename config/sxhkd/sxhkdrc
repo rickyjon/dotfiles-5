@@ -68,7 +68,7 @@ ctrl + alt + {Left,Right,Up,Down}
   xdo move {-x -20, -x +20, -y -20, -y +20}
 
 # Dropdown terminal
-super + ctrl + Return
+super + alt + Return
 	tdrop -ma -w 1916 -y 0 st
 
 #---Tabbing---#
@@ -111,9 +111,6 @@ super + {x, u, t, w, i, g, a, p, m}
 super + {b, c, e}
   {bookmenu -p "Select a bookmark" -b ~/.config/bookmenu/browser -co $BROWSER, bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim"}
 
-super + {r, s}
-  $TERMINAL -e {dman ., dlfile}
-
 F7
   toggletouch
 
@@ -139,14 +136,17 @@ super + F4
   pulsevolctrl "output-mute" "alsa_output.pci-0000_0b_00.4.analog-stereo"
 
 # Media Controls
-super + F7
+super + F8
   playerctl next
 
 super + F6
   playerctl previous
 
-super + F8
+super + F7
   playerctl play-pause
+
+super + F5
+  playerctl stop
 
 super + slash
   songnotification
@@ -184,15 +184,11 @@ super + d
 super + Return
   $TERMINAL
 
-super + {alt, Shift_L} + Return
-  {st, stabmux}
-
-# Snaps
-super + alt + l
-  snap run slack
-
 super + alt + {k, o, g, b, e, f, v, s, d}
   {kdenlive, obs, gimp, $BROWSER, thunderbird, pcmanfm, virtualbox, spotify, discord-canary}
+
+super + s
+	clipmenu
 
 super + q
   brave https://studio.youtube.com
@@ -205,5 +201,5 @@ super + e
 #  bspc rule -a st-256color -o state=floating rectangle=800x500+100+100 sticky=on && $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, joplin}
 
 super + alt + {a, r, t, h, n, c, j, p}
-  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, nvim ~/vimwiki/index.wiki, pulsemixer}
+  $TERMINAL -e {alsamixer, lf, transmission-remote-cli, htop, nvim, calcurse, nvim $XDG_DATA_HOME/vimwiki/index.wiki, pulsemixer}
 

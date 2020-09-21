@@ -36,7 +36,7 @@ cmd chmod ${{
   do
     chmod $ans $file
   done
-  
+
   lf -remote 'send reload'
 }}
 
@@ -256,7 +256,8 @@ map grs cd ~/repos/st
 map grw cd ~/repos/website
 
 map gc cd ~/.config
-map gC cd ~/cell
+map gC cd ~/.local/share/cell
+map gl cd ~/.local
 map gE cd /etc
 map gU. cd /usr
 map gUs cd /usr/share

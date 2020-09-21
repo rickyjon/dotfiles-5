@@ -29,9 +29,12 @@ set syscalls
 
 set trash
 
+set dotfiles
+
 " This is how many directories to store in the directory history.
 
 set history=100
+set number
 
 " Automatically resolve symbolic links on l or Enter.
 
@@ -40,7 +43,7 @@ set nofollowlinks
 " With this option turned on you can run partially entered commands with
 " unambiguous beginning using :! (e.g. :!Te instead of :!Terminal or :!Te<tab>).
 
-" set fastrun
+set fastrun
 
 " Natural sort of (version) numbers within text.
 
@@ -159,7 +162,6 @@ command! reload :write | restart
 
 " Pdf
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
-fileviewer *.pdf pdftotext -nopgbrk %c -
 
 " PostScript
 filextype *.ps,*.eps,*.ps.gz
@@ -177,8 +179,6 @@ filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus
        \ ffplay -nodisp -autoexit %c,
        \ {Play using MPlayer}
        \ mplayer %f,
-fileviewer *.mp3 mp3info
-fileviewer *.flac soxi
 
 " Video
 filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
@@ -186,10 +186,6 @@ filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \*.as[fx]
         \ {View using mpv}
         \ mpv %f,
-fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
-          \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
-          \*.as[fx]
-         \ ffprobe -pretty %c 2>&1
 
 " Web
 filextype *.html,*.htm
@@ -202,15 +198,9 @@ filetype *.o nm %f | less
 
 " Man page
 filetype *.[1-8] man ./%c
-fileviewer *.[1-8] man ./%c | col -b
 
 " Images
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-        \ {View in feh}
-        \ feh %f,
-        \ {View in gpicview}
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-         \ identify %f
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm sxiv %f,
 
 " OpenRaster
 filextype *.ora
@@ -249,7 +239,6 @@ filetype *.asc
 
 " Torrent
 filetype *.torrent ktorrent %f &
-fileviewer *.torrent dumptorrent -v %c
 
 " FuseZipMount
 filetype *.zip,*.jar,*.war,*.ear,*.oxt,*.apkg
@@ -259,22 +248,16 @@ filetype *.zip,*.jar,*.war,*.ear,*.oxt,*.apkg
        \ zip -sf %c | less,
        \ {Extract here}
        \ tar -xf %c,
-fileviewer *.zip,*.jar,*.war,*.ear,*.oxt zip -sf %c
 
 " ArchiveMount
 filetype *.tar,*.tar.bz2,*.tbz2,*.tgz,*.tar.gz,*.tar.xz,*.txz
        \ {Mount with archivemount}
        \ FUSE_MOUNT|archivemount %SOURCE_FILE %DESTINATION_DIR,
-fileviewer *.tgz,*.tar.gz tar -tzf %c
-fileviewer *.tar.bz2,*.tbz2 tar -tjf %c
-fileviewer *.tar.txz,*.txz xz --list %c
-fileviewer *.tar tar -tf %c
 
 " Rar2FsMount and rar archives
 filetype *.rar
        \ {Mount with rar2fs}
        \ FUSE_MOUNT|rar2fs %SOURCE_FILE %DESTINATION_DIR,
-fileviewer *.rar unrar v %c
 
 " IsoMount
 filetype *.iso
@@ -295,12 +278,9 @@ filetype *.ftp
 filetype *.7z
        \ {Mount with fuse-7z}
        \ FUSE_MOUNT|fuse-7z %SOURCE_FILE %DESTINATION_DIR,
-fileviewer *.7z 7z l %c
 
 " Office files
 filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
-fileviewer *.doc catdoc %c
-fileviewer *.docx docx2txt.pl %f -
 
 " TuDu files
 filetype *.tudu tudu -f %c
@@ -312,6 +292,8 @@ filextype *.pro qtcreator %f &
 filextype */
         \ {View in pcmanfm}
         \ pcmanfm %f &,
+
+fileviewer * preview
 
 " Syntax highlighting in preview
 "
@@ -373,10 +355,6 @@ nnoremap s :shell<cr>
 " Display sorting dialog
 nnoremap S :sort<cr>
 
-" Toggle visibility of preview window
-nnoremap p :view<cr>
-vnoremap p :view<cr>gv
-
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
 
@@ -400,28 +378,96 @@ elseif executable('xsel')
                 \ echo -n %c:p | xsel --clipboard --input %i<cr>
 endif
 
+nnoremap <bs> h
+nnoremap ` :help<cr>
+nnoremap . za
+nnoremap f :filter<space>
+nnoremap F zR
+
 " Mappings for faster renaming
-nnoremap I cw<c-a>
 nnoremap r cw<c-a>
-nnoremap cc cw<c-u>
-nnoremap A cw
+
+" File operators
+nnoremap mf :touch<space>
+nnoremap md :mkdir<space>
+
+nnoremap q :q<cr>
+nnoremap wq :wq<cr>
+nnoremap V :!less %f<cr>
+nnoremap <space> :select<cr>
+
+nnoremap gh :cd<cr>
+nnoremap gtr :cd ~/.local/share/Trash/files<cr>
+nnoremap gus :cd /run/media/brodie<cr>
+
+nnoremap gv. :cd ~/videos<cr>
+nnoremap gva :cd ~/videos/anime<cr>
+
+nnoremap gy. :cd ~/videos/youtube<cr>
+nnoremap gyt :cd ~/videos/youtube/ToUpload<cr>
+nnoremap gyu :cd ~/videos/youtube/Uploaded<cr>
+nnoremap gya :cd ~/videos/youtube/asset<cr>
+nnoremap go. :cd ~/videos/podcast<cr>
+nnoremap got :cd ~/videos/podcast/ToUpload<cr>
+nnoremap gou :cd ~/videos/podcast/Uploaded<cr>
+
+nnoremap gp. :cd ~/pictures<cr>
+nnoremap gpm :cd ~/pictures/mpvscreenshots<cr>
+nnoremap gpa :cd ~/pictures/Anime<cr>
+nnoremap gps :cd ~/pictures/screenshots<cr>
+
+nnoremap gw. :cd ~/pictures/Wallpapers<cr>
+nnoremap gww :cd ~/pictures/Wallpapers/Wallpapers<cr>
+nnoremap gwm :cd ~/pictures/Wallpapers/MobileWallpapers<cr>
+
+nnoremap gt. :cd ~/documents/Textbooks<cr>
+nnoremap gt1 :cd ~/documents/Textbooks/1stYear<cr>
+nnoremap gt2 :cd ~/documents/Textbooks/2ndYear<cr>
+nnoremap gt3 :cd ~/documents/Textbooks/3rdYear<cr>
+nnoremap gu3 :cd ~/documents/Uni/3rdYear<cr>
+nnoremap gd :cd ~/documents<cr>
+
+nnoremap gD :cd ~/downloads<cr>
+nnoremap ge :cd ~/desktop<cr>
+
+nnoremap gs. :cd ~/scripts<cr>
+nnoremap gsl :cd ~/scripts/lf<cr>
+nnoremap gsa :cd ~/scripts/alsa<cr>
+nnoremap gsi :cd ~/scripts/i3<cr>
+nnoremap gse :cd ~/scripts/lemonbar<cr>
+nnoremap gsp :cd ~/scripts/polybar<cr>
+nnoremap gsb :cd ~/scripts/bspwm<cr>
+nnoremap gsu :cd ~/scripts/pulse<cr>
+nnoremap gdt :cd ~/scripts/transmission<cr>
+
+nnoremap gr. :cd ~/repos<cr>
+nnoremap grb :cd ~/repos/bookmenu<cr>
+nnoremap grf :cd ~/repos/cleanfullscreen<cr>
+nnoremap grm :cd ~/repos/dmenu<cr>
+nnoremap grd :cd ~/repos/dotfiles<cr>
+nnoremap gri :cd ~/repos/init<cr>
+nnoremap grk :cd ~/repos/kanban-board<cr>
+nnoremap grl :cd ~/repos/lbryurlconvert<cr>
+nnoremap grP :cd ~/repos/PerlProjects<cr>
+nnoremap grr :cd ~/repos/reading-list<cr>
+nnoremap grs :cd ~/repos/st<cr>
+nnoremap grw :cd ~/repos/website<cr>
+
+nnoremap gc :cd ~/.config<cr>
+nnoremap gC :cd ~/.local/share/cell<cr>
+nnoremap gl :cd ~/.local<cr>
+nnoremap gE :cd /etc<cr>
+nnoremap gU. :cd /usr<cr>
+nnoremap gUs :cd /usr/share<cr>
 
 " Open console in current directory
-nnoremap ,t :!xterm &<cr>
+nnoremap t :!alacritty &<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
 
 " Toggle wrap setting on ,w key
 nnoremap ,w :set wrap!<cr>
-
-" Example of standard two-panel file managers mappings
-nnoremap <f3> :!less %f<cr>
-nnoremap <f4> :edit<cr>
-nnoremap <f5> :copy<cr>
-nnoremap <f6> :move<cr>
-nnoremap <f7> :mkdir<space>
-nnoremap <f8> :delete<cr>
 
 " ------------------------------------------------------------------------------
 

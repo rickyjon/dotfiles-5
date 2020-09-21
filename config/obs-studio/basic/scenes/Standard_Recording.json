@@ -109,7 +109,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_input_capture",
-        "volume": 0.79023057222366333
+        "volume": 0.8991205096244812
     },
     "DesktopAudioDevice1": {
         "balance": 0.5,
@@ -139,7 +139,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
-        "volume": 0.80186736583709717
+        "volume": 1.0
     },
     "current_program_scene": "Full Cam",
     "current_scene": "Full Cam",

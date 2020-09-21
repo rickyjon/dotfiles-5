@@ -136,7 +136,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
-        "volume": 0.81298309564590454
+        "volume": 0.91642767190933228
     },
     "current_program_scene": "Main",
     "current_scene": "Main",
@@ -206,6 +206,31 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
+            "name": "Guest",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "/home/brodie/desktop/uuGN4mOS_400x400.jpg"
+            },
+            "sync": 0,
+            "versioned_id": "image_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
             "name": "Background2",
             "prev_ver": 419430408,
             "private_settings": {},
@@ -234,10 +259,12 @@
                 ],
                 "libobs.hide_scene_item.Background2": [],
                 "libobs.hide_scene_item.Desktop Audio": [],
+                "libobs.hide_scene_item.Guest": [],
                 "libobs.hide_scene_item.Me": [],
                 "libobs.hide_scene_item.Mic/Aux": [],
                 "libobs.show_scene_item.Background2": [],
                 "libobs.show_scene_item.Desktop Audio": [],
+                "libobs.show_scene_item.Guest": [],
                 "libobs.show_scene_item.Me": [],
                 "libobs.show_scene_item.Mic/Aux": []
             },
@@ -254,7 +281,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 17,
+                "id_counter": 18,
                 "items": [
                     {
                         "align": 5,
@@ -273,8 +300,8 @@
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 975.0,
-                            "y": 402.0
+                            "x": 61.0,
+                            "y": 398.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -293,26 +320,55 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 263,
-                        "crop_left": 17,
-                        "crop_right": 973,
-                        "crop_top": 292,
+                        "crop_bottom": 270,
+                        "crop_left": 8,
+                        "crop_right": 976,
+                        "crop_top": 294,
                         "group_item_backup": false,
                         "id": 12,
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 59.0,
-                            "y": 401.0
+                            "x": 961.0,
+                            "y": 398.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.94408601522445679,
-                            "y": 0.94476193189620972
+                            "x": 0.99145299196243286,
+                            "y": 0.99031007289886475
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 18,
+                        "locked": false,
+                        "name": "Guest",
+                        "pos": {
+                            "x": 1125.0,
+                            "y": 380.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.4750000238418579,
+                            "y": 1.4750000238418579
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -422,11 +478,13 @@
                 "libobs.hide_scene_item.BackgroundVideo2": [],
                 "libobs.hide_scene_item.Browser2": [],
                 "libobs.hide_scene_item.Desktop Audio": [],
+                "libobs.hide_scene_item.Guest": [],
                 "libobs.hide_scene_item.Me": [],
                 "libobs.hide_scene_item.Mic/Aux": [],
                 "libobs.show_scene_item.BackgroundVideo2": [],
                 "libobs.show_scene_item.Browser2": [],
                 "libobs.show_scene_item.Desktop Audio": [],
+                "libobs.show_scene_item.Guest": [],
                 "libobs.show_scene_item.Me": [],
                 "libobs.show_scene_item.Mic/Aux": []
             },
@@ -443,7 +501,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 11,
+                "id_counter": 12,
                 "items": [
                     {
                         "align": 5,
@@ -462,8 +520,8 @@
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 129.0,
-                            "y": 534.0
+                            "x": 130.0,
+                            "y": 44.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -491,17 +549,46 @@
                         "locked": false,
                         "name": "Me",
                         "pos": {
-                            "x": 129.0,
-                            "y": 42.0
+                            "x": 93.0,
+                            "y": 507.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.74282675981521606,
-                            "y": 0.74334603548049927
+                            "x": 0.79596173763275146,
+                            "y": 0.79657793045043945
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 12,
+                        "locked": false,
+                        "name": "Guest",
+                        "pos": {
+                            "x": 255.0,
+                            "y": 528.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.122499942779541,
+                            "y": 1.122499942779541
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -550,7 +637,7 @@
                         "name": "Browser2",
                         "pos": {
                             "x": 967.0,
-                            "y": 44.0
+                            "y": 46.0
                         },
                         "private_settings": {},
                         "rot": 0.0,

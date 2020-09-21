@@ -1,4 +1,4 @@
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/.bashrc ]] && . ~/.config/bashrc
 
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
@@ -26,5 +26,5 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 if [[ "$(tty)" = "/dev/tty1" ]]; then
-	pgrep i3 || startx
+	pgrep bspwm || startx "$XDG_CONFIG_HOME/X11/xinitrc"
 fi

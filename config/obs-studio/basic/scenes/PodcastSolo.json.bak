@@ -101,7 +101,7 @@
                 "libobs.unmute": []
             },
             "id": "pulse_output_capture",
-            "mixers": 255,
+            "mixers": 194,
             "monitoring_type": 0,
             "muted": false,
             "name": "DesktopAudio",
@@ -211,7 +211,7 @@
                 "libobs.unmute": []
             },
             "id": "pulse_input_capture",
-            "mixers": 255,
+            "mixers": 193,
             "monitoring_type": 0,
             "muted": false,
             "name": "Microphone",
@@ -226,7 +226,7 @@
             },
             "sync": 0,
             "versioned_id": "pulse_input_capture",
-            "volume": 0.79073679447174072
+            "volume": 0.86525863409042358
         },
         {
             "balance": 0.5,
@@ -457,8 +457,8 @@
                         "locked": false,
                         "name": "Window Capture (Xcomposite)",
                         "pos": {
-                            "x": 967.0,
-                            "y": 45.0
+                            "x": 971.472900390625,
+                            "y": 48.0
                         },
                         "private_settings": {},
                         "rot": 0.0,

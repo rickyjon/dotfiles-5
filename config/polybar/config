@@ -55,7 +55,7 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
 
 modules-left = bspwm xwindow
-modules-right = crypto torrents pacman-packages subs cpu-usage cpu-temperature memory volume weather time
+modules-right = crypto torrents pacman-packages cpu-usage cpu-temperature memory volume weather time
 
 tray-position = right
 tray-padding = 1

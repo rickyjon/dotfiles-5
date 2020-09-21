@@ -1,4 +1,4 @@
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " Themes
 Plug 'vim-airline/vim-airline'
@@ -31,5 +31,8 @@ Plug 'tpope/vim-repeat'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'itchyny/calendar.vim'
 Plug 'mbbill/undotree'
+"Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 
 call plug#end()
