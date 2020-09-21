@@ -29,29 +29,29 @@ ToolButtonStyle=IconOnly
 
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/videos/youtube/asset/Generic/,$HOME/videos/youtube/patreon/,$HOME/videos/youtube/outro/
-KdenliveProjectsFolder[$e]=$HOME/videos/podcast/ToUpload/RebuildingFacebook,$HOME/videos/podcast/ToUpload/NeglectingLBRY,$HOME/videos/podcast/ToUpload/LBRY-Baseline
+KdenliveProjectsFolder[$e]=$HOME/videos/youtube/ToUpload/vim-native-plugins,$HOME/videos/youtube/ToUpload/mpd,$HOME/videos/youtube/ToUpload/Posix-Compliance
 
 [Recent Files]
-File1[$e]=$HOME/videos/youtube/ToUpload/bandwhich/bandwhich.kdenlive
-File10[$e]=$HOME/videos/podcast/ToUpload/RebuildingFacebook/RebuildingFacebook.kdenlive
-File2[$e]=$HOME/videos/youtube/ToUpload/goneovim/goneovim.kdenlive
-File3[$e]=$HOME/videos/youtube/ToUpload/abduco/abduco.kdenlive
-File4[$e]=$HOME/videos/youtube/ToUpload/vim-native-plugins/vim-native-plugins.kdenlive
-File5[$e]=$HOME/videos/youtube/ToUpload/vifm/vifm.kdenlive
-File6[$e]=$HOME/videos/youtube/ToUpload/Posix-Compliance/posix-compliance.kdenlive
-File7[$e]=$HOME/videos/youtube/ToUpload/mpd/mpd.kdenlive
-File8[$e]=$HOME/videos/podcast/ToUpload/LBRY-Baseline/LbryBaseline.kdenlive
-File9[$e]=$HOME/videos/podcast/ToUpload/NeglectingLBRY/NeglectingLBRY.kdenlive
-Name1[$e]=bandwhich.kdenlive
-Name10[$e]=RebuildingFacebook.kdenlive
-Name2[$e]=goneovim.kdenlive
-Name3[$e]=abduco.kdenlive
-Name4[$e]=vim-native-plugins.kdenlive
-Name5[$e]=vifm.kdenlive
-Name6[$e]=posix-compliance.kdenlive
-Name7[$e]=mpd.kdenlive
-Name8[$e]=LbryBaseline.kdenlive
-Name9[$e]=NeglectingLBRY.kdenlive
+File1[$e]=$HOME/videos/youtube/ToUpload/vim-directories/vim-directories.kdenlive
+File10[$e]=$HOME/videos/youtube/ToUpload/vim-native-plugins/vim-native-plugins.kdenlive
+File2[$e]=$HOME/videos/youtube/ToUpload/unix-philosphy/unix-philosphy.kdenlive
+File3[$e]=$HOME/videos/youtube/ToUpload/cleaning-home/cleaning-home.kdenlive
+File4[$e]=$HOME/videos/youtube/ToUpload/bandwhich/bandwhich.kdenlive
+File5[$e]=$HOME/videos/youtube/ToUpload/goneovim/goneovim.kdenlive
+File6[$e]=$HOME/videos/youtube/ToUpload/abduco/abduco.kdenlive
+File7[$e]=$HOME/videos/youtube/ToUpload/vifm/vifm.kdenlive
+File8[$e]=$HOME/videos/youtube/ToUpload/Posix-Compliance/posix-compliance.kdenlive
+File9[$e]=$HOME/videos/youtube/ToUpload/mpd/mpd.kdenlive
+Name1[$e]=vim-directories.kdenlive
+Name10[$e]=vim-native-plugins.kdenlive
+Name2[$e]=unix-philosphy.kdenlive
+Name3[$e]=cleaning-home.kdenlive
+Name4[$e]=bandwhich.kdenlive
+Name5[$e]=goneovim.kdenlive
+Name6[$e]=abduco.kdenlive
+Name7[$e]=vifm.kdenlive
+Name8[$e]=posix-compliance.kdenlive
+Name9[$e]=mpd.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -93,7 +93,7 @@ ColorScheme=Breeze High Contrast
 
 [bin]
 bin_zoom=3
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAIGAAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAARUAAAABAAAAAAAAA+gAAAAAMA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAIfgAAAAYAAAAGAAAAZAAAAAUAAABkAAAABAAAAGQAAAADAAAAZAAAAAIAAABkAAAAAQAAADgAAAH/AAAACAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAPEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAQ4AAAABAAAAAAAAA+gAAAAAMA==
 
 [capture]
 decklink_capturedevice=4294967295
